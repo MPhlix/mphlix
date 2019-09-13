@@ -1,8 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
+import { FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { ContactUsService } from './services/contact-us.service';
 
 @NgModule({
   declarations: [
@@ -10,9 +13,11 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
     ContactUsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [ContactUsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
