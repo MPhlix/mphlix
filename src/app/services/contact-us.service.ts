@@ -6,6 +6,7 @@ import { Http } from '@angular/http';
 })
 export class ContactUsService {
   url = "https://mphlix-api.azurewebsites.net/ContactUs/SendEmail";
+  // url = "https://localhost:5001/ContactUs/SendEmail";
 
   constructor(private http: Http) { }
 
