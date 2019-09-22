@@ -12763,9 +12763,22 @@ textarea.form-control {
   }
 }
 
+/* Development customization by Mphlix Developers team starts here */
+
 /* CSS fixes vertical scroll issue - Start - This CSS below fixes the vertical scroll issue that prevented users from scrolling on mobile devices */
-.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item{
-    -ms-touch-action: auto;
-        touch-action: auto;
+
+.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item {
+  -ms-touch-action: auto;
+  touch-action: auto;
 }
+
 /* CSS fixes vertical scroll issue - End */
+
+@media screen and (max-width: 768px) {
+  .one-forth.d-flex.align-items-center.ftco-animate.fadeInUp.ftco-animated {
+    top: -30%;
+  }
+  .logo-width {
+    width:80%;
+  }
+}
