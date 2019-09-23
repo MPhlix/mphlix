@@ -1,22 +1,24 @@
-<section class="ftco-section ftco-no-pt ftco-no-pb contact-section" style="background-image: url('assets/images/bg-2.jpg');">
+<section class="ftco-section ftco-no-pt ftco-no-pb contact-section"
+  style="background-image: url('assets/images/bg-2.jpg');">
   <div class="container-fluid px-0">
     <div class="row no-gutters block-9">
       <div class="col-md-6 order-md-last d-flex">
-        <form action="#" class="bg-light p-5 contact-form">
+        <form action="#" class="bg-light p-5 contact-form" [formGroup]="contactForm" (ngSubmit)="submit()" ngNativeValidate>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Your Name" [(ngModel)]="name" name="name">
+            <input type="text" required [ngClass]="{'form-control': true }" placeholder="Your Name" formControlName="nameField">
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Your Email" [(ngModel)]="email" name="email">
+            <input type="text" required class="form-control" placeholder="Your Email" formControlName="emailField">
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Subject" [(ngModel)]="subject" name="subject">
+            <input type="text" required class="form-control" placeholder="Subject" formControlName="subjectField">
           </div>
           <div class="form-group">
-            <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message" [(ngModel)]="message" name="message"></textarea>
+            <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"
+              formControlName="messageField"></textarea>
           </div>
           <div class="form-group">
-            <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5" (click)="submit()">
+            <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
           </div>
         </form>
 
