@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { ReactiveFormsModule, FormsModule} from '@angular/forms';
 
+import { NgxSpinnerModule } from 'ngx-spinner';
+
 import { AppComponent } from './app.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { ContactUsService } from './services/contact-us.service';
@@ -16,7 +18,8 @@ import { ContactUsService } from './services/contact-us.service';
     BrowserModule,
     HttpModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    NgxSpinnerModule
   ],
   providers: [ContactUsService],
   bootstrap: [AppComponent]

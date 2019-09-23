@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ContactUsService } from 'src/app/services/contact-us.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import * as alertify from 'alertifyjs'
+import * as alertify from 'alertifyjs';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'contact-us',
@@ -21,7 +22,7 @@ export class ContactUsComponent implements OnInit {
     messageField: new FormControl('', Validators.required),
   })
 
-  constructor(private contactService: ContactUsService) { }
+  constructor(private contactService: ContactUsService, private spinner: NgxSpinnerService) { }
 
   ngOnInit() {
     alertify.defaults.closable = false;
@@ -32,9 +33,12 @@ export class ContactUsComponent implements OnInit {
       alertify.error('Please enter all the details properly');
       return;
     }
+    this.spinner.show();
     this.contactService.sendMessage(this.name, this.email, this.subject, this.message).subscribe(response => {
+      this.spinner.hide();
       alertify.success('Thank you. Our skin specialist will contact you as soon as possible.');
     }, error => {
+      this.spinner.hide();
       alertify.error('Oops! Looks like an error occurred. Please try again.');
       console.log(error);
     });;
