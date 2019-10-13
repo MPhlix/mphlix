@@ -11986,9 +11986,10 @@ textarea.form-control {
 
 @media (min-width: 992px) {
   .testimony-section .testimony-img {
-    margin-top: 35%;  /* Changing the top margin for parent Testimony image. Old value -50px;  */
+    margin-top: 35%;
+    /* Changing the top margin for parent Testimony image. Old value -50px;  */
     margin-right: -40px;
-    height:70%;
+    height: 70%;
   }
 }
 
@@ -12796,10 +12797,17 @@ textarea.form-control {
   .logo-width {
     width: 80%;
   }
-
   .testimony-width {
     width: 100%;
   }
 }
 
 /* Setting width of logo - end */
+
+/* Crew members - start */
+
+.crew-icons {
+  font-size: x-large;
+}
+
+/* Crew members - end */
