@@ -9971,7 +9971,7 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 }
 
 .ftco-navbar-light {
-  background: transparent !important;
+  background: #2c8e8e !important;
   position: absolute;
   top: 0px;
   left: 0;
@@ -9982,10 +9982,11 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 
 @media (max-width: 991.98px) {
   .ftco-navbar-light {
-    background: #000000 !important;
+    background: #2c8e8e !important;
     position: relative;
     top: 0;
-    padding: 10px 15px;
+    padding: 10px 15px 0px 15px;
+    /* Logo padding. Old value : 10px 15px; */
   }
 }
 
@@ -10122,6 +10123,8 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: .1em;
+  padding-top: 15px;
+  /* Added to lower the position of Menu button so that it's easy to click in mobile */
 }
 
 .ftco-navbar-light .navbar-toggler:focus {
@@ -10134,7 +10137,7 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   left: 0;
   top: 0;
   margin-top: -130px;
-  background: #fff !important;
+  background: #2c8e8e !important;
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
@@ -10751,7 +10754,8 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 }
 
 .ftco-services .services-wrap .img {
-  height: 600px;
+  height: 350px;
+  /* Change this value to zoom in and out of images */
   position: relative;
   z-index: 0;
 }
@@ -11982,8 +11986,9 @@ textarea.form-control {
 
 @media (min-width: 992px) {
   .testimony-section .testimony-img {
-    margin-top: -50px;
+    margin-top: 35%;  /* Changing the top margin for parent Testimony image. Old value -50px;  */
     margin-right: -40px;
+    height:70%;
   }
 }
 
@@ -12774,11 +12779,27 @@ textarea.form-control {
 
 /* CSS fixes vertical scroll issue - End */
 
+/* Setting width of logo and testimony - start */
+
+.logo-width {
+  width: 50%;
+}
+
+.testimony-width {
+  width: 50%;
+}
+
 @media screen and (max-width: 768px) {
   .one-forth.d-flex.align-items-center.ftco-animate.fadeInUp.ftco-animated {
     top: -30%;
   }
   .logo-width {
-    width:80%;
+    width: 80%;
+  }
+
+  .testimony-width {
+    width: 100%;
   }
 }
+
+/* Setting width of logo - end */
