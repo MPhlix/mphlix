@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 
-// import Something from 'src/assets/js/minimal-form/minimal-form.js';
+import * as MinimalForm from 'src/app/plugins/minimal-form.js';
 
 @Component({
   selector: 'find-skin-type',
@@ -8,11 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./find-skin-type.component.css']
 })
 export class FindSkinTypeComponent implements OnInit {
+  @ViewChild("theForm", { static: true }) theForm: ElementRef;
 
   constructor() { }
 
   ngOnInit() {
-    // console.log(Something);
+    MinimalForm.showForm(this.theForm.nativeElement);
   }
 
 }
