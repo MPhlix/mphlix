@@ -9,12 +9,16 @@ import { AppComponent } from './app.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { ContactUsService } from './services/contact-us.service';
 import { FindSkinTypeComponent } from './components/find-skin-type/find-skin-type.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactUsComponent,
-    FindSkinTypeComponent
+    FindSkinTypeComponent,
+    NavbarComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
