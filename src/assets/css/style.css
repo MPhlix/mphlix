@@ -12811,3 +12811,12 @@ textarea.form-control {
 }
 
 /* Crew members - end */
+
+/*Angularized implementation of Carousel using Ngx-bootstrap - start */
+a.carousel-control{
+  display: none;
+}
+carousel, .carousel-inner, .carousel.slide {
+  outline: none;
+}
+/*Angularized implementation of Carousel using Ngx-bootstrap - .align-items-end */

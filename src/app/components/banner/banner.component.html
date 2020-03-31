@@ -1,42 +1,18 @@
-<section id="home-section" class="hero" data-stellar-background-ratio="0.5"
-    style="background-image: url(assets/images/bg.jpg);">
-    <div class="home-slider owl-carousel">
-        <div class="slider-item js-fullheight">
-            <div class="overlay"></div>
-            <div class="container-fluid p-0">
-                <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
-                    data-scrollax-parent="true">
-                    <img class="one-third align-self-end order-md-last img-fluid" src="assets/images/bg_1-reduced.png"
-                        alt="">
-                    <div class="one-forth d-flex align-items-center ftco-animate"
-                        data-scrollax=" properties: { translateY: '70%' }">
-                        <div class="mt-5">
-                            <h1 class="mb-4">Skin Analysis</h1>
-                            <p class="mb-4">Welcome aboard to an array of organic soaps and skin products!</p>
-                            <p><a href="#" class="btn btn-primary py-3 px-4">Discover Now</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="slider-item js-fullheight">
-            <div class="overlay"></div>
-            <div class="container-fluid p-0">
-                <div class="row d-flex no-gutters slider-text align-items-center justify-content-end"
-                    data-scrollax-parent="true">
-                    <img class="one-third align-self-end order-md-last img-fluid" src="assets/images/bg_2-reduced.png"
-                        alt="">
-                    <div class="one-forth d-flex align-items-center ftco-animate"
-                        data-scrollax=" properties: { translateY: '70%' }">
-                        <div class="mt-5">
-                            <h1 class="mb-4">Skin checkup</h1>
-                            <p class="mb-4">Welcome aboard to an array of organic soaps and skin products!</p>
-                            <p><a href="#" class="btn btn-primary py-3 px-4">Discover Now</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<ng-container>
+  <div class="row m-0" id="banner">
+    <div class="col-12 col-lg-4" id="bannerText">
+      <div class="">
+        <h1 class="mb-4 banner-heading">Skin Analysis</h1>
+        <p class="mb-4 banner-subtitle">Welcome aboard to an array of organic soaps and skin products!</p>
+        <p class="discover-button"><a id="discoverButton" href="#" class="btn btn-primary py-3 px-4">Discover Now</a></p>
+      </div>
     </div>
-</section>
+    <div class="col-12 col-lg-7">
+      <carousel [isAnimated]="true" [interval]="myInterval" [noPause]="true" [showIndicators]="showIndicator">
+        <slide *ngFor="let image of Images" [id]=image.id>
+          <img [src]="image.src" [alt]="image.isLarge">
+        </slide>
+      </carousel>
+    </div>
+  </div>
+</ng-container>

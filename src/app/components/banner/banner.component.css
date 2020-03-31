@@ -1,0 +1,94 @@
+@keyframes scaleUp1_2 {
+    to {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes scaleUp1_4 {
+    to {
+        transform: scale(1.4);
+    }
+}
+
+slide {
+    animation-name: scaleUp1_2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@media only screen and (min-width: 992px) {
+    #bannerText {
+        margin: auto auto auto 5%;
+    }
+    .banner-heading {
+        text-align: left !important;
+    }
+    .banner-subtitle {
+        text-align: left !important;
+    }
+    .discover-button {
+        text-align: left !important;
+    }
+    #banner slide img {
+        margin-right: 15%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #banner {
+        /* max-height:550px; */
+        max-height: 550px;
+    }
+    #banner slide img {
+        margin-right: 15%;
+    }
+    slide {
+        animation-name: scaleUp1_4;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 767px){
+    #banner slide img {
+        margin-right:10%;
+    }
+}
+
+#banner {
+    /* max-height:550px; */
+    max-height: 100%;
+    background-image: url('../../../assets/images/bg.jpg');
+    background-size:cover;
+}
+
+#banner slide img {
+    max-height: 450px;
+    float: right;
+    margin-top: 10%;
+    outline: 0;
+}
+
+.discover-button {
+    text-align: center;
+}
+
+#discoverButton {
+    background: #d461619e !important;
+    border: 1px solid #d461619e;
+    border-radius: 30px;
+}
+
+.banner-heading {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.banner-subtitle {
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Work Sans", Arial, sans-serif;
+    color: #000000b3;
+}

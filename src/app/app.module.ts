@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { ReactiveFormsModule, FormsModule} from '@angular/forms';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 import { NgxSpinnerModule } from 'ngx-spinner';
 
@@ -25,7 +26,8 @@ import { BannerComponent } from './components/banner/banner.component';
     HttpModule,
     ReactiveFormsModule,
     FormsModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    CarouselModule.forRoot()
   ],
   providers: [ContactUsService],
   bootstrap: [AppComponent]
