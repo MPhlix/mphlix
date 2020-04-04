@@ -26,6 +26,7 @@ export class BannerComponent implements OnInit {
   ];
   myInterval = 4000;
   showIndicator = false;
+  showSkinTypeQuiz = false;
 
   constructor() { }
 

@@ -1,0 +1,23 @@
+<div class="container">
+    <div id="quiz" *ngFor="let question of filteredQuestions;">
+        <h3 class="font-weight-normal">
+            <span>{{question.title}}</span>
+        </h3>
+        <div class="text-left options">
+            <div *ngFor="let option of question.options">
+                <label class="font-weight-normal" [attr.for]="question.title + '-' + option.title + '-' + option.id">
+                    <input id="{{question.title + '-' + option.title + '-' + option.id}}" type="checkbox"
+                        [(ngModel)]="option.selected" (change)="onSelect(question, option);" /> {{option.title}}
+                </label>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div>
+        <button class="btn btn-primary" style="float:left;" [disabled]="CanHide" (click)="previous()">Prev</button>
+        <button class="btn btn-primary" style="float:right;" (click)="next()">Next</button>
+    </div>
+    <div class="row container">
+        <a href="/products" class="m-auto btn btn-primary py-3 px-4">Explore yourself</a>
+    </div>
+</div>

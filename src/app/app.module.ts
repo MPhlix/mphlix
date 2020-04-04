@@ -13,6 +13,7 @@ import { FindSkinTypeComponent } from './components/find-skin-type/find-skin-typ
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { SkinTypeService } from './services/skin-type/skin-type.service';
+import { SkinTypeQuizComponent } from './components/skin-type-quiz/skin-type-quiz.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SkinTypeService } from './services/skin-type/skin-type.service';
     ContactUsComponent,
     FindSkinTypeComponent,
     NavbarComponent,
-    BannerComponent
+    BannerComponent,
+    SkinTypeQuizComponent
   ],
   imports: [
     BrowserModule,
