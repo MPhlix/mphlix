@@ -1,6 +1,7 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
-
 import * as MinimalForm from 'src/app/plugins/minimal-form.js';
+import { SkinTypeService } from 'src/app/services/skin-type/skin-type.service';
+import { Question } from 'src/app/interface/Question';
 
 @Component({
   selector: 'find-skin-type',
@@ -9,11 +10,22 @@ import * as MinimalForm from 'src/app/plugins/minimal-form.js';
 })
 export class FindSkinTypeComponent implements OnInit {
   @ViewChild("theForm", { static: true }) theForm: ElementRef;
+  questions: Question[];
 
-  constructor() { }
+  constructor(private skinType: SkinTypeService) {
+    this.questions = skinType.getAllQuestions().slice(0, 2);
+  }
 
   ngOnInit() {
+  }
+
+  ngAfterViewInit() {
     MinimalForm.showForm(this.theForm.nativeElement);
+  }
+
+  next() {
+    console.log('within component');
+    // this.questions.push(this.skinType.getAllQuestions().slice(2, 1)[0]);
   }
 
 }

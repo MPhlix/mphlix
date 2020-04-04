@@ -1,0 +1,190 @@
+[
+    {
+        "id": 1,
+        "title": "Mirror Mirror on the wall, which one needs most care of all?",
+        "options": [
+            {
+                "id": 1,
+                "title": "Skin"
+            },
+            {
+                "id": 2,
+                "title": "Hair"
+            }
+        ],
+        "multiSelection": false,
+        "nextQuestion": 2
+    },
+    {
+        "id": 1,
+        "title": "Is dandruff hovering over your hair?",
+        "options": [
+            {
+                "id": 1,
+                "title": "Sometimes"
+            },
+            {
+                "id": 2,
+                "title": "Always"
+            }
+        ],
+        "multiSelection": false,
+        "nextQuestion": 2
+    },
+    {
+        "id": 1,
+        "title": "Does your hair feel rough?",
+        "options": [
+            {
+                "id": 1,
+                "title": "Sometimes"
+            },
+            {
+                "id": 2,
+                "title": "Always"
+            }
+        ],
+        "multiSelection": false,
+        "nextQuestion": 2
+    },
+    {
+        "id": 1,
+        "title": "How often do you style/ chemical treat your hair?",
+        "options": [
+            {
+                "id": 1,
+                "title": "Sometimes"
+            },
+            {
+                "id": 2,
+                "title": "Always"
+            }
+        ],
+        "multiSelection": false,
+        "nextQuestion": 2
+    },
+    {
+        "id": 1,
+        "title": "How often do you oil your hair?",
+        "options": [
+            {
+                "id": 1,
+                "title": "Sometimes"
+            },
+            {
+                "id": 2,
+                "title": "Always"
+            }
+        ],
+        "multiSelection": false,
+        "nextQuestion": 2
+    },
+    {
+        "id": 1,
+        "title": "How often do you get your pimple?",
+        "options": [
+            {
+                "id": 1,
+                "title": "Weekly"
+            },
+            {
+                "id": 2,
+                "title": "Monthly"
+            },
+            {
+                "id": 3,
+                "title": "Never"
+            }
+        ],
+        "multiSelection": false,
+        "nextQuestion": 2
+    },
+    {
+        "id": 1,
+        "title": "How often do you get exposed to Sun?",
+        "options": [
+            {
+                "id": 1,
+                "title": "Daily"
+            },
+            {
+                "id": 2,
+                "title": "Weekly"
+            },
+            {
+                "id": 3,
+                "title": "Monthly"
+            }
+        ],
+        "multiSelection": false,
+        "nextQuestion": 2
+    },
+    {
+        "id": 1,
+        "title": "If daily, then does your skin appear darker than usual?",
+        "options": [
+            {
+                "id": 1,
+                "title": "Yes"
+            },
+            {
+                "id": 2,
+                "title": "No"
+            }
+        ],
+        "multiSelection": false,
+        "nextQuestion": 2
+    },
+    {
+        "id": 1,
+        "title": "How often do you apply cream?",
+        "options": [
+            {
+                "id": 1,
+                "title": "Daily"
+            },
+            {
+                "id": 2,
+                "title": "Weekly"
+            },
+            {
+                "id": 3,
+                "title": "Monthly"
+            }
+        ],
+        "multiSelection": false,
+        "nextQuestion": 2
+    },
+    {
+        "id": 1,
+        "title": "Does your skin lack glow?",
+        "options": [
+            {
+                "id": 1,
+                "title": "Sometimes"
+            },
+            {
+                "id": 2,
+                "title": "Always"
+            }
+        ],
+        "multiSelection": false,
+        "nextQuestion": 2
+    },
+    {
+        "id": 1,
+        "title": "Has your friend commented about blackheads or whiteheads on your face?",
+        "options": [
+            {
+                "id": 1,
+                "title": "Sometimes"
+            },
+            {
+                "id": 2,
+                "title": "Always"
+            }
+        ],
+        "multiSelection": false,
+        "nextQuestion": 2
+    }
+]

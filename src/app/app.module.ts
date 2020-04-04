@@ -12,6 +12,7 @@ import { ContactUsService } from './services/contact-us.service';
 import { FindSkinTypeComponent } from './components/find-skin-type/find-skin-type.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { SkinTypeService } from './services/skin-type/skin-type.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { BannerComponent } from './components/banner/banner.component';
     NgxSpinnerModule,
     CarouselModule.forRoot()
   ],
-  providers: [ContactUsService],
+  providers: [ContactUsService, SkinTypeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
