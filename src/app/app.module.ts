@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
-import { ReactiveFormsModule, FormsModule} from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 import { NgxSpinnerModule } from 'ngx-spinner';
@@ -14,6 +14,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { SkinTypeService } from './services/skin-type/skin-type.service';
 import { SkinTypeQuizComponent } from './components/skin-type-quiz/skin-type-quiz.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,10 @@ import { SkinTypeQuizComponent } from './components/skin-type-quiz/skin-type-qui
     ReactiveFormsModule,
     FormsModule,
     NgxSpinnerModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCheckboxModule
   ],
   providers: [ContactUsService, SkinTypeService],
   bootstrap: [AppComponent]

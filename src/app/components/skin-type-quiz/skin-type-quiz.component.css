@@ -1,8 +1,11 @@
-/* .container {
+.container {
     user-select: none;
-    padding:0% 20%;
 }
-*/
+
 #quiz {
     height:210px;
 } 
+
+::ng-deep .mat-checkbox .mat-checkbox-frame {
+    border-color: black;
+}

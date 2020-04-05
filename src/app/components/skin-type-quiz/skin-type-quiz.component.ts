@@ -43,7 +43,11 @@ export class SkinTypeQuizComponent implements OnInit {
     }
   }
 
-  get CanHide() {
+  get CanGoBack() {
+    return this.pager.index === 0;
+  }
+
+  get CanGoAhead() {
     return this.pager.index === 0;
   }
 }

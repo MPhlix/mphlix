@@ -5,17 +5,18 @@
         </h3>
         <div class="text-left options">
             <div *ngFor="let option of question.options">
-                <label class="font-weight-normal" [attr.for]="question.title + '-' + option.title + '-' + option.id">
+                <!-- <label class="font-weight-normal" [attr.for]="question.title + '-' + option.title + '-' + option.id">
                     <input id="{{question.title + '-' + option.title + '-' + option.id}}" type="checkbox"
                         [(ngModel)]="option.selected" (change)="onSelect(question, option);" /> {{option.title}}
-                </label>
+                </label> -->
+                <mat-checkbox>{{option.title}}</mat-checkbox>
             </div>
         </div>
     </div>
     <hr />
     <div>
-        <button class="btn btn-primary" style="float:left;" [disabled]="CanHide" (click)="previous()">Prev</button>
-        <button class="btn btn-primary" style="float:right;" (click)="next()">Next</button>
+        <button class="btn btn-primary" style="float:left;" [disabled]="CanGoBack" (click)="previous()">Prev</button>
+        <button class="btn btn-primary" style="float:right;" [disabled]="CanGoAhead" (click)="next()">Next</button>
     </div>
     <div class="row container">
         <a href="/products" class="m-auto btn btn-primary py-3 px-4">Explore yourself</a>
