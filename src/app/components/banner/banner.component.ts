@@ -33,4 +33,8 @@ export class BannerComponent implements OnInit {
   ngOnInit() {
   }
 
+  showMainMenu(){
+    this.showSkinTypeQuiz = false;
+  }
+
 }

@@ -1,26 +1,24 @@
 <ng-container>
   <div class="row m-0" id="banner">
-    <div class="col-12 col-lg-4" id="bannerText">
+    <div class="col-12 col-lg-4 col-md-6" id="bannerText">
       <div *ngIf="!showSkinTypeQuiz">
         <h1 class="mb-4 banner-heading">Skin Analysis</h1>
         <p class="mb-4 banner-subtitle">Welcome aboard to an array of organic soaps and skin products!</p>
         <div class="discover-button">
           <div class="row">
-            <div class="col-4">
+            <div class="col-md-6 col-6">
               <a id="discoverButton" href="#" class="btn btn-primary py-3 px-3" (click)="showSkinTypeQuiz = true;">
                 Find your skin type</a>
             </div>
-            <div class="col-2">
-            </div>
-            <div class="col-4">
+            <div class="col-md-6 col-6">
               <a id="discoverButton" href="/products" class="btn btn-primary py-3 px-3">Explore yourself</a>
             </div>
           </div>
         </div>
       </div>
-      <skin-type-quiz *ngIf="showSkinTypeQuiz"></skin-type-quiz>
+      <skin-type-quiz *ngIf="showSkinTypeQuiz" (backToMain)="showMainMenu()"></skin-type-quiz>
     </div>
-    <div class="col-12 col-lg-7">
+    <div class="col-12 col-lg-7 col-md-6">
       <carousel [isAnimated]="true" [interval]="myInterval" [noPause]="true" [showIndicators]="showIndicator">
         <slide *ngFor="let image of Images" [id]=image.id>
           <img [src]="image.src" [alt]="image.isLarge">

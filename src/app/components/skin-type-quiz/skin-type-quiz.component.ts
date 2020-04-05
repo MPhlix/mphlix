@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Question } from 'src/app/interface/Question';
 import { SkinTypeService } from 'src/app/services/skin-type/skin-type.service';
 
@@ -14,6 +14,8 @@ export class SkinTypeQuizComponent implements OnInit {
     size: 1,
     count: 1
   };
+
+  @Output() backToMain = new EventEmitter();
 
   constructor(private skinType: SkinTypeService) {
     this.questions = skinType.getAllQuestions();
@@ -35,6 +37,8 @@ export class SkinTypeQuizComponent implements OnInit {
     if (this.pager.index > 0) {
       this.pager.index--;
     }
+    else
+      this.backToMain.emit();
   }
 
   next() {
