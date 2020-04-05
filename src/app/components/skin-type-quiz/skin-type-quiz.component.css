@@ -3,9 +3,24 @@
 }
 
 #quiz {
-    height:210px;
-} 
+    height: 210px;
+}
 
 ::ng-deep .mat-checkbox .mat-checkbox-frame {
     border-color: black;
 }
+
+.title {
+    height:40%;
+}
+
+.options {
+    height:60%;
+    padding: 0 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.options div {
+    flex: 1;
+} 

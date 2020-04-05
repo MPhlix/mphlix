@@ -1,8 +1,8 @@
 <div class="container">
     <div id="quiz" *ngFor="let question of filteredQuestions;">
-        <h3 class="font-weight-normal">
+        <h4 class="title">
             <span>{{question.title}}</span>
-        </h3>
+        </h4>
         <div class="text-left options">
             <div *ngFor="let option of question.options">
                 <!-- <label class="font-weight-normal" [attr.for]="question.title + '-' + option.title + '-' + option.id">
