@@ -19,6 +19,7 @@ import { SkinTypeService } from './services/skin-type/skin-type.service';
 import { SkinTypeQuizComponent } from './components/skin-type-quiz/skin-type-quiz.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProductsComponent } from './components/products/products.component';
+import { MphlixServicesComponent } from './components/mphlix-services/mphlix-services.component';
 
 
 const appRoutes: Routes = [
@@ -35,7 +36,8 @@ const appRoutes: Routes = [
     BannerComponent,
     SkinTypeQuizComponent,
     HomeComponent,
-    ProductsComponent
+    ProductsComponent,
+    MphlixServicesComponent
   ],
   imports: [
     BrowserModule,
