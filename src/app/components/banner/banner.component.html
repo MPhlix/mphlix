@@ -1,7 +1,7 @@
 <ng-container>
   <div class="row m-0" id="banner">
     <div class="col-12 col-lg-4 col-md-6" id="bannerText">
-      <div *ngIf="!showSkinTypeQuiz">
+      <ng-container *ngIf="!showSkinTypeQuiz">
         <h1 class="mb-4 banner-heading">Skin Analysis</h1>
         <p class="mb-4 banner-subtitle">Welcome aboard to an array of organic soaps and skin products!</p>
         <div class="discover-button">
@@ -15,7 +15,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </ng-container>
       <skin-type-quiz *ngIf="showSkinTypeQuiz" (backToMain)="showMainMenu()"></skin-type-quiz>
     </div>
     <div class="col-12 col-lg-7 col-md-6">
