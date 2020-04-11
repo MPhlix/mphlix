@@ -3,7 +3,7 @@
         <h4 [@inOutAnimation] class="title">
             <span>{{question.title}}</span>
         </h4>
-        <div class="text-left options row">
+        <div [@fadeInAnimation] class="text-left options row">
             <div class="col" *ngFor="let option of question.options">
                 <!-- <label class="font-weight-normal" [attr.for]="question.title + '-' + option.title + '-' + option.id">
                     <input id="{{question.title + '-' + option.title + '-' + option.id}}" type="checkbox"

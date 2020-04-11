@@ -10,6 +10,7 @@
 
 ::ng-deep .mat-checkbox .mat-checkbox-frame {
     border-color: black;
+    background-color:#0000003d;
 }
 
 .title {
