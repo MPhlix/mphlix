@@ -6,4 +6,5 @@ export interface Question {
   options: Option[];
   multiSelection: boolean;
   nextQuestion: number;
+  category: string;
 }

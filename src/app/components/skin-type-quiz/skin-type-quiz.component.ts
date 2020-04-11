@@ -2,6 +2,13 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Question } from 'src/app/interface/Question';
 import { SkinTypeService } from 'src/app/services/skin-type/skin-type.service';
 import { trigger, transition, style, animate } from '@angular/animations';
+import { Option } from 'src/app/interface/Option';
+import { MatCheckboxChange } from '@angular/material';
+
+interface Answer {
+  questionId: number,
+  optionId: number
+}
 
 @Component({
   selector: 'skin-type-quiz',
@@ -14,7 +21,7 @@ import { trigger, transition, style, animate } from '@angular/animations';
         transition(
           ':enter',
           [
-            style({ height: "40px" }),
+            style({ height: "40px", opacity: 0 }),
             animate('500ms ease-in')
           ]
         )
@@ -42,23 +49,41 @@ export class SkinTypeQuizComponent implements OnInit {
     size: 1,
     count: 1
   };
+  answers: Answer[] = [];
 
   @Output() backToMain = new EventEmitter();
 
   constructor(private skinType: SkinTypeService) {
-    this.questions = skinType.getAllQuestions();
-    this.pager.count = this.questions.length;
+    this.questions = this.skinType.getAllQuestions();
   }
 
   ngOnInit() {
   }
 
   get filteredQuestions() {
-    return (this.questions) ?
-      this.questions.slice(this.pager.index, this.pager.index + this.pager.size) : [];
+    let validQs: Question[] = [];
+
+    if (this.questions) {
+      let rootOption: Option;
+      let rootQuestion = this.answers.length > 0 && this.questions.find((a: Question) => a.id === this.answers[0].questionId);
+
+      if (rootQuestion) {
+        rootOption = rootQuestion.options.find(b => b.selected);
+        validQs = this.questions.filter((a: Question) => a.category === 'root' || a.category === rootOption.title);
+      }
+      else
+        validQs = this.questions;
+    }
+    this.pager.count = validQs.length;
+    return validQs.slice(this.pager.index, this.pager.index + this.pager.size);
   }
 
-  onSelect(question: Question) {
+  optionSelected(event: MatCheckboxChange, questionId, optionId) {
+    if (event.checked)
+      this.answers.push({ questionId, optionId });
+    else {
+      this.answers.splice(this.answers.findIndex(a => a.questionId === questionId && a.optionId === optionId), 1);
+    }
   }
 
   previous() {
@@ -76,10 +101,6 @@ export class SkinTypeQuizComponent implements OnInit {
   }
 
   get CanGoBack() {
-    return this.pager.index === 0;
-  }
-
-  get CanGoAhead() {
     return this.pager.index === 0;
   }
 }

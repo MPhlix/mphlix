@@ -10,6 +10,10 @@
     }
 }
 
+#banner {
+    user-select: none;
+}
+
 slide {
     animation-name: scaleUp1_2;
     animation-duration: 4s;

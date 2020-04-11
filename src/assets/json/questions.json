@@ -5,179 +5,213 @@
         "options": [
             {
                 "id": 1,
-                "title": "Skin"
+                "title": "Skin",
+                "selected": false
             },
             {
                 "id": 2,
-                "title": "Hair"
+                "title": "Hair",
+                "selected": false
             }
         ],
         "multiSelection": false,
-        "nextQuestion": 2
+        "nextQuestion": 2,
+        "category": "root"
     },
     {
-        "id": 1,
+        "id": 2,
         "title": "Is dandruff hovering over your hair?",
         "options": [
             {
                 "id": 1,
-                "title": "Sometimes"
+                "title": "Sometimes",
+                "selected": false
             },
             {
                 "id": 2,
-                "title": "Always"
+                "title": "Always",
+                "selected": false
             }
         ],
         "multiSelection": false,
-        "nextQuestion": 2
+        "nextQuestion": 2,
+        "category": "Hair"
     },
     {
-        "id": 1,
+        "id": 3,
         "title": "Does your hair feel rough?",
         "options": [
             {
                 "id": 1,
-                "title": "Sometimes"
+                "title": "Sometimes",
+                "selected": false
             },
             {
                 "id": 2,
-                "title": "Always"
+                "title": "Always",
+                "selected": false
             }
         ],
         "multiSelection": false,
-        "nextQuestion": 2
+        "nextQuestion": 2,
+        "category": "Hair"
     },
     {
-        "id": 1,
+        "id": 4,
         "title": "How often do you style/ chemical treat your hair?",
         "options": [
             {
                 "id": 1,
-                "title": "Sometimes"
+                "title": "Sometimes",
+                "selected": false
             },
             {
                 "id": 2,
-                "title": "Always"
+                "title": "Always",
+                "selected": false
             }
         ],
         "multiSelection": false,
-        "nextQuestion": 2
+        "nextQuestion": 2,
+        "category": "Hair"
     },
     {
-        "id": 1,
+        "id": 5,
         "title": "How often do you oil your hair?",
         "options": [
             {
                 "id": 1,
-                "title": "Sometimes"
+                "title": "Sometimes",
+                "selected": false
             },
             {
                 "id": 2,
-                "title": "Always"
+                "title": "Always",
+                "selected": false
             }
         ],
         "multiSelection": false,
-        "nextQuestion": 2
+        "nextQuestion": 2,
+        "category": "Hair"
     },
     {
-        "id": 1,
+        "id": 6,
         "title": "How often do you get your pimple?",
         "options": [
             {
                 "id": 1,
-                "title": "Weekly"
+                "title": "Weekly",
+                "selected": false
             },
             {
                 "id": 2,
-                "title": "Monthly"
+                "title": "Monthly",
+                "selected": false
             },
             {
                 "id": 3,
-                "title": "Never"
+                "title": "Never",
+                "selected": false
             }
         ],
         "multiSelection": false,
-        "nextQuestion": 2
+        "nextQuestion": 2,
+        "category": "Skin"
     },
     {
-        "id": 1,
+        "id": 7,
         "title": "How often do you get exposed to Sun?",
         "options": [
             {
                 "id": 1,
-                "title": "Daily"
+                "title": "Daily",
+                "selected": false
             },
             {
                 "id": 2,
-                "title": "Weekly"
+                "title": "Weekly",
+                "selected": false
             },
             {
                 "id": 3,
-                "title": "Monthly"
+                "title": "Monthly",
+                "selected": false
             }
         ],
         "multiSelection": false,
-        "nextQuestion": 2
+        "nextQuestion": 2,
+        "category": "Skin"
     },
     {
-        "id": 1,
+        "id": 8,
         "title": "If daily, then does your skin appear darker than usual?",
         "options": [
             {
                 "id": 1,
-                "title": "Yes"
+                "title": "Yes",
+                "selected": false
             },
             {
                 "id": 2,
-                "title": "No"
+                "title": "No",
+                "selected": false
             }
         ],
         "multiSelection": false,
-        "nextQuestion": 2
+        "nextQuestion": 2,
+        "category": "Skin"
     },
     {
-        "id": 1,
+        "id": 9,
         "title": "How often do you apply cream?",
         "options": [
             {
                 "id": 1,
-                "title": "Daily"
+                "title": "Daily",
+                "selected": false
             },
             {
                 "id": 2,
-                "title": "Weekly"
+                "title": "Weekly",
+                "selected": false
             },
             {
                 "id": 3,
-                "title": "Monthly"
+                "title": "Monthly",
+                "selected": false
             }
         ],
         "multiSelection": false,
-        "nextQuestion": 2
+        "nextQuestion": 2,
+        "category": "Skin"
     },
     {
-        "id": 1,
+        "id": 10,
         "title": "Does your skin lack glow?",
         "options": [
             {
                 "id": 1,
-                "title": "Sometimes"
+                "title": "Sometimes",
+                "selected": false
             },
             {
                 "id": 2,
-                "title": "Always"
+                "title": "Always",
+                "selected": false
             }
         ],
         "multiSelection": false,
-        "nextQuestion": 2
+        "nextQuestion": 2,
+        "category": "Skin"
     },
     {
-        "id": 1,
+        "id": 11,
         "title": "Has your friend commented about blackheads or whiteheads on your face?",
         "options": [
             {
                 "id": 1,
-                "title": "Sometimes"
+                "title": "Sometimes",
+                "selected": false
             },
             {
                 "id": 2,
@@ -185,6 +219,7 @@
             }
         ],
         "multiSelection": false,
-        "nextQuestion": 2
+        "nextQuestion": 2,
+        "category": "Skin"
     }
 ]

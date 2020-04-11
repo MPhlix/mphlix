@@ -9,7 +9,7 @@
                     <input id="{{question.title + '-' + option.title + '-' + option.id}}" type="checkbox"
                         [(ngModel)]="option.selected" (change)="onSelect(question, option);" /> {{option.title}}
                 </label> -->
-                <mat-checkbox>{{option.title}}</mat-checkbox>
+                <mat-checkbox [(ngModel)]="option.selected" (change)="optionSelected($event, question.id, option.id)">{{option.title}}</mat-checkbox>
             </div>
         </div>
     </div>

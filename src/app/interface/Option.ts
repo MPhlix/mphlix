@@ -1,5 +1,6 @@
 
 export interface Option {
     id: number,
-    title: string
+    title: string,
+    selected: boolean
 }
