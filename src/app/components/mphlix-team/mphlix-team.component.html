@@ -1,4 +1,4 @@
-<section [hidden]="true" id="team" class="ftco-section ftco-team">
+<section id="team" class="ftco-section ftco-team">
     <div class="container">
         <div class="row justify-content-center pb-3">
             <div class="col-md-10 heading-section text-center ftco-animate fadeInUp ftco-animated">
@@ -13,101 +13,37 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="carousel-team owl-carousel">
-                    <div class="item">
-                        <span class="team text-center">
-                            <a href="#">
-                                <div class="img"
-                                    style="background-image: url('../../../assets/images/Soapy crew/mphlix-member-mahashweta-mohapatra-reduced.jpg');">
-                                </div>
-                            </a>
-                            <h2>Mahashweta Mohapatra</h2>
-                            <span class="position">Founder & CEO</span>
-                            <br />
-                            <a href="https://www.instagram.com/mohapatramahashweta/">
-                                <span class="icon-instagram crew-icons"></span>
-                            </a>
-                            <a href="https://twitter.com/MphlixSoapworks/">
-                                <span class="icon-twitter crew-icons"></span>
-                            </a>
-                            <a href="https://www.facebook.com/MPhlix-158263684780140/">
-                                <span class="icon-facebook crew-icons"></span>
-                            </a>
-                        </span>
+                <swiper [config]="config">
+                    <div class="swiper-wrapper">
+                        <div *ngFor="let member of members" class="swiper-slide">
+                            <div class="item">
+                                <span class="team text-center">
+                                    <a href="#">
+                                        <div class="img" [ngClass]="member.cssClass"></div>
+                                        <!-- <div class="img" style="background-image: url('../../../assets/images/Soapy crew/mphlix-member-bhavika-sabnani-reduced.jpg');"></div> -->
+                                        <!-- <div [ngStyle]="{background: 'url(' + getUrl() + ')'}"></div> -->
+                                        <!-- <div [ngStyle]="{'background-image': getUrl(), 'height':'40px', 'width':'40px'}"></div> -->
+                                    </a>
+                                    <h2>{{member.name}}</h2>
+                                    <span class="position">{{member.position}}</span>
+                                    <br />
+                                    <ng-container *ngIf="member.socialMediaProfiles">
+                                        <a class="social-media" *ngFor="let profile of member.socialMediaProfiles"
+                                            [href]="getSocialMediaProfile(profile.name, profile.profileId)">
+                                            <span class="crew-icons" [ngClass]="profile.cssClass"></span>
+                                        </a>
+                                    </ng-container>
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="item">
-                        <span class="team text-center">
-                            <a href="#">
-                                <div class="img"
-                                    style="background-image: url('../../../assets/images/Soapy crew/mphlix-member-aparajita-mohapatra-reduced.jpg');">
-                                </div>
-                            </a>
-                            <h2>Aparajita Mohapatra</h2>
-                            <span class="position">CMO</span>
-                        </span>
-                    </div>
-                    <div class="item">
-                        <span class="team text-center">
-                            <a href="#">
-                                <div class="img"
-                                    style="background-image: url('../../../assets/images/Soapy crew/mphlix-member-anum-kagdi-reduced.jpg');">
-                                </div>
-                            </a>
-                            <h2>Dr. Anum Kagdi</h2>
-                            <span class="position">Gold medalist Homeopathy</span>
-                        </span>
-                    </div>
-                    <div class="item">
-                        <span class="team text-center">
-                            <a href="#">
-                                <div class="img"
-                                    style="background-image: url('../../../assets/images/Soapy crew/mphlix-member-bhavika-sabnani-reduced.jpg');">
-                                </div>
-                            </a>
-                            <h2>Bhavika Sabnani</h2>
-                            <span class="position">Product R&D</span>
-                        </span>
-                    </div>
-                </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </swiper>
             </div>
         </div>
     </div>
 </section>
-
-<carousel [hidden]="true" [isAnimated]="true" [interval]="myInterval" [noPause]="true" [showIndicators]="showIndicator">
-    <slide *ngFor="let image of Images" [id]=image.id>
-        <div class="item">
-            <span class="team text-center">
-                <a href="#">
-                    <!-- <div class="img"
-                        style="background-image: url('../../../assets/images/Soapy crew/mphlix-member-bhavika-sabnani-reduced.jpg');">
-                    </div> -->
-                    <div class="img" [ngStyle]="{ backgroundImage : 'url(' + image.src + ')' }">
-                    </div>
-                </a>
-                <h2>Bhavika Sabnani</h2>
-                <span class="position">Product R&D</span>
-            </span>
-        </div>
-    </slide>
-</carousel>
-
-<swiper [config]="config">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
-        <div class="swiper-slide">Slide 10</div>
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-</swiper>

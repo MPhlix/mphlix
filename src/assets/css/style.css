@@ -12804,14 +12804,6 @@ textarea.form-control {
 
 /* Setting width of logo - end */
 
-/* Crew members - start */
-
-.crew-icons {
-  font-size: x-large;
-}
-
-/* Crew members - end */
-
 /*Angularized implementation of Carousel using Ngx-bootstrap - start */
 a.carousel-control{
   display: none;

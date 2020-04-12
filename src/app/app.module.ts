@@ -26,6 +26,7 @@ import { MphlixPricingComponent } from './components/mphlix-pricing/mphlix-prici
 import { MphlixAboutComponent } from './components/mphlix-about/mphlix-about.component';
 import { MphlixTeamComponent } from './components/mphlix-team/mphlix-team.component';
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
+import { MembersService } from './services/members.service';
 
 const appRoutes: Routes = [
   { path : 'products', component: ProductsComponent }, 
@@ -64,7 +65,7 @@ const appRoutes: Routes = [
     ),
     NgxUsefulSwiperModule
   ],
-  providers: [ContactUsService, SkinTypeService],
+  providers: [ContactUsService, SkinTypeService, MembersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

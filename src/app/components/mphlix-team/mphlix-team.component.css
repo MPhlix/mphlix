@@ -1,4 +1,29 @@
-swiper {
-    height: 300px;
-    width: 400px;
-  }
+.swiper-wrapper {
+  margin-bottom: 40px;
+}
+
+/* Crew members - start */
+.crew-icons {
+  font-size: x-large;
+}
+/* Crew members - end */
+
+.social-media {
+  padding-right: 10px;
+}
+
+.team .bhavikaSabnani {
+  background-image: url('../../../assets/images/Soapy crew/mphlix-member-bhavika-sabnani-reduced.jpg');
+}
+
+.team .mahashwetaMohapatra {
+  background-image: url('../../../assets/images/Soapy crew/mphlix-member-mahashweta-mohapatra-reduced.jpg');
+}
+
+.team .aparajitaMohapatra {
+  background-image: url('../../../assets/images/Soapy crew/mphlix-member-aparajita-mohapatra-reduced.jpg');
+}
+
+.team .anumKagdi {
+  background-image: url('../../../assets/images/Soapy crew/mphlix-member-anum-kagdi-reduced.jpg');
+}

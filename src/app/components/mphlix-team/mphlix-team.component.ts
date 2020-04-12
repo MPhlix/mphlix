@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SwiperOptions } from 'swiper';
+import { Member } from 'src/app/interface/Member';
+import { MembersService } from 'src/app/services/members.service';
 
 @Component({
   selector: 'mphlix-team',
@@ -7,41 +9,37 @@ import { SwiperOptions } from 'swiper';
   styleUrls: ['./mphlix-team.component.css']
 })
 export class MphlixTeamComponent implements OnInit {
-  testPath = '../assets/images/Soapy crew/mphlix-member-mahashweta-mohapatra-reduced.jpg';
 
-  Images = [
-    {
-      src: '../assets/images/Soapy crew/mphlix-member-mahashweta-mohapatra-reduced.jpg',
-      id: 0
-    },
-    {
-      src: '../assets/images/Soapy crew/mphlix-member-aparajita-mohapatra-reduced.jpg',
-      id: 1
-    },
-    {
-      src: '../assets/images/Soapy crew/mphlix-member-anum-kagdi-reduced.jpg',
-      id: 2
-    },
-    {
-      src: '../assets/images/Soapy crew/mphlix-member-bhavika-sabnani-reduced.jpg',
-      id: 3
-    }
-  ];
-  myInterval = 4000;
-  showIndicator = false;
+  socialMediaUrl = [
+    { name: 'instagram', url: 'https://www.instagram.com/' },
+    { name: 'twitter', url: 'https://twitter.com/' },
+    { name: 'github', url: 'https://www.github.com/' },
+    { name: 'facebook', url: 'https://www.facebook.com/' }
+  ]
+
+  members: Member[] = [];
 
   config: SwiperOptions = {
+    slidesPerView: 3,
     pagination: { el: '.swiper-pagination', clickable: true },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     },
-    spaceBetween: 30
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+    },
   };
 
-  constructor() { }
+  constructor(private membersService: MembersService) {
+    this.members = this.membersService.getAllQuestions();
+  }
 
   ngOnInit() {
   }
 
+  getSocialMediaProfile(socialMedia: string, profileId: string) {
+    return this.socialMediaUrl.find(a => a.name === socialMedia).url + profileId;
+  }
 }
