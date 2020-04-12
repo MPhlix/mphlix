@@ -20,7 +20,7 @@ export class BannerComponent implements OnInit {
     },
     {
       src: '../assets/images/bg-2_2-removebg-reduced.png',
-      id: 1,
+      id: 2,
       isLarge: false
     }
   ];

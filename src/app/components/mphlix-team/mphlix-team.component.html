@@ -1,0 +1,96 @@
+<section id="team" class="ftco-section ftco-team">
+    <div class="container">
+        <div class="row justify-content-center pb-3">
+            <div class="col-md-10 heading-section text-center ftco-animate fadeInUp ftco-animated">
+                <h1 class="big">Skin experts</h1>
+                <span class="subheading">Team = Family </span>
+                <h2 class="mb-4">Soapy crew</h2>
+                <p>We are not a team beause we work together, we are a team because we trust, care and respect each
+                    other.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="carousel-team owl-carousel">
+                    <div class="item">
+                        <span class="team text-center">
+                            <a href="#">
+                                <div class="img"
+                                    style="background-image: url('../../../assets/images/Soapy crew/mphlix-member-mahashweta-mohapatra-reduced.jpg');">
+                                </div>
+                            </a>
+                            <h2>Mahashweta Mohapatra</h2>
+                            <span class="position">Founder & CEO</span>
+                            <br />
+                            <a href="https://www.instagram.com/mohapatramahashweta/">
+                                <span class="icon-instagram crew-icons"></span>
+                            </a>
+                            <a href="https://twitter.com/MphlixSoapworks/">
+                                <span class="icon-twitter crew-icons"></span>
+                            </a>
+                            <a href="https://www.facebook.com/MPhlix-158263684780140/">
+                                <span class="icon-facebook crew-icons"></span>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="item">
+                        <span class="team text-center">
+                            <a href="#">
+                                <div class="img"
+                                    style="background-image: url('../../../assets/images/Soapy crew/mphlix-member-aparajita-mohapatra-reduced.jpg');">
+                                </div>
+                            </a>
+                            <h2>Aparajita Mohapatra</h2>
+                            <span class="position">CMO</span>
+                        </span>
+                    </div>
+                    <div class="item">
+                        <span class="team text-center">
+                            <a href="#">
+                                <div class="img"
+                                    style="background-image: url('../../../assets/images/Soapy crew/mphlix-member-anum-kagdi-reduced.jpg');">
+                                </div>
+                            </a>
+                            <h2>Dr. Anum Kagdi</h2>
+                            <span class="position">Gold medalist Homeopathy</span>
+                        </span>
+                    </div>
+                    <div class="item">
+                        <span class="team text-center">
+                            <a href="#">
+                                <div class="img"
+                                    style="background-image: url('../../../assets/images/Soapy crew/mphlix-member-bhavika-sabnani-reduced.jpg');">
+                                </div>
+                            </a>
+                            <h2>Bhavika Sabnani</h2>
+                            <span class="position">Product R&D</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="worked" [ngStyle]="{'background': '#fff url(' + testPath + ') no-repeat 0 0'}"></div>
+
+<carousel [isAnimated]="true" [interval]="myInterval" [noPause]="true" [showIndicators]="showIndicator">
+    <slide *ngFor="let image of Images" [id]=image.id>
+        <div class="item">
+            <span class="team text-center">
+                <a href="#">
+                    <!-- <div class="img"
+                        style="background-image: url('../../../assets/images/Soapy crew/mphlix-member-bhavika-sabnani-reduced.jpg');">
+                    </div> -->
+                    <div class="img"
+                        [ngStyle]="{ backgroundImage : 'url(' + image.src + ')' }">
+                    </div>
+                </a>
+                <h2>Bhavika Sabnani</h2>
+                <span class="position">Product R&D</span>
+            </span>
+        </div>
+    </slide>
+</carousel>

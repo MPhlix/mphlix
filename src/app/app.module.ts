@@ -24,6 +24,7 @@ import { MphlixExploringServicesComponent } from './components/mphlix-exploring-
 import { MphlixProductsMiniComponent } from './components/mphlix-products-mini/mphlix-products-mini.component';
 import { MphlixPricingComponent } from './components/mphlix-pricing/mphlix-pricing.component';
 import { MphlixAboutComponent } from './components/mphlix-about/mphlix-about.component';
+import { MphlixTeamComponent } from './components/mphlix-team/mphlix-team.component';
 
 
 const appRoutes: Routes = [
@@ -45,7 +46,8 @@ const appRoutes: Routes = [
     MphlixExploringServicesComponent,
     MphlixProductsMiniComponent,
     MphlixPricingComponent,
-    MphlixAboutComponent
+    MphlixAboutComponent,
+    MphlixTeamComponent
   ],
   imports: [
     BrowserModule,
