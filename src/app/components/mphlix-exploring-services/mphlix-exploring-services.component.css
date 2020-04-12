@@ -1,0 +1,96 @@
+.ftco-services .services-wrap {
+    width: 100%;
+    padding: 25px;
+    border: 1px solid #f7b9bb;
+    background: #fff;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.ftco-services .services-wrap .img {
+    height: 350px;
+    /* Change this value to zoom in and out of images */
+    position: relative;
+    z-index: 0;
+}
+
+.ftco-services .services-wrap .img:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: #f18c8e;
+    opacity: 0;
+    z-index: -1;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.ftco-services .services-wrap .img .number h3 {
+    margin-left: 0;
+    font-size: 80px;
+    font-weight: 900;
+    font-family: "Playfair Display", serif;
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #f18c8e;
+}
+
+.ftco-services .services-wrap .text {
+    background: #563b4c;
+    width: 85%;
+    padding: 0;
+}
+
+.ftco-services .services-wrap .text div {
+    width: 100%;
+    padding: 15px 20px;
+}
+
+.ftco-services .services-wrap .text .btn-custom {
+    width: calc(100% - 100px);
+    background: #47313f;
+}
+
+.ftco-services .services-wrap .text .btn-custom a {
+    color: #fff;
+    width: 100%;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 1px;
+}
+
+.ftco-services .services-wrap .text h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.ftco-services .services-wrap .text h3 a {
+    color: #fff;
+}
+
+.ftco-services .services-wrap .text span a {
+    color: #fff;
+}
+
+.ftco-services .services-wrap:hover, .ftco-services .services-wrap:focus {
+    -webkit-box-shadow: 0px 10px 56px -20px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0px 10px 56px -20px rgba(0, 0, 0, 0.13);
+    box-shadow: 0px 10px 56px -20px rgba(0, 0, 0, 0.13);
+}
+
+.ftco-services .services-wrap:hover .img:after, .ftco-services .services-wrap:focus .img:after {
+    opacity: .5;
+}

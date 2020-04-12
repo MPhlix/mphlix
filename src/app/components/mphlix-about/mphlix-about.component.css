@@ -1,0 +1,45 @@
+.img-2 {
+    width: 100%;
+    position: relative;
+}
+
+@media (max-width: 767.98px) {
+    .img-2 {
+        height: 300px;
+        margin-bottom: 40px;
+    }
+}
+
+.img-2 .icon {
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.img-2 .icon span {
+    color: #f18c8e;
+    font-size: 24px;
+}
+
+.wrap-about {
+    position: relative;
+  }
+  
+  @media (min-width: 992px) {
+    .wrap-about {
+      padding-left: 6em;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .wrap-about {
+      padding-left: 3em;
+    }
+  }
+  

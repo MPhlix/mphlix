@@ -1,0 +1,53 @@
+.services-section {
+    padding: 0;
+}
+
+.services {
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 40px 25px;
+}
+
+@media (max-width: 991.98px) {
+    .services {
+        padding: 10px 0;
+    }
+}
+
+.services .icon {
+    line-height: 1.3;
+    position: relative;
+}
+
+.services .icon span {
+    font-size: 60px;
+    color: rgba(0, 0, 0, 0.2);
+    color: #f18c8e;
+}
+
+.services .media-body h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@media (min-width: 992px) {
+    .services.active {
+        background: #f18c8e;
+        color: #000000;
+    }
+    .services.active .icon span {
+        color: #fff;
+    }
+}
+
+.services:hover, .services:focus {
+    background: #f18c8e;
+    color: #000000;
+}
+
+.services:hover .icon span, .services:focus .icon span {
+    color: #fff;
+}
