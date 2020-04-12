@@ -1,4 +1,4 @@
-<section id="team" class="ftco-section ftco-team">
+<section [hidden]="true" id="team" class="ftco-section ftco-team">
     <div class="container">
         <div class="row justify-content-center pb-3">
             <div class="col-md-10 heading-section text-center ftco-animate fadeInUp ftco-animated">
@@ -74,9 +74,7 @@
     </div>
 </section>
 
-<div id="worked" [ngStyle]="{'background': '#fff url(' + testPath + ') no-repeat 0 0'}"></div>
-
-<carousel [isAnimated]="true" [interval]="myInterval" [noPause]="true" [showIndicators]="showIndicator">
+<carousel [hidden]="true" [isAnimated]="true" [interval]="myInterval" [noPause]="true" [showIndicators]="showIndicator">
     <slide *ngFor="let image of Images" [id]=image.id>
         <div class="item">
             <span class="team text-center">
@@ -84,8 +82,7 @@
                     <!-- <div class="img"
                         style="background-image: url('../../../assets/images/Soapy crew/mphlix-member-bhavika-sabnani-reduced.jpg');">
                     </div> -->
-                    <div class="img"
-                        [ngStyle]="{ backgroundImage : 'url(' + image.src + ')' }">
+                    <div class="img" [ngStyle]="{ backgroundImage : 'url(' + image.src + ')' }">
                     </div>
                 </a>
                 <h2>Bhavika Sabnani</h2>
@@ -94,3 +91,23 @@
         </div>
     </slide>
 </carousel>
+
+<swiper [config]="config">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide">Slide 10</div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</swiper>

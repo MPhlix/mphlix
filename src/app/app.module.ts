@@ -25,7 +25,7 @@ import { MphlixProductsMiniComponent } from './components/mphlix-products-mini/m
 import { MphlixPricingComponent } from './components/mphlix-pricing/mphlix-pricing.component';
 import { MphlixAboutComponent } from './components/mphlix-about/mphlix-about.component';
 import { MphlixTeamComponent } from './components/mphlix-team/mphlix-team.component';
-
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 
 const appRoutes: Routes = [
   { path : 'products', component: ProductsComponent }, 
@@ -61,7 +61,8 @@ const appRoutes: Routes = [
     MatCheckboxModule,
     RouterModule.forRoot(
       appRoutes
-    )
+    ),
+    NgxUsefulSwiperModule
   ],
   providers: [ContactUsService, SkinTypeService],
   bootstrap: [AppComponent]

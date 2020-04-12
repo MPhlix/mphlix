@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SwiperOptions } from 'swiper';
 
 @Component({
   selector: 'mphlix-team',
@@ -28,6 +29,15 @@ export class MphlixTeamComponent implements OnInit {
   ];
   myInterval = 4000;
   showIndicator = false;
+
+  config: SwiperOptions = {
+    pagination: { el: '.swiper-pagination', clickable: true },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    spaceBetween: 30
+  };
 
   constructor() { }
 

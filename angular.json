@@ -40,7 +40,8 @@
               "src/assets/css/flaticon.css",
               "src/assets/css/icomoon.css",
               "src/assets/css/style.css",
-              "src/assets/css/minimal-form/minimal-form.css"
+              "src/assets/css/minimal-form/minimal-form.css",
+              "./node_modules/swiper/css/swiper.css"
             ],
             "scripts": [
               "src/assets/js/jquery-3.2.1.min.js",
