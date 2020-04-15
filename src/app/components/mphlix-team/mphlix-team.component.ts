@@ -15,7 +15,7 @@ export class MphlixTeamComponent implements OnInit {
     { name: 'twitter', url: 'https://twitter.com/' },
     { name: 'github', url: 'https://www.github.com/' },
     { name: 'facebook', url: 'https://www.facebook.com/' }
-  ]
+  ];
 
   members: Member[] = [];
 
@@ -29,7 +29,7 @@ export class MphlixTeamComponent implements OnInit {
     autoplay: {
       delay: 2500,
       disableOnInteraction: true,
-    },
+    }
   };
 
   constructor(private membersService: MembersService) {

@@ -1,0 +1,100 @@
+.testimony-size {
+    width: 50%;
+    height: 600px;
+    margin:auto;
+}
+
+.testimony-size img {
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .testimony-size {
+        width: 100%;
+    }
+}
+
+.testimony-section .testimony-img {
+    display: block;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+@media (min-width: 992px) {
+    .testimony-section .testimony-img {
+        margin-top: 35%;
+        /* Changing the top margin for parent Testimony image. Old value -50px;  */
+        margin-right: -40px;
+        height: 70%;
+    }
+}
+
+.testimony-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    opacity: .7;
+    background: #232931;
+}
+
+.testimony-wrap {
+    display: block;
+    position: relative;
+    font-size: 20px;
+}
+
+.testimony-wrap .user-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    background-position: top center;
+}
+
+.testimony-wrap .user-img .quote {
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: #f18c8e;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.testimony-wrap .user-img .quote i {
+    color: #fff;
+}
+
+.testimony-wrap .text {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.testimony-wrap .name {
+    font-weight: 400;
+    margin-bottom: 0;
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.testimony-wrap .position {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.swiper-slide {
+    width: 50%;
+}
