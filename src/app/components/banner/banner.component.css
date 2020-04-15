@@ -86,7 +86,7 @@ slide {
 #banner {
     /* max-height:550px; */
     max-height: 146%;
-    background-image: url('../../../assets/images/bg.jpg');
+    background-image: url('../../../assets/images/bg-reduced.jpg');
     background-size: cover;
 }
 
