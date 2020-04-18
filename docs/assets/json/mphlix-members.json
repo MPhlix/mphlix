@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Bhavika Sabnani",
+        "position": "Product R&D",
+        "socialMediaProfiles": [],
+        "cssClass": {
+            "bhavikaSabnani": true
+        }
+    },
+    {
+        "name": "Mahashweta Mohapatra",
+        "position": "Founder & CEO",
+        "socialMediaProfiles": [
+            {
+                "name": "instagram",
+                "profileId": "mohapatramahashweta",
+                "cssClass": "icon-instagram"
+            },
+            {
+                "name": "twitter",
+                "profileId": "MphlixSoapworks",
+                "cssClass": "icon-twitter"
+            },
+            {
+                "name": "facebook",
+                "profileId": "MPhlix-158263684780140",
+                "cssClass": "icon-facebook"
+            }
+        ],
+        "cssClass": {
+            "mahashwetaMohapatra": true
+        }
+    },
+    {
+        "name": "Aparajita Mohapatra",
+        "position": "CMO",
+        "socialMediaProfiles": [],
+        "cssClass": {
+            "aparajitaMohapatra": true
+        }
+    },
+    {
+        "name": "Dr. Anum Kagdi",
+        "position": "Gold medalist Homeopathy",
+        "socialMediaProfiles": [],
+        "cssClass": {
+            "anumKagdi": true
+        }
+    }
+]
