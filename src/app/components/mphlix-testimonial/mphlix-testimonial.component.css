@@ -1,11 +1,6 @@
 .testimony-size {
     width: 50%;
-    height: 600px;
     margin:auto;
-}
-
-.testimony-size img {
-    height: 100%;
 }
 
 @media screen and (max-width: 768px) {

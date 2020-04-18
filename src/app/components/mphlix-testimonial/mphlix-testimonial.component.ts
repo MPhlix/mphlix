@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SwiperOptions } from 'swiper';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'mphlix-testimonial',
@@ -15,19 +15,23 @@ export class MphlixTestimonialComponent implements OnInit {
     "../../../assets/images/Testimonials/mphlix-testimonial-04-reduced.png",
     "../../../assets/images/Testimonials/mphlix-testimonial-05-reduced.png"
   ];
-  
-  config: SwiperOptions = {
-    slidesPerView: 1,
-    pagination: { el: '.swiper-pagination', clickable: true },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: false,
+    dots: true,
+    navSpeed: 700,
+    responsive: {
+      0: {
+        items: 1
+      }
     },
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: true,
-    }
-  };
+    nav: false,
+    autoplay: true,
+    autoplayHoverPause: true
+  }
 
   constructor() { }
 
