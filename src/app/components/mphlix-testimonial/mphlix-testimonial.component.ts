@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { SwiperOptions } from 'swiper';
 
 @Component({
-  selector: 'testimonial',
-  templateUrl: './testimonial.component.html',
-  styleUrls: ['./testimonial.component.css']
+  selector: 'mphlix-testimonial',
+  templateUrl: './mphlix-testimonial.component.html',
+  styleUrls: ['./mphlix-testimonial.component.css']
 })
-export class TestimonialComponent implements OnInit {
+export class MphlixTestimonialComponent implements OnInit {
 
   images= [
     "../../../assets/images/Testimonials/mphlix-testimonial-01-reduced.png",

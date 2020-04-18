@@ -31,7 +31,7 @@ import { MphlixAboutComponent } from './components/mphlix-about/mphlix-about.com
 import { MphlixTeamComponent } from './components/mphlix-team/mphlix-team.component';
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { MembersService } from './services/members.service';
-import { TestimonialComponent } from './components/testimonial/testimonial.component';
+import { MphlixTestimonialComponent } from './components/mphlix-testimonial/mphlix-testimonial.component';
 
 const appRoutes: Routes = [
   { path: 'products', component: ProductsComponent },
@@ -54,7 +54,7 @@ const appRoutes: Routes = [
     MphlixPricingComponent,
     MphlixAboutComponent,
     MphlixTeamComponent,
-    TestimonialComponent
+    MphlixTestimonialComponent
   ],
   imports: [
     BrowserModule,
