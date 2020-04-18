@@ -38,7 +38,9 @@
               "src/assets/css/flaticon.css",
               "src/assets/css/icomoon.css",
               "src/assets/css/minimal-form/minimal-form.css",
-              "./node_modules/swiper/css/swiper.css"
+              "./node_modules/swiper/css/swiper.css",
+              "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
+              "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
             ],
             "scripts": [
               "src/assets/js/jquery-3.2.1.min.js",

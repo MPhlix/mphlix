@@ -1,9 +1,9 @@
 import { Component, OnInit, HostListener, AfterViewInit, ElementRef } from '@angular/core';
-import { SwiperOptions } from 'swiper';
 import { Member } from 'src/app/interface/Member';
 import { MembersService } from 'src/app/services/members.service';
 import { SCREEN_SIZE } from 'src/app/enums/screen-size.enum';
 import { ScreenResizeService } from 'src/app/services/screen-resize.service';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'mphlix-team',
@@ -21,19 +21,6 @@ export class MphlixTeamComponent implements OnInit, AfterViewInit {
 
   members: Member[] = [];
 
-  config: SwiperOptions = {
-    slidesPerView: 3,
-    pagination: { el: '.swiper-pagination', clickable: true },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
-    },
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: true,
-    }
-  };
-
   prefix = 'is-';
   sizes = [
     { id: SCREEN_SIZE.XS, name: 'xs', css: `d-block d-sm-none` },
@@ -43,29 +30,39 @@ export class MphlixTeamComponent implements OnInit, AfterViewInit {
     { id: SCREEN_SIZE.XL, name: 'xl', css: `d-none d-xl-block` },
   ];
 
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: false,
+    dots: true,
+    navSpeed: 700,
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 2
+      },
+      740: {
+        items: 3
+      },
+      940: {
+        items: 4
+      }
+    },
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true
+  }
+
   constructor(private membersService: MembersService, private screenResizeService: ScreenResizeService,
     private elementRef: ElementRef) {
     this.members = this.membersService.getAllQuestions();
   }
 
   ngOnInit() {
-    setTimeout(() => {
-      this.config = null;
-      setTimeout(() => {
-        this.config = {
-          slidesPerView: null,
-          pagination: { el: '.swiper-pagination', clickable: true },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-          },
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: true,
-          }
-        };
-      }, 1000);
-    }, 2000);
   }
 
   ngAfterViewInit() {

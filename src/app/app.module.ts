@@ -10,6 +10,7 @@ import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 // Importing third party modules
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { CarouselModule as NgxOwlCarouselO } from 'ngx-owl-carousel-o';
 
 // Importing our custom modules
 import { AppComponent } from './app.component';
@@ -68,7 +69,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes
     ),
-    NgxUsefulSwiperModule
+    NgxUsefulSwiperModule,
+    NgxOwlCarouselO
   ],
   providers: [ContactUsService, SkinTypeService, MembersService],
   bootstrap: [AppComponent]

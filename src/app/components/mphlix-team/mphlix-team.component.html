@@ -13,36 +13,27 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <swiper [config]="config">
-                    <div class="swiper-wrapper">
-                        <div *ngFor="let member of members" class="swiper-slide">
-                            <div class="item">
-                                <span class="team text-center">
-                                    <a href="#">
-                                        <div class="img" [ngClass]="member.cssClass"></div>
-                                        <!-- <div class="img" style="background-image: url('../../../assets/images/Soapy crew/mphlix-member-bhavika-sabnani-reduced.jpg');"></div> -->
-                                        <!-- <div [ngStyle]="{background: 'url(' + getUrl() + ')'}"></div> -->
-                                        <!-- <div [ngStyle]="{'background-image': getUrl(), 'height':'40px', 'width':'40px'}"></div> -->
+                <owl-carousel-o [options]="customOptions">
+                    <ng-template carouselSlide *ngFor="let member of members" class="swiper-slide">
+                        <div class="item">
+                            <span class="team text-center">
+                                <a href="#">
+                                    <div class="img" [ngClass]="member.cssClass"></div>
+                                </a>
+                                <h2>{{member.name}}</h2>
+                                <span class="position">{{member.position}}</span>
+                                <br />
+                                <ng-container *ngIf="member.socialMediaProfiles">
+                                    <a class="social-media" *ngFor="let profile of member.socialMediaProfiles"
+                                        [href]="getSocialMediaProfile(profile.name, profile.profileId)">
+                                        <span class="crew-icons" [ngClass]="profile.cssClass"></span>
                                     </a>
-                                    <h2>{{member.name}}</h2>
-                                    <span class="position">{{member.position}}</span>
-                                    <br />
-                                    <ng-container *ngIf="member.socialMediaProfiles">
-                                        <a class="social-media" *ngFor="let profile of member.socialMediaProfiles"
-                                            [href]="getSocialMediaProfile(profile.name, profile.profileId)">
-                                            <span class="crew-icons" [ngClass]="profile.cssClass"></span>
-                                        </a>
-                                    </ng-container>
-                                </span>
-                            </div>
+                                </ng-container>
+                            </span>
                         </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </swiper>
+                    </ng-template>
+                </owl-carousel-o>
             </div>
         </div>
     </div>
 </section>
-<div *ngFor="let s of sizes" class="{{s.css + ' ' + (prefix + s.id) }}">{{s.name}}</div>

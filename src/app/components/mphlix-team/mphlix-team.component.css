@@ -3,9 +3,11 @@
 }
 
 /* Crew members - start */
+
 .crew-icons {
   font-size: x-large;
 }
+
 /* Crew members - end */
 
 .social-media {
@@ -206,4 +208,11 @@
 
 .team .anumKagdi {
   background-image: url('../../../assets/images/Soapy crew/mphlix-member-anum-kagdi-reduced.jpg');
+}
+
+/* This class is dynamically added to Ngx-Owl-Carousel-O based container */
+
+/* Top padding helps view the circle of each member when it shifts up on hover */
+.item {
+  padding-top: 10px !important;
 }
