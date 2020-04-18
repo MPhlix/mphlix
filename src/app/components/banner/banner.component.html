@@ -17,12 +17,12 @@
       </ng-container>
       <skin-type-quiz *ngIf="showSkinTypeQuiz" (backToMain)="showMainMenu()"></skin-type-quiz>
     </div>
-    <div class="col-12 col-lg-7 col-md-6">
-      <carousel [isAnimated]="true" [interval]="myInterval" [noPause]="true" [showIndicators]="showIndicator">
-        <slide *ngFor="let image of Images" [id]=image.id>
-          <img [src]="image.src" [alt]="image.isLarge">
-        </slide>
-      </carousel>
+    <div class="col-12 col-lg-7 col-md-6 carousel-container">
+      <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide *ngFor="let image of Images">
+          <img [src]="image.src" [attr.is-large]="image.isLarge">
+        </ng-template>
+      </owl-carousel-o>
     </div>
   </div>
 </ng-container>

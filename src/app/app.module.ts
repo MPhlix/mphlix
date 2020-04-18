@@ -5,12 +5,11 @@ import { HttpModule } from '@angular/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCheckboxModule } from '@angular/material';
+import { MatCheckboxModule } from '@angular/material';
 
 // Importing third party modules
-import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { NgxSpinnerModule } from 'ngx-spinner';
-import { CarouselModule as NgxOwlCarouselO } from 'ngx-owl-carousel-o';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 // Importing our custom modules
 import { AppComponent } from './app.component';
@@ -63,14 +62,12 @@ const appRoutes: Routes = [
     ReactiveFormsModule,
     FormsModule,
     NgxSpinnerModule,
-    CarouselModule.forRoot(),
     BrowserAnimationsModule,
-    MatButtonModule,
     MatCheckboxModule,
     RouterModule.forRoot(
       appRoutes
     ),
-    NgxOwlCarouselO
+    CarouselModule
   ],
   providers: [ContactUsService, SkinTypeService, MembersService],
   bootstrap: [AppComponent]

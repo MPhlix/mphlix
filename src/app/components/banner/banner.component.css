@@ -12,17 +12,22 @@
 
 #banner {
     user-select: none;
+    background-image: url('../../../assets/images/bg-reduced.jpg');
+    background-size: cover;
+    overflow: hidden;
 }
 
-slide {
-    animation-name: scaleUp1_2;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+.carousel-container {
+    height: 290px;
 }
+
 
 @media only screen and (min-width: 992px) {
+    #banner {
+        height: 556px;
+    }
     #bannerText {
-        margin: auto auto auto 5%;
+        margin: 15% auto auto 5%;
     }
     .banner-heading {
         text-align: left !important;
@@ -33,16 +38,6 @@ slide {
     .discover-button {
         text-align: left !important;
     }
-    #banner slide img {
-        margin-right: 15%;
-    }
-    
-    #banner slide img {
-        max-height: 450px;
-        float: right;
-        margin-top: 10%;
-        outline: 0;
-    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -50,45 +45,15 @@ slide {
         /* max-height:550px; */
         max-height: 550px;
     }
-    #banner slide img {
-        margin-right: 10%;
-        max-height: 450px;
-    }
-    slide {
-        /* transform: scale(0.8); */
-        animation-name: scaleUp1_2;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-    }
 }
 
-/* @media only screen and (min-width: 701px) and (max-width: 767px) {
-    #banner slide img {
-        margin-right: 10%;
-    }
-} */
-
-@media only screen and (min-width:464px) and (max-width:767px) {
-    #banner slide img {
-        max-height: 419px;
-    }
-}
 
 @media only screen and (max-width:464px) {
-    #banner slide img {
-        max-height: 450px;
-        float: right;
-        margin-top: 10%;
-        outline: 0;
+    #bannerText {
+        margin-top: 5%;
     }
 }
 
-#banner {
-    /* max-height:550px; */
-    max-height: 146%;
-    background-image: url('../../../assets/images/bg-reduced.jpg');
-    background-size: cover;
-}
 
 .discover-button {
     text-align: center;

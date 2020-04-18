@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'banner',
@@ -10,23 +11,35 @@ export class BannerComponent implements OnInit {
   Images = [
     {
       src: '../assets/images/bg_1-reduced.png',
-      id: 0,
-      isLarge: true,
+      id: 0
     },
     {
       src: '../assets/images/bg_2-reduced.png',
-      id: 1,
-      isLarge: true
+      id: 1
     },
     {
-      src: '../assets/images/bg-2_2-removebg-reduced.png',
-      id: 2,
-      isLarge: false
+      src: '../assets/images/bg-2_2-removebg-reduced-removebg.png',
+      id: 2
     }
   ];
-  myInterval = 4000;
-  showIndicator = false;
+  
   showSkinTypeQuiz = false;
+
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: false,
+    navSpeed: 700,
+    responsive: {
+      0: {
+        items: 1
+      }
+    },
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 3000
+  }
 
   constructor() { }
 
