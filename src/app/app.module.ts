@@ -29,7 +29,6 @@ import { MphlixProductsMiniComponent } from './components/mphlix-products-mini/m
 import { MphlixPricingComponent } from './components/mphlix-pricing/mphlix-pricing.component';
 import { MphlixAboutComponent } from './components/mphlix-about/mphlix-about.component';
 import { MphlixTeamComponent } from './components/mphlix-team/mphlix-team.component';
-import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { MembersService } from './services/members.service';
 import { MphlixTestimonialComponent } from './components/mphlix-testimonial/mphlix-testimonial.component';
 
@@ -69,7 +68,6 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes
     ),
-    NgxUsefulSwiperModule,
     NgxOwlCarouselO
   ],
   providers: [ContactUsService, SkinTypeService, MembersService],
