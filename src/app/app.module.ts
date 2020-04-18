@@ -1,3 +1,4 @@
+// Importing Angular modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
@@ -6,9 +7,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 
+// Importing third party modules
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { NgxSpinnerModule } from 'ngx-spinner';
 
+// Importing our custom modules
 import { AppComponent } from './app.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { ContactUsService } from './services/contact-us.service';
@@ -30,8 +33,8 @@ import { MembersService } from './services/members.service';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
 
 const appRoutes: Routes = [
-  { path : 'products', component: ProductsComponent }, 
-  { path : '', component: HomeComponent }
+  { path: 'products', component: ProductsComponent },
+  { path: '', component: HomeComponent }
 ];
 
 @NgModule({

@@ -51,3 +51,11 @@
 .services:hover .icon span, .services:focus .icon span {
     color: #fff;
 }
+
+.media-body p {
+  color: #999999;
+}
+
+.media:hover p {
+  color: black;
+}

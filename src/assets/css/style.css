@@ -4,7 +4,6 @@ body {
   font-size: 16px;
   /* line-height: 1.8; */
   font-weight: 400;
-  /* color: #999999; */
 }
 
 body.menu-show {
@@ -598,7 +597,6 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   left: 0;
   right: 0;
   font-family: "Pacifico", cursive;
-  color: rgba(0, 0, 0, 0.05);
   color: #f7f5f6;
   font-size: 120px;
   z-index: -1;
