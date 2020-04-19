@@ -1,4 +1,4 @@
-import { Option } from '../interface/Option';
+import { Option } from './Option';
 
 export interface Question {
   id: number;

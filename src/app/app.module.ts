@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductsModule } from './modules/products/products.module';
 import { HomeModule } from './modules/home/home.module';
 import { AppComponent } from './app.component';
+import { CoreModule } from './modules/core/core.module';
 
 const appRoutes: Routes = [
   {
@@ -28,11 +29,12 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpModule,
     RouterModule.forRoot(appRoutes),
+    CoreModule,
     ProductsModule,
     HomeModule,
-    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

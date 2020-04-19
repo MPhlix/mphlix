@@ -13,7 +13,6 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 // Importing components
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { FindSkinTypeComponent } from './components/find-skin-type/find-skin-type.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { SkinTypeQuizComponent } from './components/skin-type-quiz/skin-type-quiz.component';
 import { HomeComponent } from './components/home/home.component';
@@ -24,11 +23,9 @@ import { PricingComponent } from './components/pricing/pricing.component';
 import { AboutComponent } from './components/about/about.component';
 import { TeamComponent } from './components/team/team.component';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
-import { FooterComponent } from './components/footer/footer.component';
 // Importing services
-import { ContactUsService } from '../../services/contact-us.service';
-import { SkinTypeService } from '../../services/skin-type/skin-type.service';
-import { MembersService } from '../../services/members.service';
+// import { SkinTypeService } from '../core/services/skin-type.service';
+// import { MembersService } from '../core/services/members.service';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent }
@@ -38,7 +35,6 @@ const appRoutes: Routes = [
   declarations: [
     ContactUsComponent,
     FindSkinTypeComponent,
-    NavbarComponent,
     BannerComponent,
     SkinTypeQuizComponent,
     HomeComponent,
@@ -48,8 +44,8 @@ const appRoutes: Routes = [
     PricingComponent,
     AboutComponent,
     TeamComponent,
-    TestimonialComponent,
-    FooterComponent],
+    TestimonialComponent
+  ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
@@ -59,10 +55,6 @@ const appRoutes: Routes = [
     CarouselModule,
     RouterModule.forChild(appRoutes),
   ],
-  providers: [
-    ContactUsService,
-    SkinTypeService,
-    MembersService
-  ]
+  providers: []
 })
 export class HomeModule { }

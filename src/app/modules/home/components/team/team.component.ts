@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Member } from 'src/app/interface/Member';
-import { MembersService } from 'src/app/services/members.service';
+import { Member } from 'src/app/modules/core/interface/Member';
+import { MembersService } from 'src/app/modules/core/services/members.service';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({

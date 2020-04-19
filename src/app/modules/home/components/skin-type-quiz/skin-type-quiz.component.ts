@@ -1,8 +1,8 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { Question } from 'src/app/interface/Question';
-import { SkinTypeService } from 'src/app/services/skin-type/skin-type.service';
+import { Question } from 'src/app/modules/core/interface/Question';
+import { SkinTypeService } from 'src/app/modules/core/services/skin-type.service';
 import { trigger, transition, style, animate } from '@angular/animations';
-import { Option } from 'src/app/interface/Option';
+import { Option } from 'src/app/modules/core/interface/Option';
 import { MatCheckboxChange } from '@angular/material';
 
 interface Answer {

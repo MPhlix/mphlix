@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ContactUsService } from 'src/app/services/contact-us.service';
+import { ContactUsService } from 'src/app/modules/core/services/contact-us.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 // import * as alertify from 'alertifyjs';
 import { NgxSpinnerService } from 'ngx-spinner';

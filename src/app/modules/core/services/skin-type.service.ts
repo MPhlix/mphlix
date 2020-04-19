@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Question } from '../../interface/Question';
+import { Question } from '../interface/Question';
 import * as questionsJson from 'src/assets/json/questions.json';
 
 @Injectable({

@@ -1,7 +1,7 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import * as MinimalForm from 'src/app/plugins/minimal-form.js';
-import { SkinTypeService } from 'src/app/services/skin-type/skin-type.service';
-import { Question } from 'src/app/interface/Question';
+import { SkinTypeService } from 'src/app/modules/core/services/skin-type.service';
+import { Question } from 'src/app/modules/core/interface/Question';
 
 @Component({
   selector: 'find-skin-type',
