@@ -4,11 +4,11 @@ import { MembersService } from 'src/app/services/members.service';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
-  selector: 'mphlix-team',
-  templateUrl: './mphlix-team.component.html',
-  styleUrls: ['./mphlix-team.component.css']
+  selector: 'team',
+  templateUrl: './team.component.html',
+  styleUrls: ['./team.component.css']
 })
-export class MphlixTeamComponent implements OnInit {
+export class TeamComponent implements OnInit {
 
   socialMediaUrl = [
     { name: 'instagram', url: 'https://www.instagram.com/' },

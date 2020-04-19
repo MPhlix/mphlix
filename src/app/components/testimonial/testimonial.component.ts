@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
-  selector: 'mphlix-testimonial',
-  templateUrl: './mphlix-testimonial.component.html',
-  styleUrls: ['./mphlix-testimonial.component.css']
+  selector: 'testimonial',
+  templateUrl: './testimonial.component.html',
+  styleUrls: ['./testimonial.component.css']
 })
-export class MphlixTestimonialComponent implements OnInit {
+export class TestimonialComponent implements OnInit {
 
   images= [
     "../../../assets/images/Testimonials/mphlix-testimonial-01-reduced.png",

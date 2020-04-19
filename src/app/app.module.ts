@@ -22,14 +22,14 @@ import { SkinTypeService } from './services/skin-type/skin-type.service';
 import { SkinTypeQuizComponent } from './components/skin-type-quiz/skin-type-quiz.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProductsComponent } from './components/products/products.component';
-import { MphlixServicesComponent } from './components/mphlix-services/mphlix-services.component';
-import { MphlixExploringServicesComponent } from './components/mphlix-exploring-services/mphlix-exploring-services.component';
-import { MphlixProductsMiniComponent } from './components/mphlix-products-mini/mphlix-products-mini.component';
-import { MphlixPricingComponent } from './components/mphlix-pricing/mphlix-pricing.component';
-import { MphlixAboutComponent } from './components/mphlix-about/mphlix-about.component';
-import { MphlixTeamComponent } from './components/mphlix-team/mphlix-team.component';
+import { ServicesComponent } from './components/services/services.component';
+import { ExploringServicesComponent } from './components/exploring-services/exploring-services.component';
+import { ProductsMiniComponent } from './components/products-mini/products-mini.component';
+import { PricingComponent } from './components/pricing/pricing.component';
+import { AboutComponent } from './components/about/about.component';
+import { TeamComponent } from './components/team/team.component';
 import { MembersService } from './services/members.service';
-import { MphlixTestimonialComponent } from './components/mphlix-testimonial/mphlix-testimonial.component';
+import { TestimonialComponent } from './components/testimonial/testimonial.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SearchProductComponent } from './components/search-product/search-product.component';
 
@@ -48,13 +48,13 @@ const appRoutes: Routes = [
     SkinTypeQuizComponent,
     HomeComponent,
     ProductsComponent,
-    MphlixServicesComponent,
-    MphlixExploringServicesComponent,
-    MphlixProductsMiniComponent,
-    MphlixPricingComponent,
-    MphlixAboutComponent,
-    MphlixTeamComponent,
-    MphlixTestimonialComponent,
+    ServicesComponent,
+    ExploringServicesComponent,
+    ProductsMiniComponent,
+    PricingComponent,
+    AboutComponent,
+    TeamComponent,
+    TestimonialComponent,
     FooterComponent,
     SearchProductComponent
   ],
