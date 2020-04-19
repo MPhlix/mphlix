@@ -10,15 +10,15 @@ export class BannerComponent implements OnInit {
 
   Images = [
     {
-      src: '../assets/images/bg_1-reduced.png',
+      src: '../../../assets/images/bg_1-reduced.png',
       id: 0
     },
     {
-      src: '../assets/images/bg_2-reduced.png',
+      src: '../../../assets/images/bg_2-reduced.png',
       id: 1
     },
     {
-      src: '../assets/images/bg-2_2-removebg-reduced-removebg.png',
+      src: '../../../assets/images/bg-2_2-removebg-reduced-removebg.png',
       id: 2
     }
   ];

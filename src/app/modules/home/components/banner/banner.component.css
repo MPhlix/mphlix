@@ -12,7 +12,7 @@
 
 #banner {
     user-select: none;
-    background-image: url('../../../assets/images/bg-reduced.jpg');
+    background-image: url('../../../../../assets/images/bg-reduced.jpg');
     background-size: cover;
     overflow: hidden;
 }
