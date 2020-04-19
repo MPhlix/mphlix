@@ -31,6 +31,7 @@ import { MphlixTeamComponent } from './components/mphlix-team/mphlix-team.compon
 import { MembersService } from './services/members.service';
 import { MphlixTestimonialComponent } from './components/mphlix-testimonial/mphlix-testimonial.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SearchProductComponent } from './components/search-product/search-product.component';
 
 const appRoutes: Routes = [
   { path: 'products', component: ProductsComponent },
@@ -54,7 +55,8 @@ const appRoutes: Routes = [
     MphlixAboutComponent,
     MphlixTeamComponent,
     MphlixTestimonialComponent,
-    FooterComponent
+    FooterComponent,
+    SearchProductComponent
   ],
   imports: [
     BrowserModule,
