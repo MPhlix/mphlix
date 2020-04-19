@@ -1,6 +1,7 @@
 // Importing Angular modules
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
 
 // Importing our custom modules
 // Importing components
@@ -17,7 +18,8 @@ import { MembersService } from './services/members.service';
     NavbarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     FooterComponent,
