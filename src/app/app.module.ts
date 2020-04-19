@@ -12,6 +12,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
 // Importing our custom modules
+import { ProductsModule } from './modules/products/products.module';
 import { AppComponent } from './app.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { ContactUsService } from './services/contact-us.service';
@@ -21,7 +22,6 @@ import { BannerComponent } from './components/banner/banner.component';
 import { SkinTypeService } from './services/skin-type/skin-type.service';
 import { SkinTypeQuizComponent } from './components/skin-type-quiz/skin-type-quiz.component';
 import { HomeComponent } from './components/home/home.component';
-import { ProductsComponent } from './components/products/products.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ExploringServicesComponent } from './components/exploring-services/exploring-services.component';
 import { ProductsMiniComponent } from './components/products-mini/products-mini.component';
@@ -31,11 +31,13 @@ import { TeamComponent } from './components/team/team.component';
 import { MembersService } from './services/members.service';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { SearchProductComponent } from './components/search-product/search-product.component';
 
 const appRoutes: Routes = [
-  { path: 'products', component: ProductsComponent },
-  { path: '', component: HomeComponent }
+  { path: '', component: HomeComponent },
+  {
+    path: 'products', loadChildren: () => import('./modules/products/products.module')
+      .then(module => module.ProductsModule)
+  }
 ];
 
 @NgModule({
@@ -47,7 +49,6 @@ const appRoutes: Routes = [
     BannerComponent,
     SkinTypeQuizComponent,
     HomeComponent,
-    ProductsComponent,
     ServicesComponent,
     ExploringServicesComponent,
     ProductsMiniComponent,
@@ -55,8 +56,7 @@ const appRoutes: Routes = [
     AboutComponent,
     TeamComponent,
     TestimonialComponent,
-    FooterComponent,
-    SearchProductComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -66,10 +66,9 @@ const appRoutes: Routes = [
     NgxSpinnerModule,
     BrowserAnimationsModule,
     MatCheckboxModule,
-    RouterModule.forRoot(
-      appRoutes
-    ),
-    CarouselModule
+    RouterModule.forRoot(appRoutes),
+    CarouselModule,
+    ProductsModule
   ],
   providers: [ContactUsService, SkinTypeService, MembersService],
   bootstrap: [AppComponent]
