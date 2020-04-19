@@ -21,7 +21,6 @@
     height: 290px;
 }
 
-
 @media only screen and (min-width: 992px) {
     #banner {
         height: 556px;
@@ -47,6 +46,17 @@
     }
 }
 
+@media only screen and (min-width:768px) and (max-width:853px){
+    .visible-on-max-426px {
+        display: block !important;
+    }
+    .guide {
+        flex-direction: column;
+    }
+    .col-6 {
+        max-width: 100%;
+    }
+}
 
 @media only screen and (max-width:464px) {
     #bannerText {
@@ -54,6 +64,17 @@
     }
 }
 
+@media only screen and (max-width:426px) {
+    .visible-on-max-426px {
+        display: block !important;
+    }
+    .guide {
+        flex-direction: column;
+    }
+    .col-6 {
+        max-width: 100%;
+    }
+}
 
 .discover-button {
     text-align: center;
