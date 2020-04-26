@@ -1,12 +1,16 @@
 .slider_area {
+    background-image: url('../../../../../assets/images/banner/products-banner-1920x1282.jpg');
+    background-size:cover;
+}
+
+.slider_area {
     position: relative;
     z-index: 0;
-    padding-top: 10px;
 }
 
 @media only screen and (min-width: 992px) {
     .slider_area {
-        padding-top: 100px;
+        padding-top: 76px;
     }
 }
 
@@ -26,6 +30,7 @@
     width: 100%;
     height: 100%;
     content: '';
+    opacity:0.6;
 }
 
 .slider_area .single_slider {
@@ -398,3 +403,29 @@
     top: 5px;
     font-size: 12px;
 }
+
+.boxed-btn2 {
+    border: none;
+    background: #F91842;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 12px 36px;
+    font-family: "Raleway", sans-serif;
+    cursor: pointer;
+  }
+  
+  /* line 149, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_btn.scss */
+  .boxed-btn2:hover {
+    background: #F91842;
+    color: #fff !important;
+  }
+  
+  /* line 153, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_btn.scss */
+  .boxed-btn2:focus {
+    outline: none;
+  }
