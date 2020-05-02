@@ -11,11 +11,15 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SkinTypeService } from './services/skin-type.service';
 import { ScreenResizeService } from './services/screen-resize.service';
 import { MembersService } from './services/members.service';
+import { SvgDefinitionsComponent } from './components/svg-definitions/svg-definitions.component';
+import { SvgIconComponent } from './components/svg-icon/svg-icon.component';
 
 @NgModule({
   declarations: [
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    SvgDefinitionsComponent,
+    SvgIconComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +27,9 @@ import { MembersService } from './services/members.service';
   ],
   exports: [
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    SvgDefinitionsComponent,
+    SvgIconComponent
   ],
   providers: [
     SkinTypeService,

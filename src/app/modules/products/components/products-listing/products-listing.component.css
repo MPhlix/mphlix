@@ -315,12 +315,8 @@
     color: #727272;
     line-height: 24px;
     font-family: "Raleway", sans-serif;
-  }
-  
-  /* line 216, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_explorer.scss */
-  .explorer_europe .single_explorer .explorer_bottom .explorer_info ul li i {
-    color: #FF8DA2;
-    padding-right: 5px;
+    list-style: none;
+    margin-left:-30px;
   }
   
   /* line 226, ../../Arafath/CL/Cl November/222. Directory/HTML/scss/_explorer.scss */
