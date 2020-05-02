@@ -1,0 +1,135 @@
+{
+    "ImageBasePath": "assets/images/Products",
+    "Products": [
+        {
+            "Id": 1,
+            "Name": "Batman soap",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/soap-batman/mphlix-soap-batman-477x742.jpeg",
+            "Category": "Soaps",
+            "SkinAreas": ["Body"],
+            "SubCategories": ["Bath"]
+        },
+        {
+            "Id": 2,
+            "Name": "Chandan soap",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/soap-chandan/mphlix-soap-chandan-1080x1080.jpeg",
+            "Category": "Soaps",
+            "SkinAreas": ["Body"],
+            "SubCategories": ["Bath"]
+        },
+        {
+            "Id": 3,
+            "Name": "Charcoal Royale soap",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/soap-charcoal-royale/mphlix-soap-charcoal-royale-1024x1024-reduced.jpg",
+            "Category": "Soaps",
+            "SkinAreas": ["Body"],
+            "SubCategories": ["Bath"]
+        },
+        {
+            "Id": 4,
+            "Name": "Green Tea soap",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/soap-green-tea/mphlix-soap-green-tea-1080x1080.jpg",
+            "Category": "Soaps",
+            "SkinAreas": ["Body"],
+            "SubCategories": ["Bath"]
+        },
+        {
+            "Id": 5,
+            "Name": "Heart shaped soap",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/soap-heart/mphlix-soap-heart-reduced.jpg",
+            "Category": "Soaps",
+            "SkinAreas": ["Body"],
+            "SubCategories": ["Bath"]
+        },
+        {
+            "Id": 6,
+            "Name": "Neem Oats soap",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/soap-neem-oats/mphlix-soap-neem-oats-1280x1280.jpeg",
+            "Category": "Soaps",
+            "SkinAreas": ["Body"],
+            "SubCategories": ["Bath"]
+        },
+        {
+            "Id": 7,
+            "Name": "Oreo shaped soap",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/soap-oreo/mphlix-soap-oreo-reduced",
+            "Category": "Soaps",
+            "SkinAreas": ["Body"],
+            "SubCategories": ["Bath"]
+        },
+        {
+            "Id": 8,
+            "Name": "Poker card soaps",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/soap-poker-set/mphlix-soap-poker-set-1280x1280.jpeg",
+            "Category": "Soaps",
+            "SkinAreas": ["Body"],
+            "SubCategories": ["Bath"]
+        },
+        {
+            "Id": 9,
+            "Name": "Cream and Lotion",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/cream-lotions/mphlix-creams-lotions-1125x1130.jpeg",
+            "Category": "Grooming",
+            "SkinAreas": ["Body", "Face"],
+            "SubCategories": ["Moisturizer", "Lotion"]
+        },
+        {
+            "Id": 10,
+            "Name": "Coffee Scrub lip balm",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/lip-balm-coffee-scrub/mphlix-lip-balm-coffee-scrub-1280x1280.jpeg",
+            "Category": "Grooming",
+            "SkinAreas": ["Face", "Lip"],
+            "SubCategories": ["Balm", "Moisturizer", "Lip"]
+        },
+        {
+            "Id": 11,
+            "Name": "Sanitizer",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/sanitizers/mphlix-sanitizer-1280x1280.jpeg",
+            "Category": "Hygiene",
+            "SkinAreas": ["Body", "Face"],
+            "SubCategories": ["Sanitizer", "Germs"]
+        },
+        {
+            "Id": 12,
+            "Name": "Rose Mist water",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/rose-mist-water/mphlix-rose-mist-water-1280x1280.jpeg",
+            "Category": "Refreshments",
+            "SkinAreas": ["Body", "Face", "Lip", "Eye"],
+            "SubCategories": ["Treatment", "Grooming", "Beauty", "Water"]
+        },
+        {
+            "Id": 13,
+            "Name": "Shampoo",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/mphlix-shampoo-550x1109.jpeg",
+            "Category": "Shampoo",
+            "SkinAreas": ["Hair"],
+            "SubCategories": ["Hairfall", "Dandruff"]
+        }
+    ]
+}
