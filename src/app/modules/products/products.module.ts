@@ -5,6 +5,7 @@ import { SearchProductComponent } from './components/search-product/search-produ
 import { Routes, RouterModule } from '@angular/router';
 import { ProductsListingComponent } from './components/products-listing/products-listing.component';
 import { CoreModule } from '../core/core.module';
+import { ProductsRepositoryModule } from '../shared/products-repository/products-repository.module';
 
 const appRoutes: Routes = [
   { path: 'products', component: ProductsComponent }
@@ -20,6 +21,7 @@ const appRoutes: Routes = [
     CommonModule,
     CoreModule,
     RouterModule.forChild(appRoutes),
+    ProductsRepositoryModule
   ],
   bootstrap: [ProductsComponent]
 })
