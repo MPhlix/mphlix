@@ -1,0 +1,86 @@
+[
+    {
+        "Id": 1,
+        "Name": "Body Care",
+        "ImageFolderPath": "/body-care",
+        "ParentCategoryId": null
+    },
+    {
+        "Id": 2,
+        "Name": "Grooming",
+        "ImageFolderPath": "/grooming",
+        "ParentCategoryId": null
+    },
+    {
+        "Id": 3,
+        "Name": "Hair Care",
+        "ImageFolderPath": "/hair-care",
+        "ParentCategoryId": null
+    },
+    {
+        "Id": 4,
+        "Name": "Hygiene",
+        "ImageFolderPath": "/hygiene",
+        "ParentCategoryId": null
+    },
+    {
+        "Id": 5,
+        "Name": "Skin Hydrants",
+        "ImageFolderPath": "/skin-hydrants",
+        "ParentCategoryId": null
+    },
+    {
+        "Id": 6,
+        "Name": "Soaps",
+        "ParentCategoryId": 1,
+        "ImageFolderPath": "/soaps"
+    },
+    {
+        "Id": 7,
+        "Name": "Multipurpose",
+        "ParentCategoryId": 6,
+        "ImageFolderPath": "/multipurpose"
+    },
+    {
+        "Id": 8,
+        "Name": "Creams and Lotions",
+        "ParentCategoryId": 2,
+        "ImageFolderPath": "/creams-and-lotions"
+    },
+    {
+        "Id": 9,
+        "Name": "Multipurpose",
+        "ParentCategoryId": 8,
+        "ImageFolderPath": "/multipurpose"
+    },
+    {
+        "Id": 10,
+        "Name": "Lip Balms",
+        "ParentCategoryId": 2,
+        "ImageFolderPath": "/lip-balms"
+    },
+    {
+        "Id": 11,
+        "Name": "Shampoo",
+        "ParentCategoryId": 3,
+        "ImageFolderPath": "/shampoo"
+    },
+    {
+        "Id": 12,
+        "Name": "Hair Fall Control",
+        "ParentCategoryId": 11,
+        "ImageFolderPath": "/hair-fall-control"
+    },
+    {
+        "Id": 13,
+        "Name": "Sanitizers",
+        "ParentCategoryId": 4,
+        "ImageFolderPath": "/sanitizers"
+    },
+    {
+        "Id": 14,
+        "Name": "Rose Water",
+        "ParentCategoryId": 5,
+        "ImageFolderPath": "/rose-water"
+    }
+]

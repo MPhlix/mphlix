@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from 'src/app/modules/shared/products-repository/services/products.service';
-import { ProductsContext } from 'src/app/modules/shared/products-repository/interfaces/ProductsContext';
+import { ProductsContainer } from 'src/app/modules/shared/products-repository/interfaces/ProductsContainer';
 
 @Component({
   selector: 'products-listing',
@@ -8,12 +8,12 @@ import { ProductsContext } from 'src/app/modules/shared/products-repository/inte
   styleUrls: ['./products-listing.component.css']
 })
 export class ProductsListingComponent implements OnInit {
-  productsModel: ProductsContext;
+  productsContainer: ProductsContainer;
 
   constructor(private productsService: ProductsService) { }
 
   ngOnInit() {
-    this.productsModel = this.productsService.getAllProducts();
+    this.productsContainer = this.productsService.getAllProducts();
   }
 
 }

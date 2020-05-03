@@ -1,24 +1,41 @@
 import { Injectable } from '@angular/core';
-import { ProductsContext } from '../interfaces/ProductsContext';
-import * as productsJson from 'src/assets/json/products-repository.json';
+
+import { ProductsContainer } from '../interfaces/ProductsContainer';
+import { Product } from '../interfaces/Product';
+import { EntityRepopulationService } from '../interfaces/entity-repopulation.service';
+import { Category } from '../interfaces/Category/Category';
+
+import { CategoriesService } from './categories.service';
+import { SkinAreaService } from './skin-area.service';
+
+import * as productsJson from 'src/assets/json/products-container.json';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ProductsService {
+export class ProductsService implements EntityRepopulationService {
 
-  private productsModel: ProductsContext;
+  private products: ProductsContainer;
 
-  constructor() {
-    this.productsModel = (productsJson as any).default as ProductsContext;
+  constructor(private categoryService: CategoriesService, private skinAreaService: SkinAreaService) {
+    this.products = (productsJson as any).default as ProductsContainer;
+    this.products.Products.forEach(a => this.repopulate(a));
+  }
+
+  repopulate(a: Product) {
+    let category = this.categoryService.getById(a.CategoryId);
+    a.Id = a.Id;
+    a.Name = a.Name;
+    a.Description = a.Description;
+    a.Price = a.Price;
+    a.ImagePath = this.products.ImageBasePath + this.categoryService.generatePathWithCategory(category) + a.ImagePath;
+    a.Category = category;
+    a.SkinAreas = a.SkinAreaIds.map(a => this.skinAreaService.getSkinAreaById(a));
+    a.Tags = a.Tags;
   }
 
   getAllProducts() {
-    return this.productsModel;
-  }
-
-  getProductsByCategory(categoryName: string) {
-    return this.productsModel.Products.filter(a=> a.Category.toLowerCase() === categoryName.toLowerCase());
+    return this.products;
   }
 
 }

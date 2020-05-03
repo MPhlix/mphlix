@@ -3,137 +3,31 @@
         <div class="explorer_wrap">
             <div class="row align-items-center">
                 <div class="col-xl-6 col-md-4">
-                    <span>1-6 out of 1000s results for soaps</span>
+                    <span>{{productsContainer.Products.length > 0 && "1"}}-13 out of {{productsContainer.Products.length}}s results for soaps</span>
                 </div>
             </div>
         </div>
         <div id="nav-tabContent">
             <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-6">
+                <div *ngFor="let item of productsContainer.Products" class="col-xl-4 col-lg-4 col-md-6">
                     <div class="single_explorer">
                         <div class="thumb">
-                            <img src="assets/images/Soaps/rose-mist-water/mphlix-rose-mist-water-1280x1280.jpeg" alt="">
+                            <img [src]="item.ImagePath" alt="item.Name">
                         </div>
                         <div class="explorer_bottom d-flex">
                             <div class="icon">
-                                <svg-icon name="grooming" [style]="{ height: '32px', width:'32px', fill: 'white' }"></svg-icon>
+                                <svg-icon name="grooming" [style]="{ height: '32px', width:'32px', fill: 'white' }">
+                                </svg-icon>
                             </div>
                             <div class="explorer_info">
-                                <h3><a href="single_listings.html">Saintmartine</a></h3>
-                                <p>700/D, Kings road, Green lane, London</p>
+                                <h3><a href="single_listings.html">{{item.Name}}</a></h3>
+                                <p>{{item.Description}}</p>
                                 <ul>
-                                    <li><svg-icon name="phone_solid"
-                                        [style]="{ height: '16px', width:'16px', fill:'#ff3100' }"></svg-icon>
-                                        +10 278 367 9823</li>
-                                    <li><svg-icon name="mail_solid"
-                                        [style]="{ height: '16px', width:'16px', fill:'#ff3100' }"></svg-icon> contact@midnight.com</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="single_explorer">
-                        <div class="thumb">
-                            <img src="assets/images/Soaps/soap-neem-oats/mphlix-soap-neem-oats-1280x1280.jpeg" alt="">
-                        </div>
-                        <div class="explorer_bottom d-flex">
-                            <div class="icon">
-                                <svg-icon name="soap" [style]="{ height: '32px', width:'32px' }"></svg-icon>
-                            </div>
-                            <div class="explorer_info">
-                                <h3><a href="single_listings.html">Freshly Food</a></h3>
-                                <p>700/D, Kings road, Green lane, London</p>
-                                <ul>
-                                    <li> <i class="fa fa-phone"></i>
-                                        +10 278 367 9823</li>
-                                    <li><i class="fa fa-envelope"></i> contact@midnight.com</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="single_explorer">
-                        <div class="thumb">
-                            <img src="assets/images/Soaps/soap-poker-set/mphlix-soap-poker-set-1280x1280.jpeg" alt="">
-                        </div>
-                        <div class="explorer_bottom d-flex">
-                            <div class="icon">
-                                <svg-icon name="lip_balm_outline" [style]="{ height: '32px', width:'32px', fill:'white' }"></svg-icon>
-                            </div>
-                            <div class="explorer_info">
-                                <h3><a href="single_listings.html">Midnight</a></h3>
-                                <p>700/D, Kings road, Green lane, London</p>
-                                <ul>
-                                    <li> <i class="fa fa-phone"></i>
-                                        +10 278 367 9823</li>
-                                    <li><i class="fa fa-envelope"></i> contact@midnight.com</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="single_explorer">
-                        <div class="thumb">
-                            <img src="assets/images/Soaps/charcoal-royale/mphlix-soap-charcoal-royale-1024x1024-reduced.jpg"
-                                alt="">
-                        </div>
-                        <div class="explorer_bottom d-flex">
-                            <div class="icon">
-                                <i class="flaticon-barbershop"></i>
-                            </div>
-                            <div class="explorer_info">
-                                <h3><a href="single_listings.html">Barber</a></h3>
-                                <p>700/D, Kings road, Green lane, London</p>
-                                <ul>
-                                    <li> <i class="fa fa-phone"></i>
-                                        +10 278 367 9823</li>
-                                    <li><i class="fa fa-envelope"></i> contact@midnight.com</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="single_explorer">
-                        <div class="thumb">
-                            <img src="assets/images/Soaps/lip-balm-coffee-scrub/mphlix-lip-balm-coffee-scrub-1280x1280.jpeg"
-                                alt="">
-                        </div>
-                        <div class="explorer_bottom d-flex">
-                            <div class="icon">
-                                <i class="flaticon-cabin"></i>
-                            </div>
-                            <div class="explorer_info">
-                                <h3><a href="single_listings.html">Montana Resort</a></h3>
-                                <p>700/D, Kings road, Green lane, London</p>
-                                <ul>
-                                    <li> <i class="fa fa-phone"></i>
-                                        +10 278 367 9823</li>
-                                    <li><i class="fa fa-envelope"></i> contact@midnight.com</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="single_explorer">
-                        <div class="thumb">
-                            <img src="assets/images/Soaps/soap-chandan/mphlix-soap-chandan-1080x1080.jpg" alt="">
-                        </div>
-                        <div class="explorer_bottom d-flex">
-                            <div class="icon">
-                                <i class="flaticon-shop"></i>
-                            </div>
-                            <div class="explorer_info">
-                                <h3><a href="single_listings.html">Yelled Shopping</a></h3>
-                                <p>700/D, Kings road, Green lane, London</p>
-                                <ul>
-                                    <li> <i class="fa fa-phone"></i>
-                                        +10 278 367 9823</li>
-                                    <li><i class="fa fa-envelope"></i> contact@midnight.com</li>
+                                    <li>
+                                        <svg-icon name="phone_solid"
+                                            [style]="{ height: '16px', width:'16px', fill:'#ff3100' }"></svg-icon>
+                                        {{item.Price}}
+                                    </li>
                                 </ul>
                             </div>
                         </div>

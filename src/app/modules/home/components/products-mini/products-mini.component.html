@@ -11,112 +11,17 @@
     </div>
     <div class="container-fluid p-0">
         <div class="row no-gutters">
-            <div class="col-md-6 col-lg-3 ftco-animate fadeInUp ftco-animated">
+            <div *ngFor="let product of productsContainer.Products"
+                class="col-md-6 col-lg-3 ftco-animate fadeInUp ftco-animated">
                 <div class="project">
-                    <img src="assets/images/Soaps/rose-mist-water/mphlix-rose-mist-water-1280x1280.jpeg" class="img-fluid"
-                        alt="Heart soap by Mphlix">
+                    <!-- <img [src]="product.ImagePath" class="img-fluid"
+                        alt="Heart soap by Mphlix"> -->
+                    <div [ngStyle]="{'background-image': 'url(' + product.ImagePath + ')' }" class="image-div" alt="Heart soap by Mphlix"></div>
                     <div class="text">
-                        <span>Rose water</span>
-                        <h3><a href="#">Rose Mist</a></h3>
+                        <span>{{product.Name}}</span>
+                        <h3><a href="#">{{product.Name}}</a></h3>
                     </div>
-                    <a href="assets/images/Soaps/rose-mist-water/mphlix-rose-mist-water-1280x1280.jpeg"
-                        class="icon image-popup d-flex justify-content-center align-items-center">
-                        <span class="icon-expand"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 ftco-animate fadeInUp ftco-animated">
-                <div class="project">
-                    <img src="assets/images/Soaps/soap-neem-oats/mphlix-soap-neem-oats-1280x1280.jpeg" class="img-fluid"
-                        alt="Brick soap by Mphlix">
-                    <div class="text">
-                        <span>Soap</span>
-                        <h3><a href="#">Neem & Oats</a></h3>
-                    </div>
-                    <a href="assets/images/Soaps/soap-neem-oats/mphlix-soap-neem-oats-1280x1280.jpeg"
-                        class="icon image-popup d-flex justify-content-center align-items-center">
-                        <span class="icon-expand"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 ftco-animate fadeInUp ftco-animated">
-                <div class="project">
-                    <img src="assets/images/Soaps/soap-poker-set/mphlix-soap-poker-set-1280x1280.jpeg" class="img-fluid"
-                        alt="Poker soap by Mphlix">
-                    <div class="text">
-                        <span>Soap</span>
-                        <h3><a href="#">Poker Set</a></h3>
-                    </div>
-                    <a href="assets/images/Soaps/soap-poker-set/mphlix-soap-poker-set-1280x1280.jpeg"
-                        class="icon image-popup d-flex justify-content-center align-items-center">
-                        <span class="icon-expand"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 ftco-animate fadeInUp ftco-animated">
-                <div class="project">
-                    <img src="assets/images/Soaps/charcoal-royale/mphlix-soap-charcoal-royale-1024x1024-reduced.jpg" class="img-fluid"
-                        alt="Charcoal Royale soap by Mphlix">
-                    <div class="text">
-                        <span>Soap</span>
-                        <h3><a href="#">Charcoal Royale</a></h3>
-                    </div>
-                    <a href="assets/images/Soaps/charcoal-royale/mphlix-soap-charcoal-royale-1024x1024-reduced.jpg"
-                        class="icon image-popup d-flex justify-content-center align-items-center">
-                        <span class="icon-expand"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 ftco-animate fadeInUp ftco-animated">
-                <div class="project">
-                    <img src="assets/images/Soaps/lip-balm-coffee-scrub/mphlix-lip-balm-coffee-scrub-1280x1280.jpeg" class="img-fluid"
-                        alt="Coffee Lip Scrub by Mphlix">
-                    <div class="text">
-                        <span>Lip Balm</span>
-                        <h3><a href="#">Coffee Lip Scrub</a></h3>
-                    </div>
-                    <a href="assets/images/Soaps/lip-balm-coffee-scrub/mphlix-lip-balm-coffee-scrub-1280x1280.jpeg"
-                        class="icon image-popup d-flex justify-content-center align-items-center">
-                        <span class="icon-expand"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 ftco-animate fadeInUp ftco-animated">
-                <div class="project">
-                    <img src="assets/images/Soaps/soap-chandan/mphlix-soap-chandan-1080x1080.jpg" class="img-fluid"
-                        alt="Ring soap by Mphlix">
-                    <div class="text">
-                        <span>Soap</span>
-                        <h3><a href="project.html">Chandan Ring</a></h3>
-                    </div>
-                    <a href="assets/images/Soaps/soap-chandan/mphlix-soap-chandan-1080x1080.jpg"
-                        class="icon image-popup d-flex justify-content-center align-items-center">
-                        <span class="icon-expand"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 ftco-animate fadeInUp ftco-animated">
-                <div class="project">
-                    <img src="assets/images/Soaps/soap-green-tea/mphlix-soap-green-tea-1080x1080.jpg" class="img-fluid" alt="soap by Mphlix">
-                    <div class="text">
-                        <span>Soap</span>
-                        <h3><a href="#">Green Tea</a></h3>
-                    </div>
-                    <a href="assets/images/Soaps/soap-green-tea/mphlix-soap-green-tea-1080x1080.jpg"
-                        class="icon image-popup d-flex justify-content-center align-items-center">
-                        <span class="icon-expand"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 ftco-animate fadeInUp ftco-animated">
-                <div class="project">
-                    <img src="assets/images/Soaps/handwash-sanitizers/mphlix-handwash-sanitizer-1280x1280.jpeg" class="img-fluid"
-                        alt="soap by Mphlix">
-                    <div class="text">
-                        <span>Handwash</span>
-                        <h3><a href="#">Sanitizer</a></h3>
-                    </div>
-                    <a href="assets/images/Soaps/handwash-sanitizers/mphlix-handwash-sanitizer-1280x1280.jpeg"
+                    <a [href]="product.ImagePath"
                         class="icon image-popup d-flex justify-content-center align-items-center">
                         <span class="icon-expand"></span>
                     </a>
