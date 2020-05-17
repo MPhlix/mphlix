@@ -10,7 +10,7 @@ import { SearchProductService } from '../../services/search-product.service';
   styleUrls: ['./products-listing.component.css']
 })
 export class ProductsListingComponent implements OnInit {
-  private products: Product[];
+  products: Product[];
   private searchTerms: string;
   filteredProducts: Product[];
 
