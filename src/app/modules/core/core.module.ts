@@ -13,6 +13,7 @@ import { ScreenResizeService } from './services/screen-resize.service';
 import { MembersService } from './services/members.service';
 import { SvgDefinitionsComponent } from './components/svg-definitions/svg-definitions.component';
 import { SvgIconComponent } from './components/svg-icon/svg-icon.component';
+import { ReleaseService } from './services/release.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { SvgIconComponent } from './components/svg-icon/svg-icon.component';
   providers: [
     SkinTypeService,
     ScreenResizeService,
-    MembersService
+    MembersService,
+    ReleaseService
   ]
 })
 export class CoreModule { }
