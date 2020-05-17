@@ -1,0 +1,135 @@
+{
+    "ImageBasePath": "assets/images/Products",
+    "Products": [
+        {
+            "Id": 1,
+            "Name": "Batman soap",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/batman/mphlix-body-care-soaps-multipurpose-batman-477x742.jpeg",
+            "CategoryId": 7,
+            "SkinAreaIds": [1, 3],
+            "Tags": ["Bath"]
+        },
+        {
+            "Id": 2,
+            "Name": "Chandan soap",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/chandan/mphlix-body-care-soaps-multipurpose-chandan-1080x1080.jpg",
+            "CategoryId": 7,
+            "SkinAreaIds": [1, 3],
+            "Tags": ["Bath"]
+        },
+        {
+            "Id": 3,
+            "Name": "Charcoal Royale soap",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/charcoal-royale/mphlix-body-care-soaps-multipurpose-charcoal-royale-1024x1024-reduced.jpg",
+            "CategoryId": 7,
+            "SkinAreaIds": [1, 3],
+            "Tags": ["Bath"]
+        },
+        {
+            "Id": 4,
+            "Name": "Green Tea soap",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/green-tea/mphlix-body-care-soaps-multipurpose-green-tea-1080x1080.jpg",
+            "CategoryId": 7,
+            "SkinAreaIds": [1, 3],
+            "Tags": ["Bath"]
+        },
+        {
+            "Id": 5,
+            "Name": "Heart shaped soap",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/heart/mphlix-body-care-soap-multipurpose-heart-reduced.jpg",
+            "CategoryId": 7,
+            "SkinAreaIds": [1, 3],
+            "Tags": ["Bath"]
+        },
+        {
+            "Id": 6,
+            "Name": "Neem Oats soap",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/neem-oats/mphlix-body-care-soap-multipurpose-neem-oats-1280x1280.jpeg",
+            "CategoryId": 7,
+            "SkinAreaIds": [1, 3],
+            "Tags": ["Bath"]
+        },
+        {
+            "Id": 7,
+            "Name": "Oreo shaped soap",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/oreo/mphlix-body-care-soap-multipurpose-oreo-reduced.png",
+            "CategoryId": 7,
+            "SkinAreaIds": [1, 3],
+            "Tags": ["Bath"]
+        },
+        {
+            "Id": 8,
+            "Name": "Poker card soaps",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/poker-set/mphlix-body-care-soap-multipurpose-poker-set-1280x1280.jpeg",
+            "CategoryId": 7,
+            "SkinAreaIds": [1, 3],
+            "Tags": ["Bath"]
+        },
+        {
+            "Id": 9,
+            "Name": "Multipurpose Cream",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/mphlix-grooming-creams-and-lotions-multipurpose-1125x1130.jpeg",
+            "CategoryId" : 9,
+            "SkinAreaIds": [1, 3],
+            "Tags": ["Lotion"]
+        },
+        {
+            "Id": 10,
+            "Name": "Coffee Scrub Lip Balm",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/coffee-scrub/mphlix-grooming-lip-balms-coffee-scrub-coffee-scrub-1280x1280.jpeg",
+            "CategoryId": 10,
+            "SkinAreaIds": [6],
+            "Tags": []
+        },
+        {
+            "Id": 11,
+            "Name": "Hair Fall Control Shampoo",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/mphlix-hair-care-shampoo-hair-fall-control-550x1109.jpeg",
+            "CategoryId": 12,
+            "SkinAreaIds": [2],
+            "Tags": ["Hairfall", "Dandruff"]
+        },
+        {
+            "Id": 12,
+            "Name": "Lime and Aloe-vera Sanitizer",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/lime-aloe-vera/mphlix-hygiene-sanitizers-lime-aloe-vera-1280x1280.jpeg",
+            "CategoryId": 13,
+            "SkinAreaIds": [1],
+            "Tags": ["Sanitizer", "Germs"]
+        },
+        {
+            "Id": 13,
+            "Name": "Rose Mist water",
+            "Description": "",
+            "Price": 0,
+            "ImagePath": "/mphlix-skin-hydrants-rose-water-mist-1280x1280.jpeg",
+            "CategoryId": 14,
+            "SkinAreaIds": [1, 3, 5],
+            "Tags": ["Treatment", "Grooming", "Beauty", "Water"]
+        }
+    ]
+}
