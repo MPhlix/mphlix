@@ -7,7 +7,7 @@ import { ReleaseService } from '../../services/release.service';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-  private version : string;
+  version : string;
 
   constructor(private releaseService: ReleaseService) { }
 
