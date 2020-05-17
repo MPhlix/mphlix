@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from 'src/app/modules/shared/products-repository/services/products.service';
-import { ProductsContainer } from 'src/app/modules/shared/products-repository/interfaces/ProductsContainer';
+import { Product } from 'src/app/modules/shared/products-repository/interfaces/Product';
+import { Category } from 'src/app/modules/shared/products-repository/interfaces/Category/Category';
+import { SearchProductService } from '../../services/search-product.service';
 
 @Component({
   selector: 'products-listing',
@@ -8,12 +10,48 @@ import { ProductsContainer } from 'src/app/modules/shared/products-repository/in
   styleUrls: ['./products-listing.component.css']
 })
 export class ProductsListingComponent implements OnInit {
-  productsContainer: ProductsContainer;
+  private products: Product[];
+  private searchTerms: string;
+  filteredProducts: Product[];
 
-  constructor(private productsService: ProductsService) { }
+  constructor(private productsService: ProductsService, private searchProductService: SearchProductService) { }
 
   ngOnInit() {
-    this.productsContainer = this.productsService.getAllProducts();
+    this.products = this.productsService.getAllProducts();
+    this.searchProductService.currentSearchTerms.subscribe(searchTerms => {
+      this.filteredProducts = this.getNewFilteredProducts(searchTerms);
+    });
+  }
+  
+  getNewFilteredProducts(searchTerms: string) {
+    let pagedProducts: Product[];
+
+    if (searchTerms) {
+      let individualSearchTerms = searchTerms.toLowerCase().split(' ');
+
+      if (this.products && individualSearchTerms) {
+
+        pagedProducts = this.products.filter(product => individualSearchTerms.filter(searchTerm => {
+          let skinAreaNames = product.SkinAreas.map(skinArea => skinArea.Name.toLowerCase());
+          let tags = product.Tags.map(tag => tag.toLowerCase());
+          return product.Name.toLowerCase().includes(searchTerm) || product.Description.toLowerCase().includes(searchTerm)
+            || skinAreaNames.filter(skinAreaName => skinAreaName.includes(searchTerm)).length > 0
+            || tags.filter(tag => tag.includes(searchTerm)).length > 0
+            || this.isCategoryMatching(product.Category, searchTerm);
+        }).length > 0);
+      }
+      else
+        pagedProducts = this.products;
+    }
+    else
+      pagedProducts = this.products;
+
+    return pagedProducts;
+  }
+
+  private isCategoryMatching(category: Category, searchTerm: string) {
+    return category.Name.toLowerCase().includes(searchTerm)
+      || (category.ParentCategory && this.isCategoryMatching(category.ParentCategory, searchTerm));
   }
 
 }

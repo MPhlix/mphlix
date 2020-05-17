@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from 'src/app/modules/shared/products-repository/services/products.service';
-import { ProductsContainer } from 'src/app/modules/shared/products-repository/interfaces/ProductsContainer';
+import { Product } from 'src/app/modules/shared/products-repository/interfaces/Product';
 
 @Component({
   selector: 'products-mini',
@@ -8,12 +8,12 @@ import { ProductsContainer } from 'src/app/modules/shared/products-repository/in
   styleUrls: ['./products-mini.component.css']
 })
 export class ProductsMiniComponent implements OnInit {
-  productsContainer: ProductsContainer;
+  products: Product[];
 
   constructor(private productsService: ProductsService) { }
 
   ngOnInit() {
-    this.productsContainer = this.productsService.getAllProducts();
+    this.products = this.productsService.getAllProducts();
   }
 
 }

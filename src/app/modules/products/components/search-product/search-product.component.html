@@ -10,17 +10,12 @@
                             <div class="row align-items-center">
                                 <div class="col-xl-5 col-md-4">
                                     <div class="input_field">
-                                        <input type="text" placeholder="What are you finding?">
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-md-4">
-                                    <div class="input_field location">
-                                        <input type="text" placeholder="Location">
+                                        <input type="text" #searchTerm placeholder="What are you finding?">
                                     </div>
                                 </div>
                                 <div class="col-xl-3 col-md-4">
                                     <div class="button_search">
-                                        <button class="boxed-btn2" type="submit">Search</button>
+                                        <button class="boxed-btn2" type="submit" (click)="submitSearch(searchTerm)">Search</button>
                                     </div>
                                 </div>
                             </div>

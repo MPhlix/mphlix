@@ -15,11 +15,11 @@ import * as productsJson from 'src/assets/json/products-container.json';
 })
 export class ProductsService implements EntityRepopulationService {
 
-  private products: ProductsContainer;
+  private productsContainer: ProductsContainer;
 
   constructor(private categoryService: CategoriesService, private skinAreaService: SkinAreaService) {
-    this.products = (productsJson as any).default as ProductsContainer;
-    this.products.Products.forEach(a => this.repopulate(a));
+    this.productsContainer = (productsJson as any).default as ProductsContainer;
+    this.productsContainer.Products.forEach(a => this.repopulate(a));
   }
 
   repopulate(a: Product) {
@@ -28,14 +28,14 @@ export class ProductsService implements EntityRepopulationService {
     a.Name = a.Name;
     a.Description = a.Description;
     a.Price = a.Price;
-    a.ImagePath = this.products.ImageBasePath + this.categoryService.generatePathWithCategory(category) + a.ImagePath;
+    a.ImagePath = this.productsContainer.ImageBasePath + this.categoryService.generatePathWithCategory(category) + a.ImagePath;
     a.Category = category;
     a.SkinAreas = a.SkinAreaIds.map(a => this.skinAreaService.getSkinAreaById(a));
     a.Tags = a.Tags;
   }
 
   getAllProducts() {
-    return this.products;
+    return this.productsContainer.Products;
   }
 
 }

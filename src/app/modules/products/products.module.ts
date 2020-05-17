@@ -6,6 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProductsListingComponent } from './components/products-listing/products-listing.component';
 import { CoreModule } from '../core/core.module';
 import { ProductsRepositoryModule } from '../shared/products-repository/products-repository.module';
+import { SearchProductService } from './services/search-product.service';
 
 const appRoutes: Routes = [
   { path: 'products', component: ProductsComponent }
@@ -23,6 +24,7 @@ const appRoutes: Routes = [
     RouterModule.forChild(appRoutes),
     ProductsRepositoryModule
   ],
+  providers: [SearchProductService],
   bootstrap: [ProductsComponent]
 })
 export class ProductsModule { }

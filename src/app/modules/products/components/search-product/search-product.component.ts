@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
+import { SearchProductService } from '../../services/search-product.service';
 
 @Component({
   selector: 'search-product',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchProductComponent implements OnInit {
 
-  constructor() { }
+  constructor(private searchProductService : SearchProductService) { }
 
   ngOnInit() {
+  }
+
+  submitSearch(searchTerm : HTMLInputElement) {
+    this.searchProductService.changeSearchTerms(searchTerm.value);
   }
 
 }
