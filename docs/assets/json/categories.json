@@ -82,5 +82,41 @@
         "Name": "Rose Water",
         "ParentCategoryId": 5,
         "ImageFolderPath": "/rose-water"
+    },
+    {
+        "Id": 15,
+        "Name": "Bath Salts",
+        "ParentCategoryId": 1,
+        "ImageFolderPath": "/bath-salts"
+    },
+    {
+        "Id": 16,
+        "Name": "Body Washes",
+        "ParentCategoryId": 1,
+        "ImageFolderPath": "/body-washes"
+    },
+    {
+        "Id": 17,
+        "Name": "Gifts Hampers",
+        "ParentCategoryId": null,
+        "ImageFolderPath": "/gifts-hampers"
+    },
+    {
+        "Id": 18,
+        "Name": "Baby",
+        "ParentCategoryId": 6,
+        "ImageFolderPath": "/baby"
+    },
+    {
+        "Id": 19,
+        "Name": "Hand washes",
+        "ParentCategoryId": 4,
+        "ImageFolderPath": "/hand-washes"
+    },
+    {
+        "Id": 20,
+        "Name": "Serum",
+        "ParentCategoryId": 3,
+        "ImageFolderPath": "/serum"
     }
 ]
