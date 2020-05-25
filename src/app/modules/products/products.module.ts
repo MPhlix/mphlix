@@ -7,6 +7,7 @@ import { ProductsListingComponent } from './components/products-listing/products
 import { CoreModule } from '../core/core.module';
 import { ProductsRepositoryModule } from '../shared/products-repository/products-repository.module';
 import { SearchProductService } from './services/search-product.service';
+import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   { path: 'products', component: ProductsComponent }
@@ -21,6 +22,7 @@ const appRoutes: Routes = [
   imports: [
     CommonModule,
     CoreModule,
+    FormsModule,
     RouterModule.forChild(appRoutes),
     ProductsRepositoryModule
   ],

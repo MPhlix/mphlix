@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from 'src/app/modules/shared/products-repository/services/products.service';
-import { Product } from 'src/app/modules/shared/products-repository/interfaces/Product';
+import { Product } from 'src/app/modules/shared/products-repository/interfaces/Product/Product';
 import { Category } from 'src/app/modules/shared/products-repository/interfaces/Category/Category';
 import { SearchProductService } from '../../services/search-product.service';
+import { CategoriesService } from 'src/app/modules/shared/products-repository/services/categories.service';
 
 @Component({
   selector: 'products-listing',
@@ -14,7 +15,7 @@ export class ProductsListingComponent implements OnInit {
   private searchTerms: string;
   filteredProducts: Product[];
 
-  constructor(private productsService: ProductsService, private searchProductService: SearchProductService) { }
+  constructor(private productsService: ProductsService, private searchProductService: SearchProductService, private categoriesService: CategoriesService) { }
 
   ngOnInit() {
     this.products = this.productsService.getAllProducts();
@@ -52,6 +53,11 @@ export class ProductsListingComponent implements OnInit {
   private isCategoryMatching(category: Category, searchTerm: string) {
     return category.Name.toLowerCase().includes(searchTerm)
       || (category.ParentCategory && this.isCategoryMatching(category.ParentCategory, searchTerm));
+  }
+
+  getCategoryBreadcrumbs(category: Category) {
+    let categoryNames = this.categoriesService.generateParentCategoryNamesWithHigherOrder(category, 2);
+    return categoryNames.join(' > ');
   }
 
 }

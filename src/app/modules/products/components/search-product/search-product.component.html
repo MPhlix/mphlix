@@ -6,39 +6,28 @@
                 <div class="col-xl-10">
                     <div class="slider_text text-center justify-content-center">
                         <h3>Products for every skin type</h3>
-                        <div class="search_form">
-                            <div class="row align-items-center">
-                                <div class="col-xl-5 col-md-4">
-                                    <div class="input_field">
-                                        <input type="text" #searchTerm placeholder="What are you finding?">
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-md-4">
-                                    <div class="button_search">
-                                        <button class="boxed-btn2" type="submit" (click)="submitSearch(searchTerm)">Search</button>
+                        <div class="">
+                            <div class="row m-0 align-items-center">
+                                <div class="col-xl-2 col-md-2 d-none d-sm-block"></div>
+                                <div class="col-xl-7 col-md-7 search_form" style="background-color:white;">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <input type="text" [(ngModel)]="currentSearchTerm"
+                                                placeholder="What are you finding?" (keyup.enter)="submitSearch()"
+                                                class="form-control search-input">
+                                        </div>
+                                        <div class="col-3">
+                                            <button class="btn btn-info" type="submit"
+                                                (click)="submitSearch()">Search</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="quality">
                             <ul>
-                                <li>
-                                    <button>Hotel</button>
-                                </li>
-                                <li>
-                                    <button>Food</button>
-                                </li>
-                                <li>
-                                    <button>Shopping</button>
-                                </li>
-                                <li>
-                                    <button>Bar & Pubs</button>
-                                </li>
-                                <li>
-                                    <button>Bar & Pubs</button>
-                                </li>
-                                <li>
-                                    <button>Places</button>
+                                <li *ngFor="let suggestion of suggestions;">
+                                    <button (click)="searchForSuggested(suggestion)">{{suggestion}}</button>
                                 </li>
                             </ul>
                         </div>

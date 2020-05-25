@@ -7,14 +7,21 @@ import { SearchProductService } from '../../services/search-product.service';
   styleUrls: ['./search-product.component.css']
 })
 export class SearchProductComponent implements OnInit {
+  suggestions: string[];
+  currentSearchTerm : string;
 
   constructor(private searchProductService : SearchProductService) { }
 
   ngOnInit() {
+    this.suggestions = this.searchProductService.getSuggestions();
   }
 
-  submitSearch(searchTerm : HTMLInputElement) {
-    this.searchProductService.changeSearchTerms(searchTerm.value);
+  submitSearch() {
+    this.searchProductService.changeSearchTerms(this.currentSearchTerm);
   }
 
+  searchForSuggested(suggestedSearchTerm : string) {
+    this.currentSearchTerm = suggestedSearchTerm;
+    this.submitSearch();
+  }
 }

@@ -1,5 +1,5 @@
-import { Category } from './Category/Category';
-import { SkinArea } from './SkinArea';
+import { Category } from '../Category/Category';
+import { SkinArea } from '../SkinArea';
 
 export interface Product {
     Id: number,

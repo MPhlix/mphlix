@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from 'src/app/modules/shared/products-repository/services/products.service';
-import { Product } from 'src/app/modules/shared/products-repository/interfaces/Product';
+import { ProductMini } from 'src/app/modules/shared/products-repository/interfaces/Product/ProductMini';
+import { Category } from 'src/app/modules/shared/products-repository/interfaces/Category/Category';
 
 @Component({
   selector: 'products-mini',
@@ -8,12 +9,15 @@ import { Product } from 'src/app/modules/shared/products-repository/interfaces/P
   styleUrls: ['./products-mini.component.css']
 })
 export class ProductsMiniComponent implements OnInit {
-  products: Product[];
+  products: ProductMini[];
 
   constructor(private productsService: ProductsService) { }
 
   ngOnInit() {
-    this.products = this.productsService.getAllProducts();
+    this.products = this.productsService.getAllMiniProducts();
   }
 
+  getCategoryBreadcrumbs(categoryNames: string[]) {
+    return categoryNames.join(' > ');
+  }
 }
