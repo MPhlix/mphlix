@@ -1,0 +1,161 @@
+  .team {
+    width: 100%;
+    display: block;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  @media (max-width: 991.98px) {
+    .team {
+      margin-bottom: 30px;
+    }
+  }
+  
+  .team .img {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .team .img:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: #f18c8e;
+    opacity: 0;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  .team h2 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+  }
+  
+  .ftco-team {
+    position: relative;
+  }
+  
+  .ftco-team .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    opacity: .7;
+    background: #232931;
+  }
+  
+  .ftco-team .owl-nav {
+    position: absolute;
+    bottom: 60px !important;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 991.98px) {
+    .ftco-team .owl-nav {
+      display: none;
+    }
+  }
+  
+  .ftco-team .owl-nav .owl-prev, .ftco-team .owl-nav .owl-next {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #fff !important;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    -webkit-transition: all 0.7s ease;
+    -ms-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    opacity: 1;
+  }
+  
+  .ftco-team .owl-nav .owl-prev span:before, .ftco-team .owl-nav .owl-next span:before {
+    font-size: 20px;
+    margin-top: 7px;
+    color: #000000;
+  }
+  
+  .ftco-team .owl-nav .owl-prev {
+    top: 0 !important;
+    right: 0 !important;
+  }
+  
+  @media (min-width: 992px) {
+    .ftco-team .owl-nav .owl-prev {
+      right: 61px !important;
+    }
+  }
+  
+  .ftco-team .owl-nav .owl-prev:hover, .ftco-team .owl-nav .owl-prev:focus {
+    background: #000000 !important;
+    outline: none !important;
+  }
+  
+  .ftco-team .owl-nav .owl-prev:hover span:before, .ftco-team .owl-nav .owl-prev:focus span:before {
+    font-size: 20px;
+    margin-top: 7px;
+    color: #fff;
+  }
+  
+  .ftco-team .owl-nav .owl-next {
+    top: 0 !important;
+    right: 0 !important;
+  }
+  
+  @media (min-width: 992px) {
+    .ftco-team .owl-nav .owl-next {
+      right: 0 !important;
+    }
+  }
+  
+  .ftco-team .owl-nav .owl-next:hover, .ftco-team .owl-nav .owl-next:focus {
+    background: #000000 !important;
+    outline: none !important;
+  }
+  
+  .ftco-team .owl-nav .owl-next:hover span:before, .ftco-team .owl-nav .owl-next:focus span:before {
+    font-size: 24px;
+    margin-top: 7px;
+    color: #fff;
+  }
+  
+  .ftco-team .owl-dots {
+    text-align: center;
+  }
+  
+  .ftco-team .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0) !important;
+    border: 1px solid #f18c8e;
+  }
+  
+  .ftco-team .owl-dots .owl-dot.active {
+    background: #f18c8e !important;
+  }
+  /* This class is dynamically added to Ngx-Owl-Carousel-O based container */
+  
+  /* Top padding helps view the circle of each member when it shifts up on hover */
+  .item {
+    padding-top: 10px !important;
+  }

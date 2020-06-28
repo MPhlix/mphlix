@@ -1,0 +1,40 @@
+{
+    "ImageBasePath": "assets/images/Accolades",
+    "Accolades": [
+        {
+            "Id": 1,
+            "Name": "Professional Aroma Therapy Diploma - KEW Academy",
+            "AccoladeTypeId": 1,
+            "ImagePath": "/mphlix-accolades-certificates-professional-aroma-therapy-diploma-mahashweta-mohapatra-kew-academy-1280x720.png",
+            "IsActive" : true
+        },
+        {
+            "Id": 2,
+            "Name": "Online Personal Makeup Tutorial - LTA School of Beauty",
+            "AccoladeTypeId": 1,
+            "ImagePath": "/mphlix-accolades-certificates-online-personal-makeup-tutorial-mahashweta-mohapatra-lta-school-of-beauty-911x648.png",
+            "IsActive" : true
+        },
+        {
+            "Id": 3,
+            "Name": "Aromatherapy For Natural Living - Mark Perren Jones Spa Training Academy",
+            "AccoladeTypeId": 1,
+            "ImagePath": "/mphlix-accolades-certificates-aromatherapy-for-natural-living-mahashweta-mohapatra-mark-perren-jones-spa-training-academy-950x734.png",
+            "IsActive" : true
+        },
+        {
+            "Id": 4,
+            "Name": "Barbicide COVID-19 Certification - Professional Beauty Training",
+            "AccoladeTypeId": 1,
+            "ImagePath": "/mphlix-accolades-certificates-barbicide covid-19-certification-mahashweta-mohapatra-professional-beauty-training-1010x715.png",
+            "IsActive" : true
+        },
+        {
+            "Id": 5,
+            "Name": "Beautify The Future - Lakme Salon",
+            "AccoladeTypeId": 1,
+            "ImagePath": "/mphlix-accolades-certificates-beautify-the-future-mahashweta-mohapatra-lakme-salon-980x1156.jpg",
+            "IsActive" : false
+        }
+    ]
+}

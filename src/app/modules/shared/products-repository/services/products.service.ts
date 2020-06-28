@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 
-import { ProductsContainer } from '../interfaces/ProductsContainer';
+import { ProductsContainer } from '../interfaces/Product/ProductsContainer';
 import { Product } from '../interfaces/Product/Product';
 import { EntityRepopulationService } from '../interfaces/entity-repopulation.service';
-import { Category } from '../interfaces/Category/Category';
 
 import { CategoriesService } from './categories.service';
 import { SkinAreaService } from './skin-area.service';
@@ -27,11 +26,6 @@ export class ProductsService implements EntityRepopulationService {
 
   repopulate(product: Product) {
     let category = this.categoriesService.getById(product.CategoryId);
-
-    product.Id = product.Id;
-    product.Name = product.Name;
-    product.Description = product.Description;
-    product.Price = product.Price;
     product.ImagePath = this.productsContainer.ImageBasePath + this.categoriesService.generatePathWithCategory(category) + product.ImagePath;
     product.Category = category;
     product.SkinAreas = product.SkinAreaIds.map(a => this.skinAreaService.getSkinAreaById(a));

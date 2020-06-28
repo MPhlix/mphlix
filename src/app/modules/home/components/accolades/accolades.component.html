@@ -1,0 +1,29 @@
+<section id="team" class="ftco-section ftco-team">
+    <div class="container">
+        <div class="row justify-content-center pb-3">
+            <div class="col-md-10 heading-section text-center ftco-animate fadeInUp ftco-animated">
+                <h1 class="big">Achievements</h1>
+                <span class="subheading">Hard Work + Talent </span>
+                <h2 class="mb-4">Accolades</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 carousel-container">
+                <owl-carousel-o [options]="customOptions">
+                    <ng-template carouselSlide *ngFor="let accolade of accolades">
+                        <div class="item text-center">
+                            <span class="team">
+                                <div class="img row">
+                                    <img class="col-sm-6 m-auto" [src]="accolade.ImagePath">
+                                </div>
+                            </span>
+                            <h3>{{accolade.Name}}</h3>
+                        </div>
+                    </ng-template>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>

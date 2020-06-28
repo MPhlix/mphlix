@@ -18,14 +18,13 @@ import { SkinTypeQuizComponent } from './components/skin-type-quiz/skin-type-qui
 import { HomeComponent } from './components/home/home.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ExploringServicesComponent } from './components/exploring-services/exploring-services.component';
-import { ProductsMiniComponent } from './components/products-mini/products-mini.component';
 import { PricingComponent } from './components/pricing/pricing.component';
 import { AboutComponent } from './components/about/about.component';
 import { TeamComponent } from './components/team/team.component';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
+import { AccoladesComponent } from './components/accolades/accolades.component';
 // Importing services
-// import { SkinTypeService } from '../core/services/skin-type.service';
-// import { MembersService } from '../core/services/members.service';
+import { AccoladesService } from '../home/services/accolades.service';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent }
@@ -40,11 +39,11 @@ const appRoutes: Routes = [
     HomeComponent,
     ServicesComponent,
     ExploringServicesComponent,
-    ProductsMiniComponent,
     PricingComponent,
     AboutComponent,
     TeamComponent,
-    TestimonialComponent
+    TestimonialComponent,
+    AccoladesComponent
   ],
   imports: [
     CommonModule,
@@ -55,6 +54,6 @@ const appRoutes: Routes = [
     CarouselModule,
     RouterModule.forChild(appRoutes),
   ],
-  providers: []
+  providers: [AccoladesService]
 })
 export class HomeModule { }
