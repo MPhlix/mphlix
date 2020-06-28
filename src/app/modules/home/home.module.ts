@@ -18,6 +18,7 @@ import { SkinTypeQuizComponent } from './components/skin-type-quiz/skin-type-qui
 import { HomeComponent } from './components/home/home.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ExploringServicesComponent } from './components/exploring-services/exploring-services.component';
+import { ProductsMiniComponent } from './components/products-mini/products-mini.component';
 import { PricingComponent } from './components/pricing/pricing.component';
 import { AboutComponent } from './components/about/about.component';
 import { TeamComponent } from './components/team/team.component';
@@ -43,7 +44,8 @@ const appRoutes: Routes = [
     AboutComponent,
     TeamComponent,
     TestimonialComponent,
-    AccoladesComponent
+    AccoladesComponent,
+    ProductsMiniComponent
   ],
   imports: [
     CommonModule,

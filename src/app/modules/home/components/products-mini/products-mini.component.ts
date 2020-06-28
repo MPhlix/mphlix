@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from 'src/app/modules/shared/products-repository/services/products.service';
 import { ProductMini } from 'src/app/modules/shared/products-repository/interfaces/Product/ProductMini';
-import { Category } from 'src/app/modules/shared/products-repository/interfaces/Category/Category';
 
 @Component({
   selector: 'products-mini',
