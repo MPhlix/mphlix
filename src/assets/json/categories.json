@@ -118,5 +118,23 @@
         "Name": "Serum",
         "ParentCategoryId": 3,
         "ImageFolderPath": "/serum"
+    },
+    {
+        "Id": 21,
+        "Name": "Skin care",
+        "ParentCategoryId": 1,
+        "ImageFolderPath": "/skin-care"
+    },
+    {
+        "Id": 22,
+        "Name": "Creams and Lotions",
+        "ParentCategoryId": 21,
+        "ImageFolderPath": "/creams-and-lotions"
+    },
+    {
+        "Id": 23,
+        "Name": "Multipurpose",
+        "ParentCategoryId": 22,
+        "ImageFolderPath": "/multipurpose"
     }
 ]
