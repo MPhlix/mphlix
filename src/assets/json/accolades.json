@@ -26,7 +26,7 @@
             "Id": 4,
             "Name": "Barbicide COVID-19 Certification - Professional Beauty Training",
             "AccoladeTypeId": 1,
-            "ImagePath": "/mphlix-accolades-certificates-barbicide covid-19-certification-mahashweta-mohapatra-professional-beauty-training-1010x715.png",
+            "ImagePath": "/mphlix-accolades-certificates-barbicide-covid-19-certification-mahashweta-mohapatra-professional-beauty-training-1010x715.png",
             "IsActive" : true
         },
         {
@@ -35,6 +35,34 @@
             "AccoladeTypeId": 1,
             "ImagePath": "/mphlix-accolades-certificates-beautify-the-future-mahashweta-mohapatra-lakme-salon-980x1156.jpg",
             "IsActive" : false
+        },
+        {
+            "Id": 6,
+            "Name": "All Natural Beauty Products Couse - Mark Perren Jones Spa Training Academy",
+            "AccoladeTypeId": 1,
+            "ImagePath": "/mphlix-accolades-certificates-all-natural-beauty-products-course-mahashweta-mohapatra-mark-perren-jones-spa-training-academy.PNG",
+            "IsActive" : true
+        },
+        {
+            "Id": 7,
+            "Name": "Lip Scrub Workshop - Creencia",
+            "AccoladeTypeId": 1,
+            "ImagePath": "/mphlix-accolades-certificates-lip-scrub-workshop-mphlix-soapworks-creencia.PNG",
+            "IsActive" : true
+        },
+        {
+            "Id": 8,
+            "Name": "Lips & Cheeks tint + Herbal Lipstick - Creencia",
+            "AccoladeTypeId": 1,
+            "ImagePath": "/mphlix-accolades-certificates-lips-&-cheeks-tint-herbal-lipstick-the-liptrip-creencia.PNG",
+            "IsActive" : true
+        },
+        {
+            "Id": 9,
+            "Name": "Taster Chakra Healing Practioner Course - International Association Of Therapists",
+            "AccoladeTypeId": 1,
+            "ImagePath": "/mphlix-accolades-certificates-taster-chakra-healing-practioner-course-mahashweta-mohapatra-international-association-of-therapists.PNG",
+            "IsActive" : true
         }
     ]
 }
