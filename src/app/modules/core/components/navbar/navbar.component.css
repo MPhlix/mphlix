@@ -1,3 +1,7 @@
 nav {
     line-height: 1.0;
 }
+
+.scrolled .collapse.navbar-collapse {
+    padding-top: 15px;
+}
