@@ -1,0 +1,11 @@
+{
+    "Websites": [
+        {
+            "Id": 1,
+            "Name": "youtube",
+            "Url": "https://www.youtube.com/",
+            "EmbeddingUrl": "embed/{videoId}",
+            "VideoIdPlaceholder": "{videoId}"
+        }
+    ]
+}

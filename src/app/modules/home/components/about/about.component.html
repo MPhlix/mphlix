@@ -1,18 +1,23 @@
 <section id="about" class="ftco-section ftco-no-pb ftco-no-pt">
+
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center pb-3">
+            <div class="heading-section mb-4 mt-md-5 text-center">
+                <h1 class="big">About</h1>
+                <span class="subheading">About Us</span>
+                <h2 class="mb-4">A World Class Soapworks Company</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row video-row" *ngFor="let video of videos">
             <div class="col-md-6 d-flex">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ovthwJ3l59g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" [src]="video.FullUrl" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
             <div class="col-md-6 py-md-5 pb-5 wrap-about pb-md-5 ftco-animate fadeInUp ftco-animated">
-                <div class="heading-section mb-4 mt-md-5">
-                    <h1 class="big">About</h1>
-                    <span class="subheading">About Us</span>
-                    <h2 class="mb-4">A World Class Soapworks Company</h2>
-                </div>
-                <div class="pb-md-5">
-                    <p>Organic and vegan lovers with a combination of creative maniacs! Name your skin type and we
-                        shall provide you the solution.</p>
+                <div class="pb-md-5" [innerHtml]="video.Description">
                 </div>
             </div>
         </div>
