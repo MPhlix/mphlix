@@ -63,6 +63,13 @@
             "AccoladeTypeId": 1,
             "ImagePath": "/mphlix-accolades-certificates-taster-chakra-healing-practioner-course-mahashweta-mohapatra-international-association-of-therapists.PNG",
             "IsActive" : true
+        },
+        {
+            "Id": 10,
+            "Name": "Hair Care Workshop - Creencia",
+            "AccoladeTypeId": 1,
+            "ImagePath": "/mphlix-accolades-certificates-hair-care-workshop-mphlix-soapworks-creencia.jpg",
+            "IsActive" : true
         }
     ]
 }
