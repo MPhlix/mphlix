@@ -1,8 +1,5 @@
 import { Injectable } from '@angular/core';
 
-//Custom Services
-import { EntityRepopulationService } from '../../shared/products-repository/interfaces/entity-repopulation.service';
-
 //Custom Models
 import { Accolade } from '../models/Accolade';
 import { AccoladeType } from '../models/AccoladeType';
@@ -11,11 +8,12 @@ import { AccoladeContainer } from '../models/AccoladeContainer';
 //Importing JSON data
 import * as accoladeTypesJson from 'src/assets/json/accolade-types.json';
 import * as accoladeContainerJson from 'src/assets/json/accolades.json';
+import { EntityRepopulation } from '../../shared/common-interfaces/interfaces/entity-repopulation.interface';
 
 @Injectable({
   providedIn: 'root'
 })
-export class AccoladesService implements EntityRepopulationService {
+export class AccoladesService implements EntityRepopulation {
   accoladeContainer: AccoladeContainer;
   private accoladesTypes: AccoladeType[];
 

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { OwlOptions } from 'ngx-owl-carousel-o';
 import { PromotionalVideoService } from '../../services/promotional-video.service';
 import { PromotionalVideo } from '../../models/PromotionalVideo';
 import { DomSanitizer } from '@angular/platform-browser';
@@ -12,24 +11,6 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class AboutComponent implements OnInit {
 
   videos: PromotionalVideo[] = [];
-
-  customOptions: OwlOptions = {
-    loop: true,
-    mouseDrag: true,
-    touchDrag: true,
-    pullDrag: false,
-    dots: true,
-    navSpeed: 700,
-    responsive: {
-      0: {
-        items: 1
-      },
-      400: {
-        items: 2
-      }
-    },
-    nav: false
-  }
 
   constructor(private videoService: PromotionalVideoService, private sanitizer: DomSanitizer) {
     this.videos = this.videoService.getActiveVideos();

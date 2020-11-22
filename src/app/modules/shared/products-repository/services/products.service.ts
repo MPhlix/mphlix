@@ -2,18 +2,18 @@ import { Injectable } from '@angular/core';
 
 import { ProductsContainer } from '../interfaces/Product/ProductsContainer';
 import { Product } from '../interfaces/Product/Product';
-import { EntityRepopulationService } from '../interfaces/entity-repopulation.service';
 
 import { CategoriesService } from './categories.service';
 import { SkinAreaService } from './skin-area.service';
 
 import * as productsJson from 'src/assets/json/products-container.json';
 import { ProductMini } from '../interfaces/Product/ProductMini';
+import { EntityRepopulation } from '../../common-interfaces/interfaces/entity-repopulation.interface';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ProductsService implements EntityRepopulationService {
+export class ProductsService implements EntityRepopulation {
 
   private productsContainer: ProductsContainer;
   private productsMini: ProductMini[];

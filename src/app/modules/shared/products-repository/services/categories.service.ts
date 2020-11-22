@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Category } from '../interfaces/Category/Category';
 import * as categoriesJson from 'src/assets/json/categories.json';
-import { EntityRepopulationService } from '../interfaces/entity-repopulation.service';
+import { EntityRepopulation } from '../../common-interfaces/interfaces/entity-repopulation.interface';
 
 @Injectable({
     providedIn: 'root'
 })
-export class CategoriesService implements EntityRepopulationService {
+export class CategoriesService implements EntityRepopulation {
 
     private categories: Category[];
 

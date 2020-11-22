@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 //Custom Services
-import { EntityRepopulationService } from '../../shared/products-repository/interfaces/entity-repopulation.service';
+import { EntityRepopulation } from '../../shared/common-interfaces/interfaces/entity-repopulation.interface';
 import { SocialMediaService } from '../../shared/social-media/services/social-media/social-media.service';
 
 //Custom Models
@@ -14,7 +14,7 @@ import * as promotionalVideosJson from 'src/assets/json/promotional-videos.json'
 @Injectable({
   providedIn: 'root'
 })
-export class PromotionalVideoService implements EntityRepopulationService {
+export class PromotionalVideoService implements EntityRepopulation {
   private websites: SocialMediaWebsite[];
   private videos: PromotionalVideo[];
 
