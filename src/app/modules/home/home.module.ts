@@ -12,7 +12,6 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 // Importing our custom modules
 // Importing components
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
-import { FindSkinTypeComponent } from './components/find-skin-type/find-skin-type.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { SkinTypeQuizComponent } from './components/skin-type-quiz/skin-type-quiz.component';
 import { HomeComponent } from './components/home/home.component';
@@ -28,13 +27,12 @@ import { AccoladesComponent } from './components/accolades/accolades.component';
 import { AccoladesService } from '../home/services/accolades.service';
 
 const appRoutes: Routes = [
-  { path: 'home', component: HomeComponent }
+  { path: '', component: HomeComponent }
 ];
 
 @NgModule({
   declarations: [
     ContactUsComponent,
-    FindSkinTypeComponent,
     BannerComponent,
     SkinTypeQuizComponent,
     HomeComponent,
