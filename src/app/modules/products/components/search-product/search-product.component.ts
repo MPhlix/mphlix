@@ -1,5 +1,6 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { SearchProductService } from '../../services/search-product.service';
+import { Router, Params } from '@angular/router';
 
 @Component({
   selector: 'search-product',
@@ -10,14 +11,17 @@ export class SearchProductComponent implements OnInit {
   suggestions: string[];
   currentSearchTerm : string;
 
-  constructor(private searchProductService : SearchProductService) { }
+  constructor(private searchProductService : SearchProductService, private router: Router) { }
 
   ngOnInit() {
     this.suggestions = this.searchProductService.getSuggestions();
   }
 
   submitSearch() {
-    this.searchProductService.changeSearchTerms(this.currentSearchTerm);
+    let queryParams: Params = { name: this.currentSearchTerm };
+    this.router.navigate([], {
+      queryParams: queryParams
+    });
   }
 
   searchForSuggested(suggestedSearchTerm : string) {

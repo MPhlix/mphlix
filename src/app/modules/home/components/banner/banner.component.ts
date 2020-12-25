@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { Router, Params } from '@angular/router';
 
 @Component({
   selector: 'banner',
@@ -10,19 +11,27 @@ export class BannerComponent implements OnInit {
 
   Images = [
     {
-      src: '../../../assets/images/bg_1-reduced.png',
-      id: 0
+      src: '../../../assets/images/Banner/bg_1-reduced.png',
+      id: 0,
+      hasUrl: false
     },
     {
-      src: '../../../assets/images/bg_2-reduced.png',
-      id: 1
+      src: '../../../assets/images/Banner/bg_2-reduced.png',
+      id: 1,
+      hasUrl: false
     },
     {
-      src: '../../../assets/images/bg-2_2-removebg-reduced-removebg.png',
-      id: 2
+      src: '../../../assets/images/Banner/bg-2_2-removebg-reduced-removebg.png',
+      id: 2,
+      hasUrl: false
+    },
+    {
+      src: '../../../assets/images/Banner/liptrip.png',
+      id: 3,
+      hasUrl: true
     }
   ];
-  
+
   showSkinTypeQuiz = false;
 
   customOptions: OwlOptions = {
@@ -41,13 +50,20 @@ export class BannerComponent implements OnInit {
     autoplayTimeout: 3000
   }
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
-  showMainMenu(){
+  showMainMenu() {
     this.showSkinTypeQuiz = false;
+  }
+
+  changeUrl() {
+    let queryParams: Params = { name: 'lip' };
+    this.router.navigate(['../products'], {
+      queryParams: queryParams
+    });
   }
 
 }

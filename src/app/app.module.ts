@@ -20,6 +20,10 @@ const appRoutes: Routes = [
     path: 'home', loadChildren: () => import('./modules/home/home.module')
       .then(module => module.HomeModule)
   },
+  {
+    path: 'liptrip', loadChildren: () => import('./modules/features/liptrip/liptrip.module')
+      .then(module => module.LiptripModule)
+  },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
 
