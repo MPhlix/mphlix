@@ -1,5 +1,6 @@
 import { Category } from '../Category/Category';
 import { SkinArea } from '../SkinArea';
+import { Campaign } from '../Campaign/Campaign';
 
 export interface Product {
     Id: number,
@@ -11,5 +12,7 @@ export interface Product {
     SkinAreaIds: number[],
     Tags: string[],
     Category: Category,
-    SkinAreas: SkinArea[]
+    SkinAreas: SkinArea[],
+    CampaignId: number,
+    Campaign: Campaign
 }

@@ -6,10 +6,11 @@
             "Name": "Charcoal and Turmeric soap",
             "Description": "",
             "Price": 150,
-            "ImagePath": "/charcoal-turmeric/mphlix-body-care-soaps-multipurpose-charcoal-turmeric-477x742.jpeg",
+            "ImagePath": "/charcoal-turmeric/mphlix-body-care-soaps-multipurpose-charcoal-turmeric-436x436-squared.jpg",
             "CategoryId": 7,
             "SkinAreaIds": [1, 3],
-            "Tags": ["Bath"]
+            "Tags": ["Bath"],
+            "CampaignId": null
         },
         {
             "Id": 2,
@@ -19,7 +20,8 @@
             "ImagePath": "/chandan/mphlix-body-care-soaps-multipurpose-chandan-1080x1080.jpg",
             "CategoryId": 7,
             "SkinAreaIds": [1, 3],
-            "Tags": ["Bath"]
+            "Tags": ["Bath"],
+            "CampaignId": null
         },
         {
             "Id": 3,
@@ -29,7 +31,8 @@
             "ImagePath": "/charcoal-royale/mphlix-body-care-soaps-multipurpose-charcoal-royale-1024x1024-reduced.jpg",
             "CategoryId": 7,
             "SkinAreaIds": [1, 3],
-            "Tags": ["Bath"]
+            "Tags": ["Bath"],
+            "CampaignId": null
         },
         {
             "Id": 4,
@@ -39,7 +42,8 @@
             "ImagePath": "/green-tea/mphlix-body-care-soaps-multipurpose-green-tea-1080x1080.jpg",
             "CategoryId": 7,
             "SkinAreaIds": [1, 3],
-            "Tags": ["Bath"]
+            "Tags": ["Bath"],
+            "CampaignId": null
         },
         {
             "Id": 5,
@@ -49,7 +53,8 @@
             "ImagePath": "/heart/mphlix-body-care-soap-multipurpose-heart-reduced.jpg",
             "CategoryId": 7,
             "SkinAreaIds": [1, 3],
-            "Tags": ["Bath"]
+            "Tags": ["Bath"],
+            "CampaignId": null
         },
         {
             "Id": 6,
@@ -59,17 +64,19 @@
             "ImagePath": "/neem-oats/mphlix-body-care-soap-multipurpose-neem-oats-1280x1280.jpeg",
             "CategoryId": 7,
             "SkinAreaIds": [1, 3],
-            "Tags": ["Bath"]
+            "Tags": ["Bath"],
+            "CampaignId": null
         },
         {
             "Id": 7,
             "Name": "Oreo-Shaped soap",
             "Description": "",
             "Price": 40,
-            "ImagePath": "/oreo/mphlix-body-care-soap-multipurpose-oreo-reduced.png",
+            "ImagePath": "/oreo/mphlix-body-care-soap-multipurpose-oreo-436x436-squared.jpg",
             "CategoryId": 7,
             "SkinAreaIds": [1, 3],
-            "Tags": ["Bath"]
+            "Tags": ["Bath"],
+            "CampaignId": null
         },
         {
             "Id": 8,
@@ -79,7 +86,8 @@
             "ImagePath": "/poker-set/mphlix-body-care-soap-multipurpose-poker-set-1280x1280.jpeg",
             "CategoryId": 7,
             "SkinAreaIds": [1, 3],
-            "Tags": ["Bath"]
+            "Tags": ["Bath"],
+            "CampaignId": null
         },
         {
             "Id": 9,
@@ -89,27 +97,30 @@
             "ImagePath": "/mphlix-grooming-creams-and-lotions-multipurpose-1125x1130.jpeg",
             "CategoryId" : 23,
             "SkinAreaIds": [1, 3],
-            "Tags": ["Lotion"]
+            "Tags": ["Lotion"],
+            "CampaignId": null
         },
         {
             "Id": 10,
             "Name": "Coffee Scrub lip balm",
             "Description": "",
             "Price": 100,
-            "ImagePath": "/coffee-scrub/mphlix-grooming-lip-balms-coffee-scrub-coffee-scrub-1280x1280.jpeg",
-            "CategoryId": 10,
+            "ImagePath": "/coffee-scrub/mphlix-grooming-lip-care-lip-balms-coffee-scrub-436x436-squared.jpg",
+            "CategoryId": 24,
             "SkinAreaIds": [6],
-            "Tags": []
+            "Tags": [],
+            "CampaignId": 1
         },
         {
             "Id": 11,
             "Name": "Hair Fall Control shampoo",
             "Description": "",
             "Price": 200,
-            "ImagePath": "/mphlix-hair-care-shampoo-hair-fall-control-550x1109.jpeg",
+            "ImagePath": "/mphlix-hair-care-shampoo-hair-fall-control-436x436-squared.jpg",
             "CategoryId": 12,
             "SkinAreaIds": [2],
-            "Tags": ["Hairfall", "Dandruff"]
+            "Tags": ["Hairfall", "Dandruff"],
+            "CampaignId": null
         },
         {
             "Id": 12,
@@ -119,7 +130,8 @@
             "ImagePath": "/lime-aloe-vera/mphlix-hygiene-sanitizers-lime-aloe-vera-1280x1280.jpeg",
             "CategoryId": 13,
             "SkinAreaIds": [1],
-            "Tags": ["Germs"]
+            "Tags": ["Germs"],
+            "CampaignId": null
         },
         {
             "Id": 13,
@@ -129,7 +141,8 @@
             "ImagePath": "/mphlix-skin-hydrants-rose-water-mist-1280x1280.jpeg",
             "CategoryId": 14,
             "SkinAreaIds": [1, 3, 5],
-            "Tags": ["Treatment", "Grooming", "Beauty", "Water"]
+            "Tags": ["Treatment", "Grooming", "Beauty", "Water"],
+            "CampaignId": null
         },
         {
             "Id": 14,
@@ -139,27 +152,30 @@
             "ImagePath": "/mphlix-body-care-bath-salts-3000x3000-reduced.jpg",
             "CategoryId": 15,
             "SkinAreaIds": [1],
-            "Tags": ["Bath"]
+            "Tags": ["Bath"],
+            "CampaignId": null
         },
         {
             "Id": 15,
             "Name": "Green Tea and Strawberry soap",
             "Description": "",
             "Price": 100,
-            "ImagePath": "/green-tea-strawberry/mphlix-body-care-soaps-multipurpose-green-tea-strawberry-720x1280.jpg",
+            "ImagePath": "/green-tea-strawberry/mphlix-body-care-soaps-multipurpose-green-tea-strawberry-436x436-squared.jpg",
             "CategoryId": 7,
             "SkinAreaIds": [1, 3],
-            "Tags": ["Bath"]
+            "Tags": ["Bath"],
+            "CampaignId": null
         },
         {
             "Id": 16,
             "Name": "Lime Cocoa body wash",
             "Description": "",
             "Price": 150,
-            "ImagePath": "/lime-cocoa/mphlix-body-care-body-washes-lime-cocoa-720x1280.jpg",
+            "ImagePath": "/lime-cocoa/mphlix-body-care-body-washes-lime-cocoa-436x436-squared.jpg",
             "CategoryId": 16,
             "SkinAreaIds": [1, 7, 8],
-            "Tags": ["Bath"]
+            "Tags": ["Bath"],
+            "CampaignId": null
         },
         {
             "Id": 17,
@@ -169,7 +185,8 @@
             "ImagePath": "/christmas/mphlix-gifts-hampers-christmas-1536x1536.jpg",
             "CategoryId": 17,
             "SkinAreaIds": [1, 3],
-            "Tags": ["Bath"]
+            "Tags": ["Bath"],
+            "CampaignId": null
         },
         {
             "Id": 18,
@@ -179,7 +196,8 @@
             "ImagePath": "/mphlix-body-care-soaps-baby-1280x1280.jpeg",
             "CategoryId": 18,
             "SkinAreaIds": [1, 3],
-            "Tags": ["Bath"]
+            "Tags": ["Bath"],
+            "CampaignId": null
         },
         {
             "Id": 19,
@@ -189,7 +207,8 @@
             "ImagePath": "/sea-minerals-neem-lemon/mphlix-hygiene-hand-washes-sea-minerals-neem-lemon-1280x1280.jpeg",
             "CategoryId": 19,
             "SkinAreaIds": [7],
-            "Tags": ["Bath"]
+            "Tags": ["Bath"],
+            "CampaignId": null
         },
         {
             "Id": 20,
@@ -199,17 +218,19 @@
             "ImagePath": "/papaya-cafe-latte-cafe-mocha/mphlix-body-care-soaps-multipurpose-papaya-cafe-latte-cafe-mocha-3000x3000-reduced.jpg",
             "CategoryId": 7,
             "SkinAreaIds": [1, 3],
-            "Tags": ["Bath"]
+            "Tags": ["Bath"],
+            "CampaignId": null
         },
         {
             "Id": 21,
             "Name": "Menthol soap",
             "Description": "",
             "Price": 100,
-            "ImagePath": "/menthol/mphlix-body-care-soaps-multipurpose-menthol-497x557.jpg",
+            "ImagePath": "/menthol/mphlix-body-care-soaps-multipurpose-menthol-496x496.jpg",
             "CategoryId": 7,
             "SkinAreaIds": [1, 3],
-            "Tags": ["Bath"]
+            "Tags": ["Bath"],
+            "CampaignId": null
         },
         {
             "Id": 21,
@@ -219,7 +240,8 @@
             "ImagePath": "/honey-milk/mphlix-body-care-soaps-multipurpose-honey-milk-606x614.jpeg",
             "CategoryId": 7,
             "SkinAreaIds": [1, 3],
-            "Tags": ["Bath"]
+            "Tags": ["Bath"],
+            "CampaignId": null
         },
         {
             "Id": 22,
@@ -229,7 +251,41 @@
             "ImagePath": "/mphlix-hair-care-serum-3000x3000-reduced.jpg",
             "CategoryId": 20,
             "SkinAreaIds": [2],
-            "Tags": ["Bath"]
+            "Tags": ["Bath"],
+            "CampaignId": null
+        },
+        {
+            "Id": 23,
+            "Name": "Lip Kit",
+            "Description": "",
+            "Price": 100,
+            "ImagePath": "/lip-kit/mphlix-grooming-lip-care-lip-kit-720x1280.jpg",
+            "CategoryId": 10,
+            "SkinAreaIds": [6],
+            "Tags": [],
+            "CampaignId": null
+        },
+        {
+            "Id": 24,
+            "Name": "Lip Scrub",
+            "Description": "",
+            "Price": 100,
+            "ImagePath": "/lip-scrub/mphlix-grooming-lip-care-lip-scrub-436x436-reduced.jpg",
+            "CategoryId": 10,
+            "SkinAreaIds": [6],
+            "Tags": [],
+            "CampaignId": null
+        },
+        {
+            "Id": 25,
+            "Name": "Lip Stick",
+            "Description": "",
+            "Price": 100,
+            "ImagePath": "/lip-stick/mphlix-grooming-lip-care-lip-stick-1080-1080-squared.png",
+            "CategoryId": 10,
+            "SkinAreaIds": [6],
+            "Tags": [],
+            "CampaignId": null
         }
     ]
 }

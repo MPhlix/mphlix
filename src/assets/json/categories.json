@@ -55,9 +55,9 @@
     },
     {
         "Id": 10,
-        "Name": "Lip Balms",
+        "Name": "Lip Care",
         "ParentCategoryId": 2,
-        "ImageFolderPath": "/lip-balms"
+        "ImageFolderPath": "/lip-care"
     },
     {
         "Id": 11,
@@ -136,5 +136,11 @@
         "Name": "Multipurpose",
         "ParentCategoryId": 22,
         "ImageFolderPath": "/multipurpose"
+    },
+    {
+        "Id": 24,
+        "Name": "Lip Balms",
+        "ParentCategoryId": 10,
+        "ImageFolderPath": "/lip-balms"
     }
 ]
