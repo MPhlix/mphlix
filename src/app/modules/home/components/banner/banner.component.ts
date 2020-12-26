@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Router, Params } from '@angular/router';
+import { Banner } from '../../models/Banner';
 
 @Component({
   selector: 'banner',
@@ -9,28 +10,34 @@ import { Router, Params } from '@angular/router';
 })
 export class BannerComponent implements OnInit {
 
-  Images = [
+  Banners: Banner[] = [
     {
       src: '../../../assets/images/Banner/bg_1-reduced.png',
       id: 0,
-      hasUrl: false
+      hasUrl: false,
+      priority: 1
     },
     {
       src: '../../../assets/images/Banner/bg_2-reduced.png',
       id: 1,
-      hasUrl: false
+      hasUrl: false,
+      priority: 1
     },
     {
       src: '../../../assets/images/Banner/bg-2_2-removebg-reduced-removebg.png',
       id: 2,
-      hasUrl: false
+      hasUrl: false,
+      priority: 1
     },
     {
       src: '../../../assets/images/Banner/liptrip.png',
       id: 3,
-      hasUrl: true
+      hasUrl: true,
+      priority: 0
     }
   ];
+
+  SortedBanners : Banner[];
 
   showSkinTypeQuiz = false;
 
@@ -47,12 +54,13 @@ export class BannerComponent implements OnInit {
     },
     nav: false,
     autoplay: true,
-    autoplayTimeout: 3000
+    autoplayTimeout: 5000
   }
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   ngOnInit() {
+    this.SortedBanners = this.Banners.sort((a, b) => a.priority - b.priority);
   }
 
   showMainMenu() {

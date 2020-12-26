@@ -21,16 +21,16 @@
     </div>
     <div class="col-12 col-lg-7 col-md-6 carousel-container">
       <owl-carousel-o [options]="customOptions">
-        <ng-template carouselSlide *ngFor="let image of Images">
-          <ng-container *ngIf="image.hasUrl then withUrl else withoutUrl">
+        <ng-template carouselSlide *ngFor="let banner of SortedBanners | trackBy:banner.id">
+          <ng-container *ngIf="banner.hasUrl then withUrl else withoutUrl">
           </ng-container>
           <ng-template #withUrl>
             <a [routerLink]="" (click)="changeUrl()">
-              <img [src]="image.src" [attr.is-large]="image.isLarge">
+              <img [src]="banner.src" [attr.is-large]="banner.isLarge">
             </a>
           </ng-template>
           <ng-template #withoutUrl>
-            <img [src]="image.src" [attr.is-large]="image.isLarge">
+            <img [src]="banner.src" [attr.is-large]="banner.isLarge">
           </ng-template>
         </ng-template>
       </owl-carousel-o>
