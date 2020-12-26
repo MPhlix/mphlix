@@ -142,5 +142,11 @@
         "Name": "Lip Balms",
         "ParentCategoryId": 10,
         "ImageFolderPath": "/lip-balms"
+    },
+    {
+        "Id": 25,
+        "Name": "Serum",
+        "ParentCategoryId": 21,
+        "ImageFolderPath": "/serum"
     }
 ]
