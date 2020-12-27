@@ -148,5 +148,35 @@
         "Name": "Serum",
         "ParentCategoryId": 21,
         "ImageFolderPath": "/serum"
+    },
+    {
+        "Id": 26,
+        "Name": "Beard Oil",
+        "ParentCategoryId": 2,
+        "ImageFolderPath": "/beard-oil"
+    },
+    {
+        "Id": 27,
+        "Name": "Body Scrub",
+        "ParentCategoryId": 1,
+        "ImageFolderPath": "/body-scrub"
+    },
+    {
+        "Id": 28,
+        "Name": "Face Wash",
+        "ParentCategoryId": 1,
+        "ImageFolderPath": "/face-wash"
+    },
+    {
+        "Id": 29,
+        "Name": "Gel",
+        "ParentCategoryId": 21,
+        "ImageFolderPath": "/gel"
+    },
+    {
+        "Id": 30,
+        "Name": "Oil",
+        "ParentCategoryId": 3,
+        "ImageFolderPath": "/oil"
     }
 ]

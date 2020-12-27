@@ -3,5 +3,10 @@
         "Id": 1,
         "Name": "The Lip Trip",
         "Tag": ["liptrip"]
+    },
+    {
+        "Id": 2,
+        "Name": "Essentials",
+        "Tag": ["Essentials", "Essential"]
     }
 ]

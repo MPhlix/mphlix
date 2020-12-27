@@ -233,7 +233,7 @@
             "CampaignId": null
         },
         {
-            "Id": 21,
+            "Id": 22,
             "Name": "Honey and Milk soap",
             "Description": "",
             "Price": 150,
@@ -244,7 +244,7 @@
             "CampaignId": null
         },
         {
-            "Id": 22,
+            "Id": 23,
             "Name": "Hair care Serum",
             "Description": "",
             "Price": 150,
@@ -255,7 +255,7 @@
             "CampaignId": null
         },
         {
-            "Id": 23,
+            "Id": 24,
             "Name": "Lip Kit",
             "Description": "",
             "Price": 250,
@@ -266,18 +266,18 @@
             "CampaignId": null
         },
         {
-            "Id": 24,
-            "Name": "Lip Scrub",
+            "Id": 25,
+            "Name": "Cinnamon Lip Scrub",
             "Description": "",
             "Price": 130,
-            "ImagePath": "/lip-scrub/mphlix-grooming-lip-care-lip-scrub-436x436-reduced.jpg",
+            "ImagePath": "/lip-scrub/mphlix-grooming-lip-care-lip-scrub-cinnamon-436x436-reduced.jpg",
             "CategoryId": 10,
             "SkinAreaIds": [6],
             "Tags": [],
             "CampaignId": null
         },
         {
-            "Id": 25,
+            "Id": 26,
             "Name": "Charcoal Royale 50gm soap",
             "Description": "",
             "Price": 80,
@@ -288,7 +288,7 @@
             "CampaignId": null
         },
         {
-            "Id": 26,
+            "Id": 27,
             "Name": "Charcoal Soaps Poker set",
             "Description": "",
             "Price": 80,
@@ -299,7 +299,7 @@
             "CampaignId": null
         },
         {
-            "Id": 27,
+            "Id": 28,
             "Name": "Coffee Soap",
             "Description": "",
             "Price": 100,
@@ -310,7 +310,7 @@
             "CampaignId": null
         },
         {
-            "Id": 28,
+            "Id": 29,
             "Name": "Glycerol Moisturizing soap",
             "Description": "",
             "Price": 100,
@@ -321,12 +321,221 @@
             "CampaignId": null
         },
         {
-            "Id": 29,
+            "Id": 30,
             "Name": "Skin care serum",
             "Description": "",
             "Price": 100,
             "ImagePath": "/mphlix-skin-care-serum-436x436-squared.jpg",
             "CategoryId": 25,
+            "SkinAreaIds": [1, 3],
+            "Tags": ["Bath"],
+            "CampaignId": null
+        },
+        {
+            "Id": 31,
+            "Name": "Beard Oil",
+            "Description": "",
+            "Price": 100,
+            "ImagePath": "/mphlix-grooming-beard-oil-436x436.jpg",
+            "CategoryId": 26,
+            "SkinAreaIds": [3, 9],
+            "Tags": [],
+            "CampaignId": null
+        },
+        {
+            "Id": 32,
+            "Name": "Chocolate soap",
+            "Description": "",
+            "Price": 100,
+            "ImagePath": "/chocolate/mphlix-body-care-soaps-multipurpose-chocolate-chocolate-soaps-436x436.jpg",
+            "CategoryId": 7,
+            "SkinAreaIds": [1, 3],
+            "Tags": ["Bath"],
+            "CampaignId": null
+        },
+        {
+            "Id": 33,
+            "Name": "Coffee and Milk soap",
+            "Description": "",
+            "Price": 100,
+            "ImagePath": "/coffee/mphlix-body-care-soaps-multipurpose-coffee-coffee-and-milk-soap-1080x1080.jpg",
+            "CategoryId": 7,
+            "SkinAreaIds": [1, 3],
+            "Tags": ["Bath"],
+            "CampaignId": null
+        },
+        {
+            "Id": 34,
+            "Name": "Poker set gift hamper",
+            "Description": "",
+            "Price": 100,
+            "ImagePath": "/poker-set/mphlix-body-care-soap-multipurpose-poker-set-glycerine-gift-hamper-340x270.jpg",
+            "CategoryId": 7,
+            "SkinAreaIds": [1, 3],
+            "Tags": ["Bath"],
+            "CampaignId": null
+        },
+        {
+            "Id": 35,
+            "Name": "Clear Skin Gel",
+            "Description": "",
+            "Price": 100,
+            "ImagePath": "/mphlix-skin-care-gel-clear-skin-gel-436x436.jpg",
+            "CategoryId": 29,
+            "SkinAreaIds": [1, 3],
+            "Tags": ["Bath"],
+            "CampaignId": null
+        },
+        {
+            "Id": 36,
+            "Name": "Haldi Kesar Soap",
+            "Description": "",
+            "Price": 100,
+            "ImagePath": "/haldi-kesar/mphlix-body-care-soaps-multipurpose-haldi-and-kesar-soap-436x436.jpg",
+            "CategoryId": 7,
+            "SkinAreaIds": [1, 3],
+            "Tags": ["Bath"],
+            "CampaignId": null
+        },
+        {
+            "Id": 37,
+            "Name": "Cocoa and Salt Body Scrub",
+            "Description": "",
+            "Price": 100,
+            "ImagePath": "/mphlix-body-care-body-scrub-cocoa-and-salt-320x394.jpg",
+            "CategoryId": 27,
+            "SkinAreaIds": [1, 3],
+            "Tags": ["Bath"],
+            "CampaignId": null
+        },
+        {
+            "Id": 38,
+            "Name": "Cocoa Walnut Face Wash",
+            "Description": "",
+            "Price": 100,
+            "ImagePath": "/mphlix-body-care-face-wash-cocoa-walnut-facewash-436x436.jpg",
+            "CategoryId": 28,
+            "SkinAreaIds": [1, 3],
+            "Tags": ["Bath"],
+            "CampaignId": null
+        },
+        {
+            "Id": 39,
+            "Name": "Green Tea Lip Scrub",
+            "Description": "",
+            "Price": 250,
+            "ImagePath": "/lip-scrub/mphlix-grooming-lip-care-lip-scrub-green-tea-lip-scrub-436x436.jpg",
+            "CategoryId": 10,
+            "SkinAreaIds": [6],
+            "Tags": [],
+            "CampaignId": null
+        },
+        {
+            "Id": 40,
+            "Name": "Honey and Oats Lip Scrub",
+            "Description": "",
+            "Price": 250,
+            "ImagePath": "/lip-scrub/mphlix-grooming-lip-care-lip-scrub-honey-and-oats-lip-scrub-436x436.jpg",
+            "CategoryId": 10,
+            "SkinAreaIds": [6],
+            "Tags": [],
+            "CampaignId": null
+        },
+        {
+            "Id": 41,
+            "Name": "Lemon Lip Scrub",
+            "Description": "",
+            "Price": 250,
+            "ImagePath": "/lip-scrub/mphlix-grooming-lip-care-lip-scrub-lemon-lip-scrub-436x436.jpg",
+            "CategoryId": 10,
+            "SkinAreaIds": [6],
+            "Tags": [],
+            "CampaignId": null
+        },
+        {
+            "Id": 42,
+            "Name": "Orange Body Wash",
+            "Description": "",
+            "Price": 150,
+            "ImagePath": "/orange/mphlix-body-care-body-washes-orange-436x436.jpg",
+            "CategoryId": 16,
+            "SkinAreaIds": [1, 7, 8],
+            "Tags": ["Bath"],
+            "CampaignId": null
+        },
+        {
+            "Id": 43,
+            "Name": "Multipurpose Coffee Gel",
+            "Description": "",
+            "Price": 100,
+            "ImagePath": "/mphlix-skin-care-gel-multipurpose-coffee-gel-1055x1055.jpg",
+            "CategoryId": 29,
+            "SkinAreaIds": [1, 3],
+            "Tags": ["Bath"],
+            "CampaignId": null
+        },
+        {
+            "Id": 44,
+            "Name": "Cocoa Lip Scrub",
+            "Description": "",
+            "Price": 130,
+            "ImagePath": "/lip-scrub/mphlix-grooming-lip-care-lip-scrub-cocoa-lip-scrub-436x436.jpg",
+            "CategoryId": 10,
+            "SkinAreaIds": [6],
+            "Tags": [],
+            "CampaignId": null
+        },
+        {
+            "Id": 45,
+            "Name": "Orange Lip Scrub",
+            "Description": "",
+            "Price": 130,
+            "ImagePath": "/lip-scrub/mphlix-grooming-lip-care-lip-scrub-orange-lip-scrub-436x436.jpg",
+            "CategoryId": 10,
+            "SkinAreaIds": [6],
+            "Tags": [],
+            "CampaignId": null
+        },
+        {
+            "Id": 46,
+            "Name": "Goat Milk soap",
+            "Description": "",
+            "Price": 100,
+            "ImagePath": "/goat-milk/mphlix-body-care-soaps-multipurpose-goat-milk-436x436.jpg",
+            "CategoryId": 7,
+            "SkinAreaIds": [1, 3],
+            "Tags": ["Bath"],
+            "CampaignId": null
+        },
+        {
+            "Id": 47,
+            "Name": "Mixed Herbs soap",
+            "Description": "",
+            "Price": 100,
+            "ImagePath": "/mixed-herbs/mphlix-body-care-soaps-multipurpose-mixed-herbs-3000x4000.jpg",
+            "CategoryId": 7,
+            "SkinAreaIds": [1, 3],
+            "Tags": ["Bath"],
+            "CampaignId": null
+        },
+        {
+            "Id": 48,
+            "Name": "Multani Mitti soap",
+            "Description": "",
+            "Price": 100,
+            "ImagePath": "/multani-mitti/mphlix-body-care-soaps-multipurpose-multani-mitti-3000x4000.jpg",
+            "CategoryId": 7,
+            "SkinAreaIds": [1, 3],
+            "Tags": ["Bath"],
+            "CampaignId": null
+        },
+        {
+            "Id": 49,
+            "Name": "",
+            "Description": "",
+            "Price": 100,
+            "ImagePath": "/mphlix-hair-care-oil-hair-oil-4000x3000.jpg",
+            "CategoryId": 30,
             "SkinAreaIds": [1, 3],
             "Tags": ["Bath"],
             "CampaignId": null
