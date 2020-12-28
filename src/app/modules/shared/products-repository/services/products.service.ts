@@ -11,6 +11,7 @@ import { ProductMini } from '../interfaces/Product/ProductMini';
 import { EntityRepopulation } from '../../common-interfaces/interfaces/entity-repopulation.interface';
 import { ObjectHelper } from '../../common-utils/helper-services/object-helper';
 import { CampaignsService } from './campaigns.service';
+import { ProductUnitTypeService } from './product-unit-type.service';
 
 @Injectable({
   providedIn: 'root'
@@ -21,7 +22,8 @@ export class ProductsService implements EntityRepopulation {
   private productsMini: ProductMini[];
 
   constructor(private categoriesService: CategoriesService, private skinAreaService: SkinAreaService,
-    private objectHelper: ObjectHelper, private campaignsService: CampaignsService) {
+    private objectHelper: ObjectHelper, private campaignsService: CampaignsService,
+    private productUnitTypeService: ProductUnitTypeService) {
     this.productsContainer = (productsJson as any).default as ProductsContainer;
     this.productsContainer.Products.forEach(a => this.repopulate(a));
     this.productsMini = this.productsContainer.Products.map(product => this.convertProductToMini(product));
@@ -35,6 +37,8 @@ export class ProductsService implements EntityRepopulation {
     product.Tags = product.Tags;
     if (!this.objectHelper.isEmptyOrZero(product.CampaignId))
       product.Campaign = this.campaignsService.getById(product.CampaignId);
+    if (!this.objectHelper.isEmptyOrZero(product.ProductUnitTypeId))
+      product.ProductUnitType = this.productUnitTypeService.getById(product.ProductUnitTypeId);
   }
 
   getAllProducts() {

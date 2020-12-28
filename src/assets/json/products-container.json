@@ -15,7 +15,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 2,
@@ -31,7 +32,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 3,
@@ -47,7 +49,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 4,
@@ -63,7 +66,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 5,
@@ -79,7 +83,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 6,
@@ -95,7 +100,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 7,
@@ -111,7 +117,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 8,
@@ -127,7 +134,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 9,
@@ -143,7 +151,8 @@
             "Tags": [
                 "Lotion"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 10,
@@ -156,7 +165,8 @@
                 6
             ],
             "Tags": [],
-            "CampaignId": 1
+            "CampaignId": 1,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 11,
@@ -172,7 +182,8 @@
                 "Hairfall",
                 "Dandruff"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 12,
@@ -187,7 +198,8 @@
             "Tags": [
                 "Germs"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 13,
@@ -207,7 +219,8 @@
                 "Beauty",
                 "Water"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 14,
@@ -222,7 +235,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 15,
@@ -238,7 +252,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 16,
@@ -255,7 +270,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 17,
@@ -271,7 +287,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 18,
@@ -287,7 +304,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 19,
@@ -302,7 +320,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 20,
@@ -318,7 +337,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 21,
@@ -334,7 +354,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 22,
@@ -350,7 +371,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 23,
@@ -365,7 +387,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 24,
@@ -378,7 +401,8 @@
                 6
             ],
             "Tags": [],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 25,
@@ -391,7 +415,8 @@
                 6
             ],
             "Tags": [],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 26,
@@ -407,7 +432,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 27,
@@ -423,7 +449,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 28,
@@ -439,7 +466,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 29,
@@ -455,7 +483,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 30,
@@ -471,7 +500,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 31,
@@ -485,7 +515,8 @@
                 9
             ],
             "Tags": [],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 32,
@@ -501,7 +532,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 33,
@@ -517,7 +549,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 34,
@@ -533,7 +566,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 35,
@@ -549,7 +583,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 36,
@@ -565,7 +600,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 37,
@@ -581,7 +617,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 38,
@@ -597,7 +634,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 39,
@@ -610,7 +648,8 @@
                 6
             ],
             "Tags": [],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 40,
@@ -623,7 +662,8 @@
                 6
             ],
             "Tags": [],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 41,
@@ -636,7 +676,8 @@
                 6
             ],
             "Tags": [],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 42,
@@ -653,7 +694,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 43,
@@ -669,7 +711,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 44,
@@ -682,7 +725,8 @@
                 6
             ],
             "Tags": [],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 45,
@@ -695,7 +739,8 @@
                 6
             ],
             "Tags": [],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 46,
@@ -711,7 +756,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 47,
@@ -727,7 +773,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 48,
@@ -743,7 +790,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 49,
@@ -759,7 +807,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 50,
@@ -775,7 +824,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         },
         {
             "Id": 51,
@@ -791,7 +841,8 @@
             "Tags": [
                 "Bath"
             ],
-            "CampaignId": null
+            "CampaignId": null,
+            "ProductUnitTypeId": 1
         }
     ]
 }
