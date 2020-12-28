@@ -178,5 +178,17 @@
         "Name": "Oil",
         "ParentCategoryId": 3,
         "ImageFolderPath": "/oil"
+    },
+    {
+        "Id": 31,
+        "Name": "Bath Oil",
+        "ParentCategoryId": 1,
+        "ImageFolderPath": "/bath-oil"
+    },
+    {
+        "Id": 32,
+        "Name": "Scalp Scrub",
+        "ParentCategoryId": 3,
+        "ImageFolderPath": "/scalp-scrub"
     }
 ]
