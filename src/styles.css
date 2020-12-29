@@ -1214,3 +1214,8 @@ html, body {
 body {
     margin: 0;
 }
+
+.mat-dialog-container {
+    padding-right: 12px !important;
+    padding-left: 12px !important;
+}

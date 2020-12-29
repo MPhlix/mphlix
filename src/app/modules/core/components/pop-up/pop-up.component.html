@@ -1,0 +1,34 @@
+<h2 mat-dialog-title>How to order from us</h2>
+<mat-dialog-content class="mat-typography">
+    <div class="container-fluid m-0">
+        <div class="row">
+            <div class="col-sm">
+                Connect us on following platforms to place orders:
+                <div class="row text-center">
+                    <div *ngFor="let profile of socialProfiles; let i = index" class="social-media-icon col-sm-12 col-3">
+                        <a [href]="profile.Url">
+                            <!-- <i class="{{profile.iconClass}} fa-2x"></i> -->
+                            <div *ngIf="!!profile.HasIconImage; then imageTemplate else svgTemplate"></div>
+                            <ng-template #svgTemplate>
+                                <svg-icon [name]="profile.SvgIconId" [style]="{ height: '40px', width:'40px' }">
+                                </svg-icon>
+                            </ng-template>
+                            <ng-template #imageTemplate>
+                                <img [src]="profile.IconImageName" height="40px" width="40px">
+                            </ng-template>
+                        </a>
+                        <ng-container *ngIf="i < socialProfiles.length - 1 then break">
+                        </ng-container>
+                        <ng-template #break>
+                            <br>
+                            <br>
+                        </ng-template>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <img src="assets/images/Banner/how-to-order.png" alt="" width="330">
+            </div>
+        </div>
+    </div>
+</mat-dialog-content>

@@ -1,11 +1,53 @@
 {
+    "ImagePath": "/assets/images/social-media-images/",
     "Websites": [
         {
             "Id": 1,
             "Name": "youtube",
             "Url": "https://www.youtube.com/",
             "EmbeddingUrl": "embed/{videoId}",
-            "VideoIdPlaceholder": "{videoId}"
+            "VideoIdPlaceholder": "{videoId}",
+            "SocialMediaTypeIds": [2]
+        },
+        {
+            "Id": 2,
+            "Name": "whatsapp",
+            "Url": "https://wa.me/",
+            "SvgIconId": "whatsapp",
+            "EmbeddingUrl": "{isd}{phoneNumber}",
+            "CountryCodePlaceholder": "{isd}",
+            "PhoneNumberPlaceholder": "{phoneNumber}",
+            "SocialMediaTypeIds": [1]
+        },
+        {
+            "Id": 3,
+            "Name": "instagram",
+            "IconClass": "fa fa-instagram",
+            "Url": "https://www.instagram.com/",
+            "SvgIconId": "instagram_mini",
+            "IconImageName": "instagram-64.png",
+            "EmbeddingUrl": "embed/{videoId}",
+            "VideoIdPlaceholder": "{videoId}",
+            "SocialMediaTypeIds": [1]
+        },
+        {
+            "Id": 4,
+            "Name": "twitter",
+            "Url": "https://twitter.com/",
+            "SvgIconId": "twitter_mini",
+            "EmbeddingUrl": "embed/{videoId}",
+            "VideoIdPlaceholder": "{videoId}",
+            "SocialMediaTypeIds": [1]
+        },
+        {
+            "Id": 5,
+            "Name": "facebook",
+            "IconClass": "fa fa-facebook",
+            "Url": "https://www.facebook.com/",
+            "SvgIconId": "facebook_mini",
+            "EmbeddingUrl": "embed/{videoId}",
+            "VideoIdPlaceholder": "{videoId}",
+            "SocialMediaTypeIds": [1]
         }
     ]
 }

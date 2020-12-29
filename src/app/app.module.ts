@@ -10,6 +10,7 @@ import { ProductsModule } from './modules/products/products.module';
 import { HomeModule } from './modules/home/home.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './modules/core/core.module';
+import { CommonComponentsModule } from './modules/shared/common-components/common-components.module';
 
 const appRoutes: Routes = [
   {
@@ -39,6 +40,7 @@ const appRoutes: Routes = [
     CoreModule,
     ProductsModule,
     HomeModule,
+    CommonComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,10 @@
+@media (max-width: 575px) {
+    .mat-dialog-content {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+}
+
+.text-center {
+    text-align: center;
+}

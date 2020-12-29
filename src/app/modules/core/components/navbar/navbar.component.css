@@ -1,7 +1,26 @@
 nav {
-    line-height: 1.0;
+    line-height: 1;
 }
 
 .scrolled .collapse.navbar-collapse {
     padding-top: 15px;
+}
+
+#orderLink span {
+    color: white;
+    background: #8cc137;
+    box-shadow: 0 0 10px #35151594;
+    animation-delay: 3s;
+    animation: glow 1000ms 3;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+
+@keyframes glow {
+    50% {
+        background: rgba(255, 0, 0, 0.5);
+        box-shadow: 0 0 10px red;
+    }
 }

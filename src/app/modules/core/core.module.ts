@@ -14,17 +14,23 @@ import { MembersService } from './services/members.service';
 import { SvgDefinitionsComponent } from './components/svg-definitions/svg-definitions.component';
 import { SvgIconComponent } from './components/svg-icon/svg-icon.component';
 import { ReleaseService } from './services/release.service';
+import { CommonComponentsModule } from '../shared/common-components/common-components.module';
+import { PopUpComponent } from './components/pop-up/pop-up.component';
+import { MatDialogModule } from '@angular/material';
 
 @NgModule({
   declarations: [
     FooterComponent,
     NavbarComponent,
     SvgDefinitionsComponent,
-    SvgIconComponent
+    SvgIconComponent,
+    PopUpComponent
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    CommonComponentsModule,
+    MatDialogModule
   ],
   exports: [
     FooterComponent,
@@ -37,6 +43,9 @@ import { ReleaseService } from './services/release.service';
     ScreenResizeService,
     MembersService,
     ReleaseService
+  ],
+  entryComponents: [
+    PopUpComponent
   ]
 })
 export class CoreModule { }
