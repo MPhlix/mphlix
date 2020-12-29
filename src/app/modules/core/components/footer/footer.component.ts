@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ReleaseService } from '../../services/release.service';
+import { AppConfigService } from '../../services/app-config.service';
 
 @Component({
   selector: 'app-footer',
@@ -9,10 +9,10 @@ import { ReleaseService } from '../../services/release.service';
 export class FooterComponent implements OnInit {
   version : string;
 
-  constructor(private releaseService: ReleaseService) { }
+  constructor(private appConfigService: AppConfigService) { }
 
   ngOnInit() {
-    this.version = this.releaseService.getReleaseInformation();
+    this.version = this.appConfigService.getReleaseInformation();
   }
 
 }

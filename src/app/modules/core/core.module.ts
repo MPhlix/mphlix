@@ -13,7 +13,7 @@ import { ScreenResizeService } from './services/screen-resize.service';
 import { MembersService } from './services/members.service';
 import { SvgDefinitionsComponent } from './components/svg-definitions/svg-definitions.component';
 import { SvgIconComponent } from './components/svg-icon/svg-icon.component';
-import { ReleaseService } from './services/release.service';
+import { AppConfigService } from './services/app-config.service';
 import { CommonComponentsModule } from '../shared/common-components/common-components.module';
 import { PopUpComponent } from './components/pop-up/pop-up.component';
 import { MatDialogModule } from '@angular/material';
@@ -42,7 +42,7 @@ import { MatDialogModule } from '@angular/material';
     SkinTypeService,
     ScreenResizeService,
     MembersService,
-    ReleaseService
+    AppConfigService
   ],
   entryComponents: [
     PopUpComponent
