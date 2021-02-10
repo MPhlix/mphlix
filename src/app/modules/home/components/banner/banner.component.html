@@ -25,7 +25,7 @@
           <ng-container *ngIf="banner.hasUrl then withUrl else withoutUrl">
           </ng-container>
           <ng-template #withUrl>
-            <a [routerLink]="" (click)="changeUrl()">
+            <a [routerLink]="" (click)="changeUrl(banner.keyword)">
               <img [src]="banner.src" [attr.is-large]="banner.isLarge">
             </a>
           </ng-template>

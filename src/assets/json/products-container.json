@@ -843,6 +843,57 @@
             ],
             "CampaignId": null,
             "ProductUnitTypeId": 1
+        },
+        {
+            "Id": 52,
+            "Name": "Valentine's Hamper",
+            "Description": "",
+            "Price": 300,
+            "ImagePath": "/valentines-day/mphlix-gift-hampers-valentines-hamper-customizable.jpg",
+            "CategoryId": 17,
+            "SkinAreaIds": [
+                1,
+                3
+            ],
+            "Tags": [
+                "Bath"
+            ],
+            "CampaignId": 3,
+            "ProductUnitTypeId": 1
+        },
+        {
+            "Id": 53,
+            "Name": "Valentine's Gift Basket",
+            "Description": "",
+            "Price": 100,
+            "ImagePath": "/valentines-day/mphlix-gift-hampers-valentines-gift-basket.jpg",
+            "CategoryId": 17,
+            "SkinAreaIds": [
+                1,
+                3
+            ],
+            "Tags": [
+                "Bath"
+            ],
+            "CampaignId": 3,
+            "ProductUnitTypeId": 1
+        },
+        {
+            "Id": 54,
+            "Name": "Valentine's Special Mini-Hampers",
+            "Description": "",
+            "Price": 200,
+            "ImagePath": "/valentines-day/mphlix-gift-hampers-valentines-special-mini-hampers.jpg",
+            "CategoryId": 17,
+            "SkinAreaIds": [
+                1,
+                3
+            ],
+            "Tags": [
+                "Bath"
+            ],
+            "CampaignId": 3,
+            "ProductUnitTypeId": 1
         }
     ]
 }
