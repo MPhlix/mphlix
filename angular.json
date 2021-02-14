@@ -20,7 +20,7 @@
             "tsConfig": "tsconfig.app.json",
             "aot": false,
             "assets": [
-              "src/favicon.ico",
+              "src/assets/icons",
               "src/assets/fonts",
               "src/assets/images",
               "src/CNAME"
@@ -36,7 +36,6 @@
               "src/assets/css/aos.css",
               "src/assets/css/ionicons.min.css",
               "node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css",
-              "src/assets/css/flaticon.css",
               "src/assets/css/icomoon.css",
               "src/assets/css/minimal-form/minimal-form.css",
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
