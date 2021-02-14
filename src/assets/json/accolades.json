@@ -40,28 +40,28 @@
             "Id": 6,
             "Name": "All Natural Beauty Products Couse - Mark Perren Jones Spa Training Academy",
             "AccoladeTypeId": 1,
-            "ImagePath": "/mphlix-accolades-certificates-all-natural-beauty-products-course-mahashweta-mohapatra-mark-perren-jones-spa-training-academy-reduced.png",
+            "ImagePath": "/mphlix-accolades-certificates-all-natural-beauty-products-course-mahashweta-mohapatra-mark-perren-jones-spa-training-academy-reduced.PNG",
             "IsActive" : true
         },
         {
             "Id": 7,
             "Name": "Lip Scrub Workshop - Creencia",
             "AccoladeTypeId": 1,
-            "ImagePath": "/mphlix-accolades-certificates-lip-scrub-workshop-mphlix-soapworks-creencia-reduced.png",
+            "ImagePath": "/mphlix-accolades-certificates-lip-scrub-workshop-mphlix-soapworks-creencia-reduced.PNG",
             "IsActive" : true
         },
         {
             "Id": 8,
             "Name": "Lips & Cheeks tint + Herbal Lipstick - Creencia",
             "AccoladeTypeId": 1,
-            "ImagePath": "/mphlix-accolades-certificates-lips-&-cheeks-tint-herbal-lipstick-the-liptrip-creencia-reduced.png",
+            "ImagePath": "/mphlix-accolades-certificates-lips-&-cheeks-tint-herbal-lipstick-the-liptrip-creencia-reduced.PNG",
             "IsActive" : true
         },
         {
             "Id": 9,
             "Name": "Taster Chakra Healing Practioner Course - International Association Of Therapists",
             "AccoladeTypeId": 1,
-            "ImagePath": "/mphlix-accolades-certificates-taster-chakra-healing-practioner-course-mahashweta-mohapatra-international-association-of-therapists-reduced.png",
+            "ImagePath": "/mphlix-accolades-certificates-taster-chakra-healing-practioner-course-mahashweta-mohapatra-international-association-of-therapists-reduced.PNG",
             "IsActive" : true
         },
         {
