@@ -26,6 +26,7 @@ import { TestimonialComponent } from './components/testimonial/testimonial.compo
 import { AccoladesComponent } from './components/accolades/accolades.component';
 // Importing services
 import { AccoladesService } from '../home/services/accolades.service';
+import { CoreModule } from '../core/core.module';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent }
@@ -54,7 +55,8 @@ const appRoutes: Routes = [
     NgxSpinnerModule,
     CarouselModule,
     RouterModule.forChild(appRoutes),
-    YouTubePlayerModule
+    YouTubePlayerModule,
+    CoreModule
   ],
   providers: [AccoladesService]
 })
