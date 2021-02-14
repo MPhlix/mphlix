@@ -206,7 +206,7 @@
             "Name": "Rose Mist water",
             "Description": "",
             "Price": 60,
-            "ImagePath": "/mphlix-skin-hydrants-rose-water-mist-1280x1280.jpeg",
+            "ImagePath": "/mphlix-skin-hydrants-rose-water-mist-1280x1280-reduced.jpeg",
             "CategoryId": 14,
             "SkinAreaIds": [
                 1,
@@ -278,7 +278,7 @@
             "Name": "Christmas gift",
             "Description": "",
             "Price": 220,
-            "ImagePath": "/christmas/mphlix-gifts-hampers-christmas-1536x1536.jpg",
+            "ImagePath": "/christmas/mphlix-gifts-hampers-christmas-1536x1536-reduced.jpg",
             "CategoryId": 17,
             "SkinAreaIds": [
                 1,
@@ -295,7 +295,7 @@
             "Name": "Baby soaps",
             "Description": "",
             "Price": 250,
-            "ImagePath": "/mphlix-body-care-soaps-baby-1280x1280.jpeg",
+            "ImagePath": "/mphlix-body-care-soaps-baby-1280x1280-reduced.jpeg",
             "CategoryId": 18,
             "SkinAreaIds": [
                 1,
@@ -312,7 +312,7 @@
             "Name": "Sea Minerals Neem Lemon hand washes",
             "Description": "",
             "Price": 130,
-            "ImagePath": "/sea-minerals-neem-lemon/mphlix-hygiene-hand-washes-sea-minerals-neem-lemon-1280x1280.jpeg",
+            "ImagePath": "/sea-minerals-neem-lemon/mphlix-hygiene-hand-washes-sea-minerals-neem-lemon-1280x1280-reduced.jpeg",
             "CategoryId": 19,
             "SkinAreaIds": [
                 7
@@ -440,7 +440,7 @@
             "Name": "Charcoal Soaps Poker set",
             "Description": "",
             "Price": 80,
-            "ImagePath": "/charcoal/mphlix-body-care-soaps-multipurpose-charcoal-charcoal-poker-set-1601x1601.jpg",
+            "ImagePath": "/charcoal/mphlix-body-care-soaps-multipurpose-charcoal-charcoal-poker-set-1601x1601-reduced.jpg",
             "CategoryId": 7,
             "SkinAreaIds": [
                 1,
@@ -702,7 +702,7 @@
             "Name": "Multipurpose Coffee Gel",
             "Description": "",
             "Price": 150,
-            "ImagePath": "/mphlix-skin-care-gel-multipurpose-coffee-gel-1055x1055.jpg",
+            "ImagePath": "/mphlix-skin-care-gel-multipurpose-coffee-gel-1055x1055-reduced.jpg",
             "CategoryId": 29,
             "SkinAreaIds": [
                 1,
@@ -764,7 +764,7 @@
             "Name": "Mixed Herbs soap",
             "Description": "",
             "Price": 150,
-            "ImagePath": "/mixed-herbs/mphlix-body-care-soaps-multipurpose-mixed-herbs-3000x4000.jpg",
+            "ImagePath": "/mixed-herbs/mphlix-body-care-soaps-multipurpose-mixed-herbs-3000x4000-reduced.jpg",
             "CategoryId": 7,
             "SkinAreaIds": [
                 1,
@@ -781,7 +781,7 @@
             "Name": "Multani Mitti soap",
             "Description": "",
             "Price": 150,
-            "ImagePath": "/multani-mitti/mphlix-body-care-soaps-multipurpose-multani-mitti-3000x4000.jpg",
+            "ImagePath": "/multani-mitti/mphlix-body-care-soaps-multipurpose-multani-mitti-3000x4000-reduced.jpg",
             "CategoryId": 7,
             "SkinAreaIds": [
                 1,
@@ -798,7 +798,7 @@
             "Name": "",
             "Description": "",
             "Price": 120,
-            "ImagePath": "/mphlix-hair-care-oil-hair-oil-3000x3000.jpg",
+            "ImagePath": "/mphlix-hair-care-oil-hair-oil-3000x3000-reduced.jpg",
             "CategoryId": 30,
             "SkinAreaIds": [
                 1,
@@ -815,7 +815,7 @@
             "Name": "",
             "Description": "",
             "Price": 150,
-            "ImagePath": "/mphlix-body-care-bath-oil-3000x3000.jpg",
+            "ImagePath": "/mphlix-body-care-bath-oil-3000x3000-reduced.jpg",
             "CategoryId": 31,
             "SkinAreaIds": [
                 1,
@@ -832,7 +832,7 @@
             "Name": "",
             "Description": "",
             "Price": 150,
-            "ImagePath": "/mphlix-hair-care-scrub-1912x1912.jpg",
+            "ImagePath": "/mphlix-hair-care-scalp-scrub-1912x1912-reduced.jpg",
             "CategoryId": 32,
             "SkinAreaIds": [
                 1,
@@ -893,6 +893,23 @@
                 "Bath"
             ],
             "CampaignId": 3,
+            "ProductUnitTypeId": 1
+        },
+        {
+            "Id": 55,
+            "Name": "Pink Clay Cleanser",
+            "Description": "",
+            "Price": 150,
+            "ImagePath": "/pink-clay-cleanser/mphlix-body-care-skin-care-creams-and-lotions-pink-clay-cleanser-reduced.jpg",
+            "CategoryId": 22,
+            "SkinAreaIds": [
+                1,
+                3
+            ],
+            "Tags": [
+                "Bath"
+            ],
+            "CampaignId": null,
             "ProductUnitTypeId": 1
         }
     ]

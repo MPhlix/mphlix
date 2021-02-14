@@ -22,13 +22,9 @@
                             <div class="explorer_info">
                                 <h3><a href="single_listings.html">{{product.Name}}</a></h3>
                                 <div style="font-size: 12px;">{{getCategoryBreadcrumbs(product.Category)}}</div>
-                                <ul>
-                                    <li style="font-size: 20px;">
-                                        <svg-icon name="currency_india"
-                                            [style]="{ height: '12px', width:'12px' }"></svg-icon>
-                                        {{product.Price}} each
-                                    </li>
-                                </ul>
+                                <svg-icon name="currency_india" [style]="{ height: '12px', width:'12px' }">
+                                </svg-icon>
+                                <span class="product-price">{{product.Price}} each</span>
                             </div>
                         </div>
                     </div>
