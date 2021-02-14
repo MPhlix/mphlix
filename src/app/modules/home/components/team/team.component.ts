@@ -14,7 +14,8 @@ export class TeamComponent implements OnInit {
     { name: 'instagram', url: 'https://www.instagram.com/' },
     { name: 'twitter', url: 'https://twitter.com/' },
     { name: 'github', url: 'https://www.github.com/' },
-    { name: 'facebook', url: 'https://www.facebook.com/' }
+    { name: 'facebook', url: 'https://www.facebook.com/' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/' }
   ];
 
   members: Member[] = [];

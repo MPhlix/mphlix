@@ -46,5 +46,39 @@
         "cssClass": {
             "anumKagdi": true
         }
+    },
+    {
+        "name": "Akshay Raut",
+        "position": "Technical Architect",
+        "socialMediaProfiles": [
+            {
+                "name": "github",
+                "profileId": "akshayraut1321",
+                "cssClass": "icon-github"
+            },
+            {
+                "name": "linkedin",
+                "profileId": "ng-akshay",
+                "cssClass": "icon-linkedin"
+            },
+            {
+                "name": "instagram",
+                "profileId": "akshayraut1321",
+                "cssClass": "icon-instagram"
+            },
+            {
+                "name": "twitter",
+                "profileId": "akshayraut1321",
+                "cssClass": "icon-twitter"
+            },
+            {
+                "name": "facebook",
+                "profileId": "akshayraut1321",
+                "cssClass": "icon-facebook"
+            }
+        ],
+        "cssClass": {
+            "akshayRaut": true
+        }
     }
 ]
