@@ -23,7 +23,6 @@
               "src/favicon.ico",
               "src/assets/fonts",
               "src/assets/images",
-              "src/assets/js",
               "src/CNAME"
             ],
             "styles": [
