@@ -5,70 +5,70 @@
             "Id": 1,
             "Name": "Professional Aroma Therapy Diploma - KEW Academy",
             "AccoladeTypeId": 1,
-            "ImagePath": "/mphlix-accolades-certificates-professional-aroma-therapy-diploma-mahashweta-mohapatra-kew-academy-1280x720.png",
+            "ImagePath": "/mphlix-accolades-certificates-professional-aroma-therapy-diploma-mahashweta-mohapatra-kew-academy-1280x720-reduced.png",
             "IsActive" : true
         },
         {
             "Id": 2,
             "Name": "Online Personal Makeup Tutorial - LTA School of Beauty",
             "AccoladeTypeId": 1,
-            "ImagePath": "/mphlix-accolades-certificates-online-personal-makeup-tutorial-mahashweta-mohapatra-lta-school-of-beauty-911x648.png",
+            "ImagePath": "/mphlix-accolades-certificates-online-personal-makeup-tutorial-mahashweta-mohapatra-lta-school-of-beauty-911x648-reduced.png",
             "IsActive" : true
         },
         {
             "Id": 3,
             "Name": "Aromatherapy For Natural Living - Mark Perren Jones Spa Training Academy",
             "AccoladeTypeId": 1,
-            "ImagePath": "/mphlix-accolades-certificates-aromatherapy-for-natural-living-mahashweta-mohapatra-mark-perren-jones-spa-training-academy-950x734.png",
+            "ImagePath": "/mphlix-accolades-certificates-aromatherapy-for-natural-living-mahashweta-mohapatra-mark-perren-jones-spa-training-academy-950x734-reduced.png",
             "IsActive" : true
         },
         {
             "Id": 4,
             "Name": "Barbicide COVID-19 Certification - Professional Beauty Training",
             "AccoladeTypeId": 1,
-            "ImagePath": "/mphlix-accolades-certificates-barbicide-covid-19-certification-mahashweta-mohapatra-professional-beauty-training-1010x715.png",
+            "ImagePath": "/mphlix-accolades-certificates-barbicide-covid-19-certification-mahashweta-mohapatra-professional-beauty-training-1010x715-reduced.png",
             "IsActive" : true
         },
         {
             "Id": 5,
             "Name": "Beautify The Future - Lakme Salon",
             "AccoladeTypeId": 1,
-            "ImagePath": "/mphlix-accolades-certificates-beautify-the-future-mahashweta-mohapatra-lakme-salon-980x1156.jpg",
+            "ImagePath": "/mphlix-accolades-certificates-beautify-the-future-mahashweta-mohapatra-lakme-salon-980x1156-reduced.jpg",
             "IsActive" : false
         },
         {
             "Id": 6,
             "Name": "All Natural Beauty Products Couse - Mark Perren Jones Spa Training Academy",
             "AccoladeTypeId": 1,
-            "ImagePath": "/mphlix-accolades-certificates-all-natural-beauty-products-course-mahashweta-mohapatra-mark-perren-jones-spa-training-academy.PNG",
+            "ImagePath": "/mphlix-accolades-certificates-all-natural-beauty-products-course-mahashweta-mohapatra-mark-perren-jones-spa-training-academy-reduced.png",
             "IsActive" : true
         },
         {
             "Id": 7,
             "Name": "Lip Scrub Workshop - Creencia",
             "AccoladeTypeId": 1,
-            "ImagePath": "/mphlix-accolades-certificates-lip-scrub-workshop-mphlix-soapworks-creencia.PNG",
+            "ImagePath": "/mphlix-accolades-certificates-lip-scrub-workshop-mphlix-soapworks-creencia-reduced.png",
             "IsActive" : true
         },
         {
             "Id": 8,
             "Name": "Lips & Cheeks tint + Herbal Lipstick - Creencia",
             "AccoladeTypeId": 1,
-            "ImagePath": "/mphlix-accolades-certificates-lips-&-cheeks-tint-herbal-lipstick-the-liptrip-creencia.PNG",
+            "ImagePath": "/mphlix-accolades-certificates-lips-&-cheeks-tint-herbal-lipstick-the-liptrip-creencia-reduced.png",
             "IsActive" : true
         },
         {
             "Id": 9,
             "Name": "Taster Chakra Healing Practioner Course - International Association Of Therapists",
             "AccoladeTypeId": 1,
-            "ImagePath": "/mphlix-accolades-certificates-taster-chakra-healing-practioner-course-mahashweta-mohapatra-international-association-of-therapists.PNG",
+            "ImagePath": "/mphlix-accolades-certificates-taster-chakra-healing-practioner-course-mahashweta-mohapatra-international-association-of-therapists-reduced.png",
             "IsActive" : true
         },
         {
             "Id": 10,
             "Name": "Hair Care Workshop - Creencia",
             "AccoladeTypeId": 1,
-            "ImagePath": "/mphlix-accolades-certificates-hair-care-workshop-mphlix-soapworks-creencia.jpg",
+            "ImagePath": "/mphlix-accolades-certificates-hair-care-workshop-mphlix-soapworks-creencia-reduced.jpg",
             "IsActive" : true
         }
     ]
