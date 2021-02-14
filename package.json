@@ -22,6 +22,7 @@
     "@angular/platform-browser": "~8.1.0",
     "@angular/platform-browser-dynamic": "~8.1.0",
     "@angular/router": "~8.1.0",
+    "@angular/youtube-player": "^8.2.0",
     "bootstrap": "^4.4.1",
     "bootstrap-datepicker": "^1.9.0",
     "hammerjs": "^2.0.8",

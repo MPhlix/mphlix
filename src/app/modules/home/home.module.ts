@@ -8,6 +8,7 @@ import { MatCheckboxModule } from '@angular/material';
 // Importing third party modules
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 // Importing our custom modules
 // Importing components
@@ -53,6 +54,7 @@ const appRoutes: Routes = [
     NgxSpinnerModule,
     CarouselModule,
     RouterModule.forChild(appRoutes),
+    YouTubePlayerModule
   ],
   providers: [AccoladesService]
 })

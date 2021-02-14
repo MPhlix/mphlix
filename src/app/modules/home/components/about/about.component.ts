@@ -22,9 +22,4 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
   }
 
-  // getVideoUrl(video: PromotionalVideo) {
-  //   return this.sanitizer.bypassSecurityTrustResourceUrl(video.FullUrl);
-  //   // return this.sanitizer.sanitize(SecurityContext.URL, video.FullUrl);
-  // }
-
 }

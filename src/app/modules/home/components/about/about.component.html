@@ -12,9 +12,10 @@
     <div class="container">
         <div class="row video-row" *ngFor="let video of videos">
             <div class="col-md-6 d-flex">
-                <iframe width="560" height="315" [src]="video.FullUrl" frameborder="0"
+                <!-- <iframe width="560" height="315" [src]="video.FullUrl" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                    allowfullscreen></iframe> -->
+                <youtube-player [videoId]="video.VideoId" width="560" height="315"></youtube-player>
             </div>
             <div class="col-md-6 py-md-5 pb-5 wrap-about pb-md-5 ftco-animate fadeInUp ftco-animated">
                 <div class="pb-md-5" [innerHtml]="video.Description">
