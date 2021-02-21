@@ -33,13 +33,6 @@ export class BannerComponent implements OnInit {
       keyword: null
     },
     {
-      src: '../../../assets/images/Banner/Campaigns/valentines-day/mphlix-banner-valentines-day.jpg',
-      id: 4,
-      hasUrl: true,
-      priority: 0,
-      keyword: "valentine"
-    },
-    {
       src: '../../../assets/images/Banner/liptrip.png',
       id: 3,
       hasUrl: true,
