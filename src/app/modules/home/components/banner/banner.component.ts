@@ -38,6 +38,13 @@ export class BannerComponent implements OnInit {
       hasUrl: true,
       priority: 0,
       keyword: "lip"
+    },
+    {
+      src: "../../../assets/images/Banner/Campaigns/international-womens-day/women's day.jpg",
+      id: 4,
+      hasUrl: true,
+      priority: 0,
+      keyword: null
     }
   ];
 
