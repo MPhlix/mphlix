@@ -1,0 +1,22 @@
+dist: trusty
+sudo: false
+
+language: node_js
+node_js:
+  - '12'
+
+branches:
+  only:
+  - master
+
+before_script:
+  - npm install -g @angular/cli
+
+script:
+- ng build --prod --base-href docs
+- git stash
+- git checkout master
+- git stash pop
+- git add .
+- git commit -am "Deploy to GitHub pages"
+- git push
