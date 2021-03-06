@@ -56,7 +56,7 @@ export class ProductsListingComponent implements OnInit {
   }
 
   getCategoryBreadcrumbs(category: Category) {
-    let categoryNames = this.categoriesService.generateParentCategoryNamesWithHigherOrder(category, 2);
+    let categoryNames = this.categoriesService.generateParentCategoryNamesWithHigherOrder(category, 3);
     return categoryNames.join(' > ');
   }
 

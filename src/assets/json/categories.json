@@ -190,5 +190,11 @@
         "Name": "Scalp Scrub",
         "ParentCategoryId": 3,
         "ImageFolderPath": "/scalp-scrub"
+    },
+    {
+        "Id": 33,
+        "Name": "Face Pack",
+        "ParentCategoryId": 1,
+        "ImageFolderPath": "/face-pack"
     }
 ]

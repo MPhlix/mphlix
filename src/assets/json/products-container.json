@@ -900,7 +900,7 @@
             "Name": "Pink Clay Cleanser",
             "Description": "",
             "Price": 150,
-            "ImagePath": "/pink-clay-cleanser/mphlix-body-care-skin-care-creams-and-lotions-pink-clay-cleanser-reduced.jpg",
+            "ImagePath": "/pink-clay-cleanser/mphlix-body-care-skin-care-creams-and-lotions-pink-clay-cleanser-reduced-squared.jpg",
             "CategoryId": 22,
             "SkinAreaIds": [
                 1,
@@ -911,6 +911,23 @@
             ],
             "CampaignId": null,
             "ProductUnitTypeId": 1
+        },
+        {
+            "Id": 56,
+            "Name": "Facial kit for all skin types",
+            "Description": "",
+            "Price": 300,
+            "ImagePath": "/facial-kit/mphlix-body-care-face-pack-facial-kit-squared.jpg",
+            "CategoryId": 33,
+            "SkinAreaIds": [
+                3
+            ],
+            "Tags": [
+                "Bath",
+                "Pack"
+            ],
+            "CampaignId": null,
+            "ProductUnitTypeId": 2
         }
     ]
 }
